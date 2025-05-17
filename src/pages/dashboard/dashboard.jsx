@@ -1,9 +1,11 @@
+import NavBar from "../../components/NavBar/navBar";
+
 const DashboardScreen = () => {
-	return <>
-		<main className='page' id='dashboardPage'>
-			<p>Dashboard</p>
-		</main>
-	</>
+	return (
+		<>
+			<NavBar></NavBar>
+		</>
+	)
 };
 
 export default DashboardScreen;
