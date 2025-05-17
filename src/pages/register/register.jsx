@@ -1,8 +1,12 @@
+import FormRegister from "../../components/FormRegister/formRegister";
+import LogosInicio from "../../components/LogosInicio/logosInicio";
+
 const RegisterScreen = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <LogosInicio />
+            <FormRegister />
+        </>
     )
 };
 
