@@ -1,9 +1,12 @@
 import './dashboardPage.css'
 
+import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
+
 export const DashboardPage = () => {
 	return <>
 		<main className='page' id='dashboardPage'>
-			<p>Dashboard</p>
+			<GlobalNavBar></GlobalNavBar>
+
 		</main>
 	</>
 }
