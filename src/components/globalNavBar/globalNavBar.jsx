@@ -1,11 +1,17 @@
+import "./globalNavBar.css"
+
+import { ProjectSelector } from "../projectSelector/projectSelector"
+
+import navbarAppLogo from "../../assets/svg/logoAppNavbar.svg"
+
 export const GlobalNavBar = () => {
     return <>
         <aside id="globalSidebar__nav">
             <div className="sidebar__logo">
-                <img src="" alt="appLogo" />
+                <img src={navbarAppLogo} alt="appLogo" />
             </div>
 
-            <select name="project" id="projectSelection">
+            {/* <select name="project" id="projectSelection">
                 <option value="violet">
                     <h2>Violet</h2>
                     <p>Apartamento</p>
@@ -14,7 +20,9 @@ export const GlobalNavBar = () => {
                     <h2>Pance Nativo</h2>
                     <p>Casa</p>
                 </option>
-            </select>
+            </select> */}
+
+            <ProjectSelector></ProjectSelector>
 
             <nav className="sidebar__nav">
                 <ul>

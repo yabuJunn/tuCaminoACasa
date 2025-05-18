@@ -8,8 +8,8 @@ const mockUserName = "Carolina"
 export const DashboardPage = () => {
 	return <>
 		<main className='page' id='dashboardPage'>
-			{/* <GlobalNavBar></GlobalNavBar>
-			<UpperNavButtons></UpperNavButtons> */}
+			<GlobalNavBar></GlobalNavBar>
+			{/* <UpperNavButtons></UpperNavButtons> */}
 
 			<div id='dashboardPagePresentation'>
 				<h1>¡Hola, {mockUserName}!</h1>
