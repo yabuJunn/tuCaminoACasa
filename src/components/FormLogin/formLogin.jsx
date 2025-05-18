@@ -2,10 +2,6 @@ const FormLogin = () => {
     return (
         <>
             <div>
-                <img src="#" alt="logo_tu_camino_a_casa" />
-                <img src="#" alt="logo_Jaramillo_Mora" />
-            </div>
-            <div>
                 <h1>¡Bienvenido de nuevo!</h1>
                 <div>
                     <h2>Iniciar sesión</h2>
@@ -18,10 +14,11 @@ const FormLogin = () => {
                         <div>
                             <label htmlFor="password">Contraseña</label>
                             <input type="password" id="password" name="password" required />
+                            <a href="#">¿Olvidaste tu contraseña?</a>
                         </div>
                         <button type="submit">Iniciar sesión</button>
                     </form>
-                    <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                    <p>¿Aun no tienes una cuenta? <a href="#">Regístrate ahora</a></p>
                 </div>
             </div>
         </>
