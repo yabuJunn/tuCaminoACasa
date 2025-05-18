@@ -1,8 +1,8 @@
-import LoginScreen from "../pages/login/LoginScreen";
+import LoginScreen from "../pages/login/login";
 
 export const mainRoutes = [
     {
-        path: "/dashboard",
+        path: "/",
         element: <LoginScreen></LoginScreen>,
     },
 ]
