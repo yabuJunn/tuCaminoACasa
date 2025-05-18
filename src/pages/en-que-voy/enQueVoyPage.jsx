@@ -1,5 +1,3 @@
-import { progressTimeline } from "../../components/progressTimeLine/progressTimeLine";
-
 export const EnQueVoyScreen = () => {
   return (
     <main className="page" id="enQueVoyPage">
