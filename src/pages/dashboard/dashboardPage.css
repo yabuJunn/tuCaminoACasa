@@ -1,0 +1,21 @@
+#dashboardPage {}
+
+#dashboardPagePresentation h1 {
+    color: #FF0100;
+
+    font-family: Archivo;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem;
+}
+
+#dashboardPagePresentation p {
+    color: var(--Primary-color-Black, #18181B);
+
+    font-family: Archivo;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
