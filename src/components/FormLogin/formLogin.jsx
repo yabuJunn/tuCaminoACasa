@@ -1,7 +1,7 @@
 const FormLogin = () => {
     return (
         <>
-            <div>
+            <div id="loginForm">
                 <h1>¡Bienvenido de nuevo!</h1>
                 <div>
                     <h2>Iniciar sesión</h2>
