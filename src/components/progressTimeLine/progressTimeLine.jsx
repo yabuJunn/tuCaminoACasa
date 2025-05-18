@@ -4,7 +4,8 @@ export const ProgressTimeLine = () => {
         <h1>Línea de tiempo de tu proceso</h1>
 		</div>
 
-        <div className= "seleccion-check">
+        <div className="check-sesion">
+            <div className= "seleccion-check">
             <h5 className="seleccion">Selección del inmueble</h5>
         </div>
 
@@ -28,6 +29,13 @@ export const ProgressTimeLine = () => {
             <h5 className="escrituración"> Escrituración </h5>
         </div>
 
+
+    </div>
+        
+        <div id="construction- progress">
+        <h1>Progreso de la construcción</h1>
+        
+		</div>
 
 	</>
 }
