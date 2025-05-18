@@ -11,7 +11,8 @@ const ProfileScreen = () => {
                 </div>
                 <div id="photo-profile">
                     <img id="profile-photo" src="https://www.w3schools.com/howto/img_avatar.png" alt="Foto de perfil" />
-                    <input type="file" name="photo-user" id="upload-photo-user" />
+                    <input type="file" name="photo-user" id="upload-photo-user" style={{ display: 'none' }} />
+                    <label htmlFor="upload-photo-user" id="upload-photo-label">Editar</label>
                 </div>
                 <FormProfile />
                 <FormPrefrences />

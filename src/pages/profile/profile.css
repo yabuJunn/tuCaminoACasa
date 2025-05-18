@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 38px; /* 126.667% */
-  margin-left: 527px;
+  margin-left: 350px;
 
 }
 
@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
-  margin-left: 527px;
+  margin-left: 350px;
 }
 
 #photo-profile {
@@ -24,25 +24,32 @@
   height: 140px;
   flex-shrink: 0;
   border-radius: 70px;
-  background: lightgray -3.92px -2.533px / 100% 124.95% no-repeat;
   margin: 0 auto;
   position: relative;
 }
 
 #profile-photo {
+  margin-top: 2%;
   width: 140px;
   height: 140px;
   border-radius: 70px;
   object-fit: cover;
 }
 
-#upload-photo-user {
+
+
+#upload-photo-label {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -50%);
-  width: 24px;
-  height: 24px;
-  opacity: 0.7;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #18181b;
+  color: #fff;
+  padding: 6px 16px;
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
   cursor: pointer;
+  white-space: nowrap;
 }
