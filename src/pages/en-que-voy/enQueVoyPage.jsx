@@ -1,4 +1,3 @@
-import { CheckSesion } from "../../components/checkSesion/checkSesion";
 import { ConstructionProgress } from "../../components/constructionProgress/constructionProgress";
 import { ProgressTimeLine } from "../../components/progressTimeLine/progressTimeLine"
 
@@ -16,9 +15,7 @@ export const EnQueVoyPage = () => {
         <ProgressTimeLine></ProgressTimeLine>
       </section>
       
-      <section className="check-section">
-     <CheckSesion></CheckSesion>
-      </section>
+  
 
        <section className="construction-progress">
      <ConstructionProgress></ConstructionProgress>
