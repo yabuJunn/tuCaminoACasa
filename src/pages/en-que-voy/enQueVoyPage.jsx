@@ -1,4 +1,6 @@
-export const EnQueVoyScreen = () => {
+import { ProgressTimeLine } from "../../components/progressTimeLine/progressTimeLine"
+
+export const EnQueVoyPage = () => {
   return (
     <main className="page" id="enQueVoyPage">
       <h2>¿En qué voy?</h2>
@@ -9,12 +11,11 @@ export const EnQueVoyScreen = () => {
      
       
       <section>
-        <progressTimeline />
+        <ProgressTimeLine></ProgressTimeLine>
       </section>
       
       <section className="progress-section">
-        <ConstructionGallery />
-        <ConstructionStages />
+     
       </section>
     </main>
   );
