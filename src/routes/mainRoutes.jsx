@@ -1,8 +1,15 @@
-import { DashboardPage } from "../pages/dashboard/dashboardPage.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export const mainRoutes = [
-    {
-        path: "/dashboard",
-        element: <DashboardPage></DashboardPage>,
-    },
-]
+import { LoginScreen } from "../pages";
+
+const Router = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<LoginScreen />} />
+            </Routes>
+        </BrowserRouter>
+    );
+};
+
+export default Router;
