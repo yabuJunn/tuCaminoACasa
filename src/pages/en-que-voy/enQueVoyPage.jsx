@@ -14,8 +14,6 @@ export const EnQueVoyPage = () => {
       <section className="progress-timeLine">
         <ProgressTimeLine></ProgressTimeLine>
       </section>
-      
-  
 
        <section className="construction-progress">
      <ConstructionProgress></ConstructionProgress>
