@@ -1,21 +1,21 @@
-# Code Conduct Proyecto Web
+# Code Conduct Proyecto PI 2
 
 > Developers guide for greatness
 > 
 
-Esta es la guía de desarrolladores para "Tu Camino a Casa", que usa React para construir la interfaz y Typecript para lenguaje. El proyecto usa React con Javascript + SWC. El proyecto usa ECMAScript e import y export para los modulos.
+Esta es la guía de desarrolladores para "Tu Camino a Casa", que usa React para construir la interfaz y Javascript para lenguaje de programación. El proyecto usa React con Javascript + SWC. El proyecto usa ECMAScript e import y export para los modulos.
 
 # Project Structure
 
 El proyecto usa vite React con Typescript + SWC para desarrollar la aplicación.
 
-### App.tsx
+### Main.jsx
 
-Es el archivo principal de la aplicación donde se renderiza React.
+Es el archivo principal de la aplicación donde se renderiza React y el react route dom.
 
 ### Components
 
-En esta carpeta se almacenan todos los componentes de la aplicación. Cada componente tiene su archivo tsx
+En esta carpeta se almacenan todos los componentes de la aplicación. Cada componente tiene su archivo jsx
 
 ### Screens
 
@@ -122,8 +122,35 @@ export const ExampleCommponent = (props) => {
 
 Usaremos fuentes de la internet (google fonts) para gestionar las fuentes en los estilos. En el archivo index.html se importan las fuentes, y segun el nombre y la documentacion se declaran en el css. (Esto se va aclarar mas cuando lo hagamos)
 
+# Pages Structures
 
-# Components Estructures
+Para crear las pantallas se sigue la siguiente estructura:
+```jsx
+// Se importa el css
+import "./LoginScreen.css"
+
+// Luego se importan los componentes
+import FormLogin from "../../components/FormLogin/formLogin";
+import LogosInicio from "../../components/LogosInicio/logosInicio";
+
+//Aqui se importan las imagenes
+import logo from "./assets/svg/logo.svg"
+
+//Finalmente se crea la función del componente de pagina
+export const LoginScreen = () => {
+    return <>
+            <main className='page' id='loginPage'>
+                <LogosInicio></LogosInicio>
+                <FormLogin></FormLogin>
+            </main>
+        </>
+};
+```
+
+Es muy importante tener en cuenta que todas las pantallas su contenedor es un elemento <main> y su id cambia segun el nombre de la pantalla. Tambien, que el nombre de la funcion del componente de la pantalla (y todos los componentes) tiene que comenzar por mayusculas y seguir con cammel case, esto se llama `PascalCase`.
+
+
+# Components Structures
 
 Para crear un componente se tiene que crear dentro de la carpeta de commponents un una nueva con el nombre del componente, y dentro de esta carpeta dos archivos con el nombre del componente, un archivo `.jsx` y otro archivo `.css`.
 
@@ -133,7 +160,7 @@ Se importa primero el css, usando un punto. Luego todos los recursos que se vaya
 
 Ejemplo:
 
-```tsx
+```jsx
 import './componentStyle'
 
 import jpg from './'
@@ -154,7 +181,7 @@ export const ExampleComponent = ({atributte1, atributte2}) => {
 Los pasos para traer el proyecto a su carpeta local en su computador son los siguientes:
 
 1. git init
-2. git remote add origin https://github.com/yabuJunn/CapyWeb.git
+2. git remote add origin https://github.com/yabuJunn/tuCaminoACasa.git
 3. git pull main
 4. git checkout -b
 5. Ahora puedes pushear tu propia rama ya creada, si te da error, recuerda: has git add -A, git commit -m "nombre" y push. Si el push te da error de upStream, pon el comando que te indica la consola. **Recuerda nunca pushear algo directamente a la main**
