@@ -1,15 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginScreen from "../pages/login/login";
+import RegisterScreen from "../pages/register/register";
 
-import { LoginScreen } from "../pages";
+export const mainRoutes = [
+    {
+        path: "/",
+        element: <LoginScreen></LoginScreen>,
 
-const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LoginScreen />} />
-            </Routes>
-        </BrowserRouter>
-    );
-};
-
-export default Router;
+    },
+    {
+        path: "/register",
+        element: <RegisterScreen></RegisterScreen>,
+    }
+]
