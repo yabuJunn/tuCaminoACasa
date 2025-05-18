@@ -4,8 +4,10 @@ import LogosInicio from "../../components/LogosInicio/logosInicio";
 const LoginScreen = () => {
     return (
         <>
-            <LogosInicio></LogosInicio>
-            <FormLogin></FormLogin>
+            <main className='page' id='loginPage'>
+                <LogosInicio></LogosInicio>
+                <FormLogin></FormLogin>
+            </main>
         </>
     )
 };
