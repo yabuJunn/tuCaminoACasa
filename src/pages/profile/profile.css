@@ -1,0 +1,48 @@
+#profile-title {
+  color: var(--Secondary-color-Red, #ff0100);
+  font-family: "Archivo", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 126.667% */
+  margin-left: 527px;
+
+}
+
+#profile-subtitle {
+  color: var(--Primary-color-Black, #18181b);
+  font-family: "Archivo", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  margin-left: 527px;
+}
+
+#photo-profile {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 70px;
+  background: lightgray -3.92px -2.533px / 100% 124.95% no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
+
+#profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  object-fit: cover;
+}
+
+#upload-photo-user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+}

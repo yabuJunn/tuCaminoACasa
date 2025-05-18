@@ -12,4 +12,4 @@ const LogosInicio = () => {
     )
 };
 
-export default LogosInicio;
+export default LogosInicio;

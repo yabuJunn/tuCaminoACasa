@@ -1,0 +1,134 @@
+#formProfile .input-edit-wrapper {
+  position: relative;
+  width: 370px;
+}
+
+#formProfile .input-edit-wrapper input {
+  width: 100%;
+}
+
+#formProfile .input-edit-wrapper .edit-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#formProfile .input-edit-wrapper .edit-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Center the entire form horizontally and vertically align items */
+#formProfile {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3%;
+
+}
+
+#formProfile #editProfileForm {
+  width: 799px;
+}
+
+#formProfile #profile-form-title {
+  align-self: flex-start;
+  margin-left: -24px;
+  color: var(--Secondary-color-Red, #FF0100);
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+#formProfile .formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1;
+}
+
+
+#formProfile .pairRow {
+  display: flex;
+  gap: 59px;
+  justify-content: center;
+  width: 100%;
+}
+
+#formProfile #1,
+#formProfile #2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#formProfile label {
+  font-family: Archivo;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--Primary-color-Black, #18181B);
+}
+
+#formProfile input[type="text"],
+#formProfile input[type="email"],
+#formProfile input[type="number"] {
+  display: flex;
+  width: 370px;
+  padding: 10px 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid var(--Neutral-colors-400, #A4A7AE);
+  font-family: Archivo;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#formProfile #credential {
+  color: var(--Neutral-colors-400, #A4A7AE);
+}
+
+#formProfile img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  margin-left: -40px;
+  margin-top: -35px;
+  align-self: flex-end;
+}
+
+#formProfile #email-group {
+  margin-top: 20px;
+}
+
+#formProfile #phone-group {
+  margin-top: 20px;
+}
+#formProfile #profile-submit-button {
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-left: 87%;
+  background-color: var(--Primary-color-Black, #18181B);
+  color: #fff;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+}
