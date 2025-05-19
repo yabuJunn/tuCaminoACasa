@@ -37,23 +37,33 @@ export const ProgressTimeLine = () => {
          </div>
          
         <div className="generalStructureCheck">
-            <div className="checkImg">
-                <img src={checkIcon} alt="checkIcon" />
+            <div className="number">
+                <h4>4</h4>
             </div>
         <div className= "construccionCheck">
             <h5 className="construccion"> Construcción en curso</h5>
         </div>
         </div>
 
-        
 
+         <div className="generalStructureCheck">
+            <div className="number">
+            <h4>5</h4>
+            </div>
         <div className= "entregaCheck">
             <h5 className="entrega"> Entrega del inmueble</h5>
         </div>
+        </div>
 
+        <div className="generalStructureCheck">
+            <div className="number">
+                <h4>6</h4>
+            </div>
         <div className= "escrituracionCheck">
             <h5 className="escrituración"> Escrituración </h5>
         </div>
+        </div>
+
 
 
     </sesion>
