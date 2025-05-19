@@ -11,8 +11,7 @@
 }
 
 #preferences-title {
-  align-self: flex-start;
-  margin-left: 265px;
+  margin-left:-572px;
   color: var(--Secondary-color-Red, #FF0100);
   font-family: Archivo;
   font-size: 24px;
