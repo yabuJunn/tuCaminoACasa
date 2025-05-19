@@ -14,10 +14,10 @@ export const DashboardPage = () => {
 			<GlobalNavBar></GlobalNavBar>
 			{/* <UpperNavButtons></UpperNavButtons> */}
 
-			<div id='dashbboardPageContent'>
+			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>
 					<h1>¡Hola, {mockUserName}!</h1>
-					<p>Bienvenida a tu proyecto <strong>Violet</strong>. !Ve, qué alegría tenerte por acá!</p>
+					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Ve, qué alegría tenerte por acá!</p>
 				</div>
 
 				<div id="dashboardPageCards">

@@ -2,17 +2,17 @@
 
 } */
 
-#dashbboardPageContent {
+#dashboardPageContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
     border: #FF0100 1px solid;
     margin: 1.5rem 1.5rem 1.5rem 14.5rem;
-
     height: 93vh;
-}
+    width: calc(100% - 14.5rem - 3rem);    
+    box-sizing: border-box;
+  }
 
 #dashboardPagePresentation h1 {
     color: #FF0100;
@@ -37,32 +37,28 @@
 #dashboardPageCards {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: #0051ff 1px solid;
-
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 2rem;
-
     margin-top: 2rem;
     width: 100%;
-    height: 100%;
-}
+    height: auto;
+  }
 
-#dashboardContentColumn1 {
+  #dashboardContentColumn1 {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 322px; 
+    flex-shrink: 0;
+  }
 
-    height: 100%;
-    width: 35%;
-    border: #18181B 1px solid;
-}
-
-#dashboardContentColumn2 {
+  #dashboardContentColumn2 {
     display: flex;
-
-    height: 100%;
-    width: 65%;
-    border: #18181B 1px solid;
-}
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+  }
 
 #dashboardContentColumn3 {
     display: flex;
