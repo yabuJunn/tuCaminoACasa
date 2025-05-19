@@ -4,6 +4,29 @@ export const ConstructionSteps = () => {
 		<div id="construction-steps">
         <h1>Etapas de la construccion</h1>
 		</div>
+
+        <sesion className="numbersColumn">
+            <div className="number"> 1 </div>
+            <div className="number"> 2 </div>
+            <div className="number"> 3 </div>
+            <div className="number"> 4 </div>
+        </sesion>
+        
+            <sesion className="descriptions Column">
+            
+            <div className="generalStructureDescription">
+                <div className="completado"> Completado </div>
+                 <div className="title"> Preparación del terreno </div>
+                 <div className="description"> Se limpia y nivela el lote donde se construirá el proyecto, incluyendo estudios del suelo y adecuación del espacio. </div>
+            </div>
+
+             <div className="generalStructureDescription">
+                <div className="completado"> Completado </div>
+                 <div className="title"> Cimentación </div>
+                 <div className="description"> Se limpia y nivela el lote donde se construirá el proyecto, incluyendo estudios del suelo y adecuación del espacio. </div>
+            </div>
+            
+        </sesion>
         
         
 
