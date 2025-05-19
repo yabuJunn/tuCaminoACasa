@@ -1,10 +1,13 @@
 import FormProfile from "../../components/FormProfile/formProfile";
 import FormPrefrences from "../../components/FormPreferences/formPreferences";
+import { GlobalNavBar} from "../../components/globalNavBar/globalNavBar"
 import "./profile.css";
+
 const ProfileScreen = () => {
     return(
         <>
             <main className='page' id='profilePage'>
+                <GlobalNavBar />
                 <div id="header-profile">
                     <h1 id="profile-title">Perfil de usuario</h1>
                     <p id="profile-subtitle">Bienvenida a tu <strong>Perfil</strong>, ¡Ve, aquí podrás cambiar tú información para tenerla actualizada!</p>
