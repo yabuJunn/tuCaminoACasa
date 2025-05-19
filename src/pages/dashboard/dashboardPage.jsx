@@ -4,6 +4,7 @@ import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/upperNavButtons/upperNavButtons'
 import { PropertySummmary } from '../../components/propertySummary/propertySummary'
 import { PropertyProjectDetails } from '../../components/propertyProjectDetails/propertyProjectDetails'
+import { GeneralPropertyTimeline } from '../../components/generalPropertyTimeline/generalPropertyTimeline'
 
 const mockUserName = "Carolina"
 
@@ -26,7 +27,7 @@ export const DashboardPage = () => {
 					</div>
 
 					<div id='dashboardContentColumn2'>
-						{/* Linea de tiempo */}
+						<GeneralPropertyTimeline></GeneralPropertyTimeline>
 						<div id='dashboardContentColumn3'>
 
 						</div>
