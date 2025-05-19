@@ -1,6 +1,7 @@
 #formProfile .input-edit-wrapper {
   position: relative;
   width: 370px;
+  
 }
 
 #formProfile .input-edit-wrapper input {
@@ -16,6 +17,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  
 }
 
 #formProfile .input-edit-wrapper .edit-button img {
@@ -32,6 +34,7 @@
   align-items: center;
   gap: 20px;
   margin-top: 3%;
+  margin-left: 70px;
 
 }
 
