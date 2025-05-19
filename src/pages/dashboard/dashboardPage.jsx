@@ -5,6 +5,7 @@ import { UpperNavButtons } from '../../components/upperNavButtons/upperNavButton
 import { PropertySummmary } from '../../components/propertySummary/propertySummary'
 import { PropertyProjectDetails } from '../../components/propertyProjectDetails/propertyProjectDetails'
 import { GeneralPropertyTimeline } from '../../components/generalPropertyTimeline/generalPropertyTimeline'
+import { ConstructionProgress } from '../../components/constructionProgress/constructionProgress'
 
 const mockUserName = "Carolina"
 
@@ -29,7 +30,7 @@ export const DashboardPage = () => {
 					<div id='dashboardContentColumn2'>
 						<GeneralPropertyTimeline></GeneralPropertyTimeline>
 						<div id='dashboardContentColumn3'>
-
+							<ConstructionProgress></ConstructionProgress>
 						</div>
 
 						<div id='dashboardContentColumn4'>

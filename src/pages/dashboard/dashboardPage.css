@@ -1,6 +1,11 @@
 /* #dashboardPage {
 
 } */
+body {
+    overflow-y: hidden;
+    overflow: hidden;
+    overflow-y: none;
+}
 
 #dashboardPageContent {
     display: flex;
@@ -12,6 +17,9 @@
     height: 93vh;
     width: calc(100% - 14.5rem - 3rem);    
     box-sizing: border-box;
+    overflow-y: hidden;
+    overflow: hidden;
+    overflow-y: none;
   }
 
 #dashboardPagePresentation h1 {
@@ -65,7 +73,6 @@
 
     height: 100%;
     width: 50%;
-    border: #18181B 1px solid;
 }
 
 #dashboardContentColumn4 {
@@ -73,5 +80,4 @@
 
     height: 100%;
     width: 50%;
-    border: #18181B 1px solid;
 }

@@ -1,0 +1,101 @@
+#generalPropertyTimelineContainer {
+    font-family: "Archivo", sans-serif;
+    width: 790px;
+    background-color: #fff;
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid #DDDEE1;
+  }
+  
+  #generalPropertyTimelineContainer h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+  }
+  
+  #generalPropertyTimelineContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .generalPropertyTimeLineStage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .generalPropertyTimeLineStageCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    z-index: 2;
+  }
+  
+  .generalPropertyTimeLineStage.completed .generalPropertyTimeLineStageCircle {
+    background-color: #27AE60;
+  }
+  
+  .generalPropertyTimeLineStage.firstNotCompleted .generalPropertyTimeLineStageCircle {
+    background-color: #fff; 
+    border: 1px solid #27AE60;
+    color: #27AE60;
+    z-index: 2;
+  }
+  
+  .generalPropertyTimeLineStage.notCompleted .generalPropertyTimeLineStageCircle {
+    background-color: #BDBDBD;
+    color: #fff;
+  }
+  
+  .generalPropertyTimeLineStage p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  #generalPropertyTimelineContent::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #E0E0E0;
+    border: 1px;
+    z-index: 1;
+  }
+  
+  .generalPropertyTimeLineStage.completed ~ .generalPropertyTimeLineStage::before {
+    background-color: #E0E0E0;
+    border: 1px;
+  }
+  
+  .generalPropertyTimeLineStage:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -50%;
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    z-index: 1; 
+  }
+  
+  .generalPropertyTimeLineStage.completed:not(:last-child)::after {
+    background-color: #27AE60;
+    z-index: 1; 
+  }
