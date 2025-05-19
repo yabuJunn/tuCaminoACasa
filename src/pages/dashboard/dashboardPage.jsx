@@ -3,6 +3,7 @@ import './dashboardPage.css'
 import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/upperNavButtons/upperNavButtons'
 import { PropertySummmary } from '../../components/propertySummary/propertySummary'
+import { PropertyProjectDetails } from '../../components/propertyProjectDetails/propertyProjectDetails'
 
 const mockUserName = "Carolina"
 
@@ -21,6 +22,7 @@ export const DashboardPage = () => {
 				<div id="dashboardPageCards">
 					<div id='dashboardContentColumn1'>
 						<PropertySummmary></PropertySummmary>
+						<PropertyProjectDetails></PropertyProjectDetails>
 					</div>
 
 					<div id='dashboardContentColumn2'>
