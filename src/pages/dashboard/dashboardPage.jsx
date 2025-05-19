@@ -18,7 +18,20 @@ export const DashboardPage = () => {
 				</div>
 
 				<div id="dashboardPageCards">
+					<div id='dashboardContentColumn1'>
 
+					</div>
+
+					<div id='dashboardContentColumn2'>
+						{/* Linea de tiempo */}
+						<div id='dashboardContentColumn3'>
+
+						</div>
+
+						<div id='dashboardContentColumn4'>
+
+						</div>
+					</div>
 				</div>
 			</div>
 
