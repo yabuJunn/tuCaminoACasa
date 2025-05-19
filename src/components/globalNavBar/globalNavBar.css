@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .sidebar__logo {

@@ -22,7 +22,6 @@ import bankStatementIconBlack from "../../assets/svg/bankStatementIconBlack.svg"
 import learnIconWhite from "../../assets/svg/learnIconWhite.svg"
 import learnIconBlack from "../../assets/svg/learnIconBlack.svg"
 
-
 export const GlobalNavBar = () => {
     return <>
         <aside id="globalSidebar__nav">
