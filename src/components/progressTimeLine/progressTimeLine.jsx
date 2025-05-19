@@ -1,3 +1,4 @@
+import checkIcon from "../../assets//svgCheckIcon/check.svg"
 
 export const ProgressTimeLine = () => {
 	return <>
@@ -5,22 +6,46 @@ export const ProgressTimeLine = () => {
         <h1>Línea de tiempo de tu proceso</h1>
 		</div>
         
-         <div className="checkSesion">
+    <sesion className="checkSesion">
+
+        <div className="generalStructureCheck">
+                 <div className="checkImg">
+                <img src={checkIcon} alt="checkIcon" />
+            </div>
+            
             <div className= "seleccionCheck">
             <h5 className="seleccion">Selección del inmueble</h5>
-        </div>
-
-        <div className= "separacionCheck">
+            </div>
+         </div>
+        
+        <div className="generalStructureCheck">
+             <div className="checkImg">
+                <img src={checkIcon} alt="checkIcon" />
+            </div>
+            <div className= "separacionCheck">
             <h5 className="separacion">Separación del inmueble</h5>
         </div>
-
-         <div className= "firmaCheck">
+        </div>
+        
+         <div className="generalStructureCheck">
+            <div className="checkImg">
+                <img src={checkIcon} alt="checkIcon" />
+            </div>
+            <div className= "firmaCheck">
             <h5 className="firma"> Firma de documentación</h5>
         </div>
-
+         </div>
+         
+        <div className="generalStructureCheck">
+            <div className="checkImg">
+                <img src={checkIcon} alt="checkIcon" />
+            </div>
         <div className= "construccionCheck">
             <h5 className="construccion"> Construcción en curso</h5>
         </div>
+        </div>
+
+        
 
         <div className= "entregaCheck">
             <h5 className="entrega"> Entrega del inmueble</h5>
@@ -31,7 +56,7 @@ export const ProgressTimeLine = () => {
         </div>
 
 
-    </div>
+    </sesion>
 
        
         

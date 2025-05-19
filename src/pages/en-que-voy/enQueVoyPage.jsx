@@ -1,4 +1,5 @@
 import { ConstructionProgress } from "../../components/constructionProgress/constructionProgress";
+import { ConstructionSteps } from "../../components/constructionSteps/constructionSteps";
 import { ProgressTimeLine } from "../../components/progressTimeLine/progressTimeLine"
 
 export const EnQueVoyPage = () => {
@@ -17,6 +18,10 @@ export const EnQueVoyPage = () => {
 
        <section className="construction-progress">
      <ConstructionProgress></ConstructionProgress>
+      </section>
+
+       <section className="construction-progress">
+     <ConstructionSteps></ConstructionSteps>
       </section>
     </main>
   );
