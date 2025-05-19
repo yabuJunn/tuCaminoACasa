@@ -1,3 +1,5 @@
+import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
+
 import { ConstructionProgress } from "../../components/constructionProgress/constructionProgress";
 import { ConstructionSteps } from "../../components/constructionSteps/constructionSteps";
 import { ProgressTimeLine } from "../../components/progressTimeLine/progressTimeLine"
@@ -10,6 +12,7 @@ export const EnQueVoyPage = () => {
 
        <h3>Progreso Postventa</h3>
       <h4>Trámites</h4>
+        <GlobalNavBar></GlobalNavBar>
      
       
       <section className="progress-timeLine">

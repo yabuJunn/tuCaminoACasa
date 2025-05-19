@@ -1,0 +1,78 @@
+.project-selector {
+    position: relative;
+    width: 90%;
+    font-family: sans-serif;
+}
+
+.selector-button {
+    background-color: #1f2632;
+    border: 1px solid #8c8f99;
+    border-radius: 12px;
+    padding: 12px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    height: 80%;
+}
+
+.selector-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.project-type {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+.chevron {
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.selector-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 6px;
+    z-index: 100;
+}
+
+.project-name-option {
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #18181B;
+}
+
+.project-type-option {
+    font-size: 14px;
+    color: #535862;
+    line-height: 1.2;
+}
+
+.option {
+    padding: 12px 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.option:hover {
+    background-color: #e1e1e1;
+    border-radius: 12px;
+}
