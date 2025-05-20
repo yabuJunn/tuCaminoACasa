@@ -8,6 +8,7 @@ import { GeneralPropertyTimeline } from '../../components/generalPropertyTimelin
 import { ConstructionProgress } from '../../components/constructionProgress/constructionProgress'
 import { DocumentsState } from '../../components/documentsState/documentsState'
 import { AccruedPayment } from '../../components/accruedPayment/accruedPayment'
+import { NextInstalment } from '../../components/nextInstalment/nextInstalment'
 
 const mockUserName = "Carolina"
 
@@ -38,6 +39,7 @@ export const DashboardPage = () => {
 
 						<div id='dashboardContentColumn4'>
 							<AccruedPayment></AccruedPayment>
+							<NextInstalment></NextInstalment>
 						</div>
 					</div>
 				</div>
