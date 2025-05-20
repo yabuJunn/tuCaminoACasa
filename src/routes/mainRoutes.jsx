@@ -1,8 +1,8 @@
-import { DashboardPage } from "../pages/dashboard/dashboardPage.jsx"
+import LoginScreen from "../pages/login/login";
 
 export const mainRoutes = [
     {
-        path: "/dashboard",
-        element: <DashboardPage></DashboardPage>,
+        path: "/",
+        element: <LoginScreen></LoginScreen>,
     },
 ]

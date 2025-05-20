@@ -1,0 +1,12 @@
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.logo-container img {
+  width: 120px; /* o cualquier tamaño deseado */
+  height: auto; /* mantiene proporción */
+}
