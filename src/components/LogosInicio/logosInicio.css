@@ -6,7 +6,10 @@
   margin-left: 5%;
   margin-top: 1%;
 }
+
 .logo-container img {
-  width: 120px; /* o cualquier tamaño deseado */
-  height: auto; /* mantiene proporción */
+  width: 120px;
+  /* o cualquier tamaño deseado */
+  height: auto;
+  /* mantiene proporción */
 }
