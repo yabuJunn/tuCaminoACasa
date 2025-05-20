@@ -24,7 +24,6 @@ body {
 
 #dashboardPagePresentation h1 {
     color: #FF0100;
-
     font-family: Archivo;
     font-size: 1.5rem;
     font-style: normal;
@@ -34,7 +33,6 @@ body {
 
 #dashboardPagePresentation p {
     color: #18181B;
-
     font-family: Archivo;
     font-size: 1rem;
     font-style: normal;
@@ -47,8 +45,8 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 10px;
+    margin-top: 10px;
     width: 100%;
     height: auto;
   }
@@ -56,7 +54,7 @@ body {
   #dashboardContentColumn1 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     width: 322px; 
     flex-shrink: 0;
   }
@@ -64,20 +62,27 @@ body {
   #dashboardContentColumn2 {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 10px;
     flex: 1;
   }
+  
 
-#dashboardContentColumn3 {
-    display: flex;
-
-    height: 100%;
-    width: 50%;
-}
-
-#dashboardContentColumn4 {
-    display: flex;
-
-    height: 100%;
-    width: 50%;
-}
+  #dashboardCardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  .dashboardCard {
+    width: 100%;
+    height: 300px;
+    min-height: 230px;
+    max-height: 300px;
+    box-sizing: border-box;
+  }
+  
+  

@@ -1,6 +1,6 @@
 #constructionProgressContainer {
-    width: 249px;
-    height: 222px;
+  width: 100%;
+  max-width: 250px;
     border-radius: 16px;
     padding: 16px;
     font-family: "Archivo", sans-serif;
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -100px;
+    margin-top: 0px;
   }
   
   #constructionProgressProgressTextTitle h3 {
@@ -68,5 +68,11 @@
   
   #constructionProgressNextStageButton:hover {
     background-color: #f5f5f5;
+  }
+  
+  .CircularProgressbar {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto;
   }
   

@@ -1,6 +1,6 @@
 #documentsStateContainer {
-    width: 249px;
-    height: 221px;
+    width: 100%;
+    max-width: 250px;
     background-color: white;
     border-radius: 16px;
     padding: 16px;

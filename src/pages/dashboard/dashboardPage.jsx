@@ -24,7 +24,7 @@ export const DashboardPage = () => {
 					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Ve, qué alegría tenerte por acá!</p>
 				</div>
 
-				<div id="dashboardPageCards">
+				<div id="dashboardPageCards" className='dashboardCard'>
 					<div id='dashboardContentColumn1'>
 						<PropertySummmary></PropertySummmary>
 						<PropertyProjectDetails></PropertyProjectDetails>
@@ -32,15 +32,14 @@ export const DashboardPage = () => {
 
 					<div id='dashboardContentColumn2'>
 						<GeneralPropertyTimeline></GeneralPropertyTimeline>
-						<div id='dashboardContentColumn3'>
-							<ConstructionProgress></ConstructionProgress>
-							<DocumentsState></DocumentsState>
+
+						<div id="dashboardCardsGrid">
+							<ConstructionProgress />
+							<AccruedPayment />
+							<DocumentsState />
+							<NextInstalment />
 						</div>
 
-						<div id='dashboardContentColumn4'>
-							<AccruedPayment></AccruedPayment>
-							<NextInstalment></NextInstalment>
-						</div>
 					</div>
 				</div>
 			</div>
