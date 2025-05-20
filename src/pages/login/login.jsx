@@ -6,7 +6,7 @@ const LoginScreen = () => {
     return (
         <>
             <main className='page' id='loginPage'>
-            <img id="FondoLogin" src={FondoLogin} alt="Fondo-LoginRegister" />
+            <img id="fondoLogin" src={FondoLogin} alt="Fondo-LoginRegister" />
 
                 <LogosInicio></LogosInicio>
                 <FormLogin></FormLogin>

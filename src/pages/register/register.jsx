@@ -6,7 +6,7 @@ const RegisterScreen = () => {
     return (
         <>
             <main className='page' id='registerPage'>
-                <img id="FondoRegister" src={FondoRegister} alt="Fondo-LoginRegister" />
+                <img id="fondoRegister" src={FondoRegister} alt="Fondo-LoginRegister" />
                 <LogosInicio></LogosInicio>
                 <FormRegister></FormRegister>
             </main>
