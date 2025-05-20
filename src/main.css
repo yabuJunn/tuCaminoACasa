@@ -1,3 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 99vw;
+    min-height: 100vh;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -8,12 +29,18 @@ body {
     color: #A4A7AE;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
 
-p{
+p {
     font-size: 16px;
     font-weight: 300px;
 }
@@ -24,11 +51,11 @@ p{
     display: flex;
 }
 
-.progressSection{
+.progressSection {
     display: flex;
 }
 
-.page-content{
+.page-content {
     margin-left: 209px;
     padding: 20px;
     display: flex;
@@ -36,18 +63,18 @@ p{
     gap: 40px;
 }
 
-.title{
+.title {
     display: flex;
     gap: 7px;
     flex-direction: column;
 }
 
-.subtitle{
+.subtitle {
     display: flex;
     gap: 7px;
     flex-direction: column;
 }
 
-.page-title{
- color: #FF0100;   
+.page-title {
+    color: #FF0100;
 }

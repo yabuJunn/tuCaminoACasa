@@ -1,4 +1,4 @@
-//import "./CommonAreas.css";
+import "./CommonAreas.css";
 
 import BathArea from '../../assets/svg/bathArea.svg';
 import GameArea from '../../assets/svg/gameArea.svg';

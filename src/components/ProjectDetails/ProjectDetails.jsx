@@ -31,14 +31,14 @@ export function ProjectDetails() {
       <p>Área privada construida total 77,70m²</p>
 
       <div id="ProjectElements">
-                  <div className="projectElementsImage">
-            <img src={RoomImage} alt="Plano del proyecto" />
-          </div>
+        <div className="projectElementsImage">
+          <img src={RoomImage} alt="Plano del proyecto" />
+        </div>
 
         <div className="projectElementsList">
           {projectElements.map((element, index) => (
             <div key={index} className="propertyProjectDetailsDescriptionElement">
-              <img src={Viñeta} alt="Viñeta" /> 
+              <img src={Viñeta} alt="Viñeta" />
               <p>{element}</p>
             </div>
           ))}

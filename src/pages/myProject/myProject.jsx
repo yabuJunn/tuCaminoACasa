@@ -15,8 +15,8 @@ export function MyProject() {
         <Header />
         <main className="content">
           <ProjectDescription />
-          <ProjectDetails />
           <CommonAreas />
+          <ProjectDetails />
           <ProjectMap />
         </main>
       </div>

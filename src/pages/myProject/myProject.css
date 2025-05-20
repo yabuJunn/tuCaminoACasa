@@ -13,7 +13,7 @@ html, body {
 
 /* 3. Opcional: espaciado interno del contenido */
 .content {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* 4. Sidebar fijo ya correcto */
