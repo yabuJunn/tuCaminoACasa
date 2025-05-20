@@ -7,6 +7,7 @@ import { PropertyProjectDetails } from '../../components/propertyProjectDetails/
 import { GeneralPropertyTimeline } from '../../components/generalPropertyTimeline/generalPropertyTimeline'
 import { ConstructionProgress } from '../../components/constructionProgress/constructionProgress'
 import { DocumentsState } from '../../components/documentsState/documentsState'
+import { AccruedPayment } from '../../components/accruedPayment/accruedPayment'
 
 const mockUserName = "Carolina"
 
@@ -36,7 +37,7 @@ export const DashboardPage = () => {
 						</div>
 
 						<div id='dashboardContentColumn4'>
-
+							<AccruedPayment></AccruedPayment>
 						</div>
 					</div>
 				</div>
