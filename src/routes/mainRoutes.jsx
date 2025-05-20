@@ -3,6 +3,7 @@ import RegisterScreen from "../pages/register/register";
 import { DashboardPage } from "../pages/dashboard/dashboardPage";
 import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { MyProject } from "../pages/myProject/myProject.jsx";
+import ProfileScreen from "../pages/profile/profile";
 
 export const mainRoutes = [
     {
@@ -26,5 +27,10 @@ export const mainRoutes = [
     {
         path: "/my-project",
         element: <MyProject />,
+    },
+    {
+        path: "/profile",
+        element: <ProfileScreen></ProfileScreen>,
+
     },
 ]
