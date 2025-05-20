@@ -1,38 +1,40 @@
-import checkIcon from "../../assets//svgCheckIcon/check.svg"
+//import checkIcon from "../../assets//svgCheckIcon/check.svg"
+import "../progressTimeLine/progressTimeLine.css"
 
 export const ProgressTimeLine = () => {
 	return <>
-		<div id="progress-time-line">
-        <h1>Línea de tiempo de tu proceso</h1>
-		</div>
+		
         
     <sesion className="checkSesion">
-
+        <div id="progress-time-line">
+            <h1>Línea de tiempo de tu proceso</h1>
+		</div>
+        <div className="steps">
         <div className="generalStructureCheck">
-                 <div className="checkImg">
-                <img src={checkIcon} alt="checkIcon" />
+            <div className="number check">
+                <h4>1</h4>
             </div>
             
             <div className= "seleccionCheck">
-            <h5 className="seleccion">Selección del inmueble</h5>
+            <p className="seleccion">Selección del inmueble</p>
             </div>
          </div>
         
         <div className="generalStructureCheck">
-             <div className="checkImg">
-                <img src={checkIcon} alt="checkIcon" />
+            <div className="number check">
+                <h4>2</h4>
             </div>
             <div className= "separacionCheck">
-            <h5 className="separacion">Separación del inmueble</h5>
+            <p className="separacion">Separación del inmueble</p>
         </div>
         </div>
         
          <div className="generalStructureCheck">
-            <div className="checkImg">
-                <img src={checkIcon} alt="checkIcon" />
+            <div className="number check">
+                <h4>3</h4>
             </div>
             <div className= "firmaCheck">
-            <h5 className="firma"> Firma de documentación</h5>
+            <p className="firma"> Firma de documentación</p>
         </div>
          </div>
          
@@ -41,18 +43,18 @@ export const ProgressTimeLine = () => {
                 <h4>4</h4>
             </div>
         <div className= "construccionCheck">
-            <h5 className="construccion"> Construcción en curso</h5>
+            <p className="construccion"> Construcción en curso</p>
         </div>
         </div>
 
 
          <div className="generalStructureCheck">
             <div className="number">
-            <h4>5</h4>
+                <h4>5</h4>
             </div>
-        <div className= "entregaCheck">
-            <h5 className="entrega"> Entrega del inmueble</h5>
-        </div>
+            <div className= "entregaCheck">
+                <p className="entrega"> Entrega del inmueble</p>
+            </div>
         </div>
 
         <div className="generalStructureCheck">
@@ -60,12 +62,12 @@ export const ProgressTimeLine = () => {
                 <h4>6</h4>
             </div>
         <div className= "escrituracionCheck">
-            <h5 className="escrituración"> Escrituración </h5>
+            <p className="escrituración"> Escrituración </p>
         </div>
         </div>
 
 
-
+        </div>
     </sesion>
 
        

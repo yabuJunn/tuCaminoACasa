@@ -7,25 +7,37 @@ import { ProgressTimeLine } from "../../components/progressTimeLine/progressTime
 export const EnQueVoyPage = () => {
   return (
     <main className="page" id="enQueVoyPage">
-      <h2>¿En qué voy?</h2>
-      <p>Mirá ve, el estado actual de tu compra y lo que sigue en el camino a tu nuevo hogar.</p>
-
-       <h3>Progreso Postventa</h3>
-      <h4>Trámites</h4>
         <GlobalNavBar></GlobalNavBar>
      
-      
-      <section className="progress-timeLine">
-        <ProgressTimeLine></ProgressTimeLine>
-      </section>
+     <div className='page-content'>
+        <div className='title'>
+          <h2 className='page-title'>¿En qué voy?</h2>
+          <p>Mirá ve, el estado actual de tu compra y lo que sigue en el camino a tu nuevo hogar.</p>
+        </div>
 
-       <section className="construction-progress">
-     <ConstructionProgress></ConstructionProgress>
-      </section>
+        <div className='subtitle'>
+          <h3>Progreso Postventa</h3>
+          <p>Trámites</p>
+        </div>
 
-       <section className="construction-progress">
-     <ConstructionSteps></ConstructionSteps>
-      </section>
+        <section className="progress-timeLine">
+          <ProgressTimeLine></ProgressTimeLine>
+        </section>
+
+        <div id="construction- progress">
+          <h1>Progreso de la construcción</h1>
+        </div>
+
+        <div className='progressSection'>
+            <section className="construction-progress">
+          <ConstructionProgress></ConstructionProgress>
+            </section>
+
+            <section className="construction-steps">
+          <ConstructionSteps></ConstructionSteps>
+            </section>
+          </div>
+        </div>
     </main>
   );
 };

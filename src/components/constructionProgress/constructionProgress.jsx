@@ -5,21 +5,17 @@ import obraNegra3 from "../../assets/ImagenesDeContruccion/obraNegra3.png"
 import constructionIcon from "../../assets/svgIconConstruction/constructionIcon/constructionIcon.svg"
 import graphicProgress from "../../assets/svgConstructionGraphic/graphicProgress/graphicProgress.svg"
 
-
+import "../constructionProgress/constructionProgress.css"
 
 export const ConstructionProgress = () => {
 	return <>
 
-        <div id="construction- progress">
-        <h1>Progreso de la construcción</h1>
-		</div>
-
         <section className="progressImgs">
 
-        <div className="1-obraNegra">
+        <div className="fObranegra">
             <img src={obraNegra} alt="constructionImg" />
 
-            <div> 
+            <div className="obraNegra"> 
                 <img src={constructionIcon} alt="constructionIcon" />
                 <div className="description">
                     <h4>Etapa actual</h4>
@@ -29,18 +25,20 @@ export const ConstructionProgress = () => {
         </div>
 
          <div className="graphicProgress">
-            <h2>Progreso de la construcción</h2>
+            <h2 className="graphicTitle">Progreso de la construcción</h2>
 
             <img src={graphicProgress} alt="graphicProgress" />
            
-                    <h2>Etapa actual</h2>
-                    <h4>Instalación de servivicios</h4>
+            <div className="content"> 
+                <h2>Etapa actual</h2>
+                <p>Instalación de servivicios</p>
+            </div>
         </div>
 
-            <div className="2-obraNegra">
+            <div className="s-obraNegra">
             <img src={obraNegra2} alt="constructionImg" />
 
-            <div> 
+            <div className="obraNegra"> 
                 <img src={constructionIcon} alt="constructionIcon" />
                 <div className="description">
                     <h4>Etapa actual</h4>
@@ -49,10 +47,10 @@ export const ConstructionProgress = () => {
             </div>
         </div>
 
-          <div className="3-obraNegra">
-            <img src={obraNegra3} alt="constructionImg" />
+          <div className="t-obraNegra">
+            <img src={obraNegra3} className="constructionImgt" />
 
-            <div> 
+            <div className="obraNegra"> 
                 <img src={constructionIcon} alt="constructionIcon" />
                 <div className="description">
                     <h4>Etapa actual</h4>

@@ -1,0 +1,48 @@
+.obraNegra{
+    position: relative;
+    bottom: 119px;
+    left: 26px;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+.graphicProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 253px;
+    border-radius: 32px;
+    border: 0.794px solid #DDDEE1;
+    color: #414651;
+    padding: 0px 25px;
+}
+
+.graphicTitle{
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fObranegra{
+    height: 252px;
+    width: fit-content;
+}
+
+.progressImgs{
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.constructionImgt{
+    width: 447px;
+    height: 361px;
+}
