@@ -1,0 +1,97 @@
+#documentsStateContainer {
+    width: 249px;
+    height: 221px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #DDDEE1;
+    font-family: "Archivo", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  #documentsStateContainer h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #212121;
+    margin: 0 0 12px 0;
+  }
+  
+  #documentsStateContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .documentState {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .documentStateIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .documentStateIcon img {
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+  }
+  
+  .documentStateLine {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 40px;
+    z-index: 0;
+  }
+  
+  .documentStateText h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #212121;
+    margin: 0;
+  }
+  
+  .documentStateText p {
+    font-size: 13px;
+    color: #616161;
+    margin: 4px 0 0 0;
+  }
+  
+  #documentsStateContainer button {
+    align-self: flex-end;
+    border: 1px solid #DDDEE1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #212121;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  #documentsStateContainer button:hover {
+    background-color: #f5f5f5;
+  }
+  
