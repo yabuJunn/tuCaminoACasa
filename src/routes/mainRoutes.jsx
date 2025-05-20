@@ -2,6 +2,7 @@ import LoginScreen from "../pages/login/login";
 import RegisterScreen from "../pages/register/register";
 import { DashboardPage } from "../pages/dashboard/dashboardPage";
 import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
+import { MyProject } from "../pages/myProject/myProject.jsx";
 
 export const mainRoutes = [
     {

@@ -7,7 +7,7 @@ import { CommonAreas } from "../../components/CommonAreas/CommonAreas";
 import { ProjectDetails } from "../../components/ProjectDetails/ProjectDetails";
 import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar";
 
-export default function MyProject() {
+export function MyProject() {
   return (
     <div>
       <GlobalNavBar />
