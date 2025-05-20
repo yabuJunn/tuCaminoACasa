@@ -3,7 +3,7 @@ import "./accruedPayment.css";
 import accruedPaymentIcon from "../../assets/svg/accruedPaymentIcon.svg"
 
 const mockPayment = {
-    accruedPayment: 36000000,
+    accruedPayment: "36'000.000",
     numberOfPayments: 12,
     totalPayments: 60,
     nextPayment: 3000000,

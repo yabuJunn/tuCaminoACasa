@@ -13,21 +13,20 @@ export const ConstructionProgress = () => {
         <div id="constructionProgressContainer">
             <h2>Progreso de la construcción</h2>
 
-            <div id="constructionProgressProgressGraph">
-                <CircularProgressbar
-                    value={percentage}
-                    maxValue={100}
-                    text={`${percentage}%`}
-                    styles={buildStyles({
-                        rotation: 0.75, // empieza en el lateral izquierdo
-                        strokeLinecap: 'round',
-                        trailColor: '#d6d6d6',
-                        pathColor: '#2F80ED',
-                        textColor: '#000',
-                    })}
-                    circleRatio={0.5}
-                />
-            </div>
+            <CircularProgressbar
+                value={percentage}
+                maxValue={100}
+                text={`${percentage}%`}
+                styles={buildStyles({
+                    rotation: 0.75,
+                    strokeLinecap: 'round',
+                    trailColor: '#d6d6d6',
+                    pathColor: '#2F80ED',
+                    textColor: '#000',
+                })}
+                circleRatio={0.5}
+                style={{ width: '100%', height: '100%' }}
+            />
 
             <div id="constructionProgressProgressText">
                 <div id="constructionProgressProgressTextTitle">

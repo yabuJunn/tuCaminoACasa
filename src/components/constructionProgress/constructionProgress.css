@@ -1,48 +1,77 @@
-.obraNegra{
-    position: relative;
-    bottom: 119px;
-    left: 26px;
-    color: white;
-    width: fit-content;
-    height: fit-content;
+#constructionProgressContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: "Archivo", sans-serif;
+  border: 1px solid #dddee1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.graphicProgress{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 253px;
-    border-radius: 32px;
-    border: 0.794px solid #DDDEE1;
-    color: #414651;
-    padding: 0px 25px;
+
+#constructionProgressContainer h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+  margin: 0 0 8px 0;
 }
 
-.graphicTitle{
-    font-size: 20px;
+#constructionProgressProgressGraph {
+  width: 110px;
+  height: 110px;
+  margin: 12px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#constructionProgressProgressGraph .CircularProgressbar-text {
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.fObranegra{
-    height: 252px;
-    width: fit-content;
+#constructionProgressProgressText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
 }
 
-.progressImgs{
-    display: flex;
-    width: 800px;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
+#constructionProgressProgressTextTitle h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  color: #424242;
 }
 
-.constructionImgt{
-    width: 447px;
-    height: 361px;
+#constructionProgressProgressTextTitle p {
+  font-size: 13px;
+  color: #424242;
+  margin: 4px 0 0 0;
+}
+
+#constructionProgressNextStageButton {
+  border: 1px solid #dddee1;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #212121;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#constructionProgressNextStageButton:hover {
+  background-color: #f5f5f5;
+}
+
+.CircularProgressbar {
+  width: 120px !important;
+  height: 120px !important;
+  margin: 0 auto;
 }
