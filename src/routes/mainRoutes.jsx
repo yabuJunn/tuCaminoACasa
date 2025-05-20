@@ -22,4 +22,8 @@ export const mainRoutes = [
         path: '/en-que-voy',
         element: <EnQueVoyPage></EnQueVoyPage>,
     },
+    {
+        path: "/my-project",
+        element: <MyProject />,
+    },
 ]
