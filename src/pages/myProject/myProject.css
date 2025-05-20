@@ -1,0 +1,9 @@
+/* Ajuste para que el contenido no se superponga con la navbar */
+.my-project {
+    margin-left: 13vw; /* Igual al ancho de la navbar */
+}
+
+/* Opcional: margen o padding adicional interno en el contenido */
+.content {
+    padding: 2rem;
+}
