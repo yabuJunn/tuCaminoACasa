@@ -1,7 +1,6 @@
 #constructionProgressContainer {
   width: 100%;
-  max-width: 265px;
-  max-height: 315px;
+  height: 100%;
   border-radius: 16px;
   padding: 16px;
   font-family: "Archivo", sans-serif;
@@ -10,7 +9,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
+
 
 #constructionProgressContainer h2 {
   font-size: 14px;

@@ -1,17 +1,17 @@
 #nextInstalmentContainer {
-  width: 100%;
-  max-width: 300px;
-  max-height: 315px;
-  background-color: white;
-  border: 1px solid #dddee1;
-  border-radius: 16px;
-  padding: 16px;
-  font-family: "Archivo", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #dddee1;
+    border-radius: 16px;
+    padding: 16px;
+    font-family: "Archivo", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
 
 #nextInstalmentTitleContainer {
   display: flex;
