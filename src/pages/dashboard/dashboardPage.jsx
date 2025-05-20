@@ -6,6 +6,7 @@ import { PropertySummmary } from '../../components/propertySummary/propertySumma
 import { PropertyProjectDetails } from '../../components/propertyProjectDetails/propertyProjectDetails'
 import { GeneralPropertyTimeline } from '../../components/generalPropertyTimeline/generalPropertyTimeline'
 import { ConstructionProgress } from '../../components/constructionProgress/constructionProgress'
+import { DocumentsState } from '../../components/documentsState/documentsState'
 
 const mockUserName = "Carolina"
 
@@ -31,6 +32,7 @@ export const DashboardPage = () => {
 						<GeneralPropertyTimeline></GeneralPropertyTimeline>
 						<div id='dashboardContentColumn3'>
 							<ConstructionProgress></ConstructionProgress>
+							<DocumentsState></DocumentsState>
 						</div>
 
 						<div id='dashboardContentColumn4'>
