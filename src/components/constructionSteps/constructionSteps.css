@@ -1,0 +1,75 @@
+.number{
+    border-radius: 52px;
+    border: 1px solid #D5D7DA;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.numbersColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.completado{
+    width: fit-content;
+    padding: 8.5px;
+    color: white;
+    background-color: #01C764;
+    border-radius: 23.176px;
+}
+
+.generalStructureDescription{
+    row-gap: 6px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DDDEE1;
+    background: #FFF;
+    width: 300px;
+    padding: 16px;
+    border-radius: 18px;
+}
+
+.title{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.stepsInfo{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 30px 43px 30px 25px;
+    gap: 25px;
+    border: 1px solid #D5D7DA;
+    border-radius: 28px;
+}
+
+line{
+    direction: 90px;
+}
+
+hr{
+    width: 30px;
+    position: fixed;
+    transform: rotate(90deg);
+    border-color: #D5D7DA;
+    border-width: 1px;
+}
+
+.stepsRows{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.descriptionColumn{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}

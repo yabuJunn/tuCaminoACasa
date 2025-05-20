@@ -1,6 +1,7 @@
 import LoginScreen from "../pages/login/login";
 import RegisterScreen from "../pages/register/register";
 import { DashboardPage } from "../pages/dashboard/dashboardPage";
+import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 
 export const mainRoutes = [
     {
@@ -16,5 +17,9 @@ export const mainRoutes = [
         path: "/dashboard",
         element: <DashboardPage></DashboardPage>,
 
+    },
+    {
+        path: '/en-que-voy',
+        element: <EnQueVoyPage></EnQueVoyPage>,
     },
 ]
