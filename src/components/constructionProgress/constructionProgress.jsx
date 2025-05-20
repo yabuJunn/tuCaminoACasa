@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "./constructionProgress.css"
 import {
     CircularProgressbar,
@@ -42,7 +41,8 @@ export const ConstructionProgress = () => {
             </div>
         </div >
     </>
-=======
+}
+
 import obraNegra from "../../assets/ImagenesDeContruccion/obraNegra.png"
 import obraNegra2 from "../../assets/ImagenesDeContruccion/obraNegra2.png"
 import obraNegra3 from "../../assets/ImagenesDeContruccion/obraNegra3.png"
@@ -52,60 +52,59 @@ import graphicProgress from "../../assets/svgConstructionGraphic/graphicProgress
 
 import "../constructionProgress/constructionProgress.css"
 
-export const ConstructionProgress = () => {
-	return <>
+export const ConstructionProgressEnQueVoy = () => {
+    return <>
 
         <section className="progressImgs">
 
-        <div className="fObranegra">
-            <img src={obraNegra} alt="constructionImg" />
+            <div className="fObranegra">
+                <img src={obraNegra} alt="constructionImg" />
 
-            <div className="obraNegra"> 
-                <img src={constructionIcon} alt="constructionIcon" />
-                <div className="description">
-                    <h4>Etapa actual</h4>
-                    <h2>Obra negra</h2>
+                <div className="obraNegra">
+                    <img src={constructionIcon} alt="constructionIcon" />
+                    <div className="description">
+                        <h4>Etapa actual</h4>
+                        <h2>Obra negra</h2>
+                    </div>
                 </div>
             </div>
-        </div>
 
-         <div className="graphicProgress">
-            <h2 className="graphicTitle">Progreso de la construcción</h2>
+            <div className="graphicProgress">
+                <h2 className="graphicTitle">Progreso de la construcción</h2>
 
-            <img src={graphicProgress} alt="graphicProgress" />
-           
-            <div className="content"> 
-                <h2>Etapa actual</h2>
-                <p>Instalación de servivicios</p>
+                <img src={graphicProgress} alt="graphicProgress" />
+
+                <div className="content">
+                    <h2>Etapa actual</h2>
+                    <p>Instalación de servivicios</p>
+                </div>
             </div>
-        </div>
 
             <div className="s-obraNegra">
-            <img src={obraNegra2} alt="constructionImg" />
+                <img src={obraNegra2} alt="constructionImg" />
 
-            <div className="obraNegra"> 
-                <img src={constructionIcon} alt="constructionIcon" />
-                <div className="description">
-                    <h4>Etapa actual</h4>
-                    <h2>Obra negra</h2>
+                <div className="obraNegra">
+                    <img src={constructionIcon} alt="constructionIcon" />
+                    <div className="description">
+                        <h4>Etapa actual</h4>
+                        <h2>Obra negra</h2>
+                    </div>
                 </div>
             </div>
-        </div>
 
-          <div className="t-obraNegra">
-            <img src={obraNegra3} className="constructionImgt" />
+            <div className="t-obraNegra">
+                <img src={obraNegra3} className="constructionImgt" />
 
-            <div className="obraNegra"> 
-                <img src={constructionIcon} alt="constructionIcon" />
-                <div className="description">
-                    <h4>Etapa actual</h4>
-                    <h2>Obra negra</h2>
+                <div className="obraNegra">
+                    <img src={constructionIcon} alt="constructionIcon" />
+                    <div className="description">
+                        <h4>Etapa actual</h4>
+                        <h2>Obra negra</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-            
+
         </section>
 
-	</>
->>>>>>> origin/feature/enQueVoyStructure
+    </>
 }
