@@ -1,8 +1,8 @@
-export const documentos = () => {
+export const aprendePage = () => {
 	return <>
 	
         
-    <section className="documentosPage">
+    <section className="aprendePage">
 
     
 
