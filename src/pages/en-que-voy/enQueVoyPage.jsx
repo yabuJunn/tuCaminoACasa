@@ -20,7 +20,7 @@ export const EnQueVoyPage = () => {
       </section>
 
        <section className="construction-progress">
-     <ConstructionProgress></ConstructionProgress>
+     <ConstructionProgress></ConstructionProgress>x
       </section>
 
        <section className="construction-progress">
