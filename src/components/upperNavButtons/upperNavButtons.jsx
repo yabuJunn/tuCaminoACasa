@@ -1,8 +1,8 @@
 import "./upperNavButtons.css"
 
-import settingsIcon from "../../assets/svg/settingsIcon.svg"
-import notificationsIcon from "../../assets/svg/notificationsIcon.svg"
-import profileIcon from "../../assets/jpg/profileMockImage.jpg"
+import settingsIcon from "../../assets/Iconos/settings-02.svg"
+import notificationsIcon from "../../assets/Iconos/bell-01.svg"
+import profileIcon from "../../assets/jpg/Image-profile.png"
 
 export const UpperNavButtons = () => {
     return <>
