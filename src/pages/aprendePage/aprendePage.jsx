@@ -1,5 +1,5 @@
 import { AprendeHeader } from "../../components/aprendeHeader/aprendeHeader"
-import { GuiaCards } from "../../components/guiasCards/guiasCards"
+import { CardsGuia } from "../../components/cardsGuia/cardsGuia"
 
 export const AprendePage = () => {
 	return <>
@@ -12,9 +12,13 @@ export const AprendePage = () => {
     <h2>Guía del proceso</h2>
 
       <div className="guiaSection">
-    <GuiaCards></GuiaCards>
+    <CardsGuia></CardsGuia>
     </div>
+    
+       <h2>Últimos artículos </h2>
 
+      <div className="articulosSection">
+    </div>
 
     </section>
 
