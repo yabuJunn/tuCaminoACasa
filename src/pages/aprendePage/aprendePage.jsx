@@ -2,11 +2,15 @@ import { AprendeHeader } from "../../components/aprendeHeader/aprendeHeader"
 import { ArticulosSection } from "../../components/articulos/articulos"
 import { CardsGuia } from "../../components/cardsGuia/cardsGuia"
 import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar"
+import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons"
 
 export const AprendePage = () => {
 	return <>
     <section className="aprendePage">
-            <GlobalNavBar></GlobalNavBar>
+    <GlobalNavBar></GlobalNavBar>
+
+    <UpperNavButtons></UpperNavButtons>
+
     
 
      <div className="headerSection">
@@ -25,6 +29,7 @@ export const AprendePage = () => {
             <ArticulosSection></ArticulosSection>
 
     </div>
+
 
     </section>
 
