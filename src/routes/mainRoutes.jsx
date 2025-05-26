@@ -5,6 +5,7 @@ import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { MyProject } from "../pages/myProject/myProject.jsx";
 import ProfileScreen from "../pages/profile/profile";
 import StatementOfAccount from "../pages/statementOfAccount/statementOfAccount.jsx";
+import PaymentsAndFees from "../pages/statementOfAccount/paymentsAndFees.jsx";
 
 export const mainRoutes = [
     {
@@ -37,6 +38,11 @@ export const mainRoutes = [
     {
         path: "/statement-of-account",
         element: <StatementOfAccount></StatementOfAccount>,
+
+    },
+    {
+        path: "/payments-and-fees",
+        element: <PaymentsAndFees></PaymentsAndFees>,
 
     },
 ]
