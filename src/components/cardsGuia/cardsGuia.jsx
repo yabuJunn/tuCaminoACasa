@@ -4,7 +4,7 @@ import registroIcon from "../../assets/guiasCardsIcons/registro.svg"
 import entregaIcon from "../../assets/guiasCardsIcons/entrega.svg"
 import "./cardsGuia.css"
 
-export const CardsGuia =({ icon, title, description })=>{
+export const CardsGuia =()=>{
     return(
         <div className="GuiaCards">
 

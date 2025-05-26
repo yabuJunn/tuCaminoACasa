@@ -1,3 +1,6 @@
+body {
+    font-family: Archivo;
+}
 .headerSection {
     display: flex;
     justify-content: space-between;
@@ -7,4 +10,13 @@
   
   .aprendeMargin {
     margin-left: 210px;
+  }
+
+.aprendeTitle {
+    font-size: 20px;
+    font-weight: semibold;
+  }
+
+  .guiaSection {
+    margin-top: -30px;
   }
