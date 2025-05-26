@@ -1,8 +1,8 @@
 //import "./ProjectDetails.css";
 
 import RoomImage from "../../assets/jpg/RoomImage.png";
-import buildingIcon from "../../assets/svg/BuildIcon.svg";
-import Viñeta from "../../assets/svg/Viñeta.svg";
+import buildingIcon from "../../assets/svgIcons/BuildIcon.svg";
+import Viñeta from "../../assets/svgIcons/Viñeta.svg";
 
 export function ProjectDetails() {
   const projectElements = [

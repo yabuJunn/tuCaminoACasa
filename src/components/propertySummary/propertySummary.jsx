@@ -1,5 +1,5 @@
 import "./propertySummary.css";
-import ProjectCardImage from "../../assets/svg/ProjectCard.svg";
+import ProjectCardImage from "../../assets/svgIcons/ProjectCard.svg";
 
 const projectMock = {
   title: "Violet",

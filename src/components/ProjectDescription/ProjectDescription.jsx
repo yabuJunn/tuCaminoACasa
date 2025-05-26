@@ -1,10 +1,10 @@
 //import "./ProjectDescription.css";
 
 import Project3D from "../../assets/jpg/VisualizationProject3D.png";
-import IconUbicacion from "../../assets/svg/ubiIcon.svg";
-import IconPrecio from "../../assets/svg/payIcon.svg";
-import IconArea from "../../assets/svg/areaIcon.svg";
-import IconEntrega from "../../assets/svg/calendarIcon.svg";
+import IconUbicacion from "../../assets/svgIcons/ubiIcon.svg";
+import IconPrecio from "../../assets/svgIcons/payIcon.svg";
+import IconArea from "../../assets/svgIcons/areaIcon.svg";
+import IconEntrega from "../../assets/svgIcons/calendarIcon.svg";
 
 
 const projectDescriptionParagraphs = [

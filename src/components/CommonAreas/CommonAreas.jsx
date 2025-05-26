@@ -1,11 +1,11 @@
 import "./CommonAreas.css";
 
-import BathArea from '../../assets/svg/bathArea.svg';
-import GameArea from '../../assets/svg/gameArea.svg';
-import GymArea from '../../assets/svg/gymArea.svg';
-import PathArea from '../../assets/svg/pathArea.svg';
-import PicnicArea from '../../assets/svg/picnicArea.svg';
-import PoolArea from '../../assets/svg/poolArea.svg';
+import BathArea from '../../assets/svgIcons/bathArea.svg';
+import GameArea from '../../assets/svgIcons/gameArea.svg';
+import GymArea from '../../assets/svgIcons/gymArea.svg';
+import PathArea from '../../assets/svgIcons/pathArea.svg';
+import PicnicArea from '../../assets/svgIcons/picnicArea.svg';
+import PoolArea from '../../assets/svgIcons/poolArea.svg';
 
 export function CommonAreas() {
   const amenities = [

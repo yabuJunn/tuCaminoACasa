@@ -1,6 +1,6 @@
 import "./documentsState.css";
-import documentAprovedIcon from "../../assets/svg/documentAprovedIcon.svg";
-import documentNotUploadIcon from "../../assets/svg/documentNotUploadIcon.svg";
+import documentAprovedIcon from "../../assets/svgIcons/documentAprovedIcon.svg";
+import documentNotUploadIcon from "../../assets/svgIcons/documentNotUploadIcon.svg";
 
 const documentsMock = [
     {

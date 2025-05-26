@@ -1,7 +1,7 @@
 import "./propertyProjectDetails.css"
 
-import buildingIcon from "../../assets/svg/buildingIcon.svg"
-import starListIcon from "../../assets/svg/starListIcon.svg"
+import buildingIcon from "../../assets/svgIcons/buildingIcon.svg"
+import starListIcon from "../../assets/svgIcons/starListIcon.svg"
 
 const projectMock = {
     title: "Violet",

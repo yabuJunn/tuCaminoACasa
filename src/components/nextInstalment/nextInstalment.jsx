@@ -1,5 +1,5 @@
 import "./nextInstalment.css";
-import nextInstalmentIcon from "../../assets/svg/nextInstalmentIcon.svg";
+import nextInstalmentIcon from "../../assets/svgIcons/nextInstalmentIcon.svg";
 
 const mockNextInstalment = {
   amount: "3'000.000",

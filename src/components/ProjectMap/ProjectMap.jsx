@@ -1,14 +1,14 @@
 //import "./ProjectMap.css";
 
 import SiteMapImage from "../../assets/jpg/PlanoAereo.png";
-import PoolIcon from '../../assets/svg/poolArea2.svg';
-import SalonIcon from '../../assets/svg/salonArea.svg';
-import MascotasIcon from '../../assets/svg/mascotasArea.svg';
-import LobbyIcon from '../../assets/svg/lobbyArea.svg';
-import BasurasIcon from '../../assets/svg/basuraArea.svg';
-import PicnicIcon from '../../assets/svg/picnicArea2.svg';
-import JuegosIcon from '../../assets/svg/juegosArea.svg';
-import GymIcon from '../../assets/svg/gymArea2.svg';
+import PoolIcon from '../../assets/svgIcons/poolArea2.svg';
+import SalonIcon from '../../assets/svgIcons/salonArea.svg';
+import MascotasIcon from '../../assets/svgIcons/mascotasArea.svg';
+import LobbyIcon from '../../assets/svgIcons/lobbyArea.svg';
+import BasurasIcon from '../../assets/svgIcons/basuraArea.svg';
+import PicnicIcon from '../../assets/svgIcons/picnicArea2.svg';
+import JuegosIcon from '../../assets/svgIcons/juegosArea.svg';
+import GymIcon from '../../assets/svgIcons/gymArea2.svg';
 
 export function ProjectMap() {
   const amenities = [

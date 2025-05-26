@@ -1,6 +1,6 @@
 import "./generalPropertyTimeline.css"
 
-import checkIcon from "../../assets/svg/checkIcon.svg"
+import checkIcon from "../../assets/svgIcons/checkIcon.svg"
 
 const projectStateMock = [
     {

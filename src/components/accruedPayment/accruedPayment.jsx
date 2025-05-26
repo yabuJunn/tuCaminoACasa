@@ -1,6 +1,6 @@
 import "./accruedPayment.css";
 
-import accruedPaymentIcon from "../../assets/svg/accruedPaymentIcon.svg"
+import accruedPaymentIcon from "../../assets/svgicons/accruedPaymentIcon.svg"
 
 const mockPayment = {
     accruedPayment: "36'000.000",
