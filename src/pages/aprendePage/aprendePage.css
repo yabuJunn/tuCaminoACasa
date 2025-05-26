@@ -15,8 +15,13 @@ body {
 .aprendeTitle {
     font-size: 20px;
     font-weight: semibold;
+    margin-top: -20px;
   }
 
   .guiaSection {
+    margin-top: -30px;
+  }
+
+  .articulosSection {
     margin-top: -30px;
   }

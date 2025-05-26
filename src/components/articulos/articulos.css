@@ -1,0 +1,75 @@
+.articulosCards {
+    display: flex;
+    gap: 10px;
+    padding: 40px 0;
+    font-family: Archivo;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  
+  .noticia {
+    background-color: #fff;
+    border: 1px solid #DDDEE1;
+    border-radius: 32px;
+    padding: 24px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .noticia img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .noticia h3:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #B0B0B0;
+    margin: 0 0 4px 0;
+  }
+  
+  .noticia h3:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+  }
+  
+  .cardArticleDescription {
+    font-size: 15px;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin-bottom: auto;
+  }
+  
+  .articuloButton {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 16px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .articuloButton:hover {
+    background-color: #4a4a4a;
+  }
+  
+  .articuloButton .span {
+    font-size: 20px;
+    margin-left: 6px;
+  }
+  
