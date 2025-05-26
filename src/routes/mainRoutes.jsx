@@ -4,6 +4,7 @@ import { DashboardPage } from "../pages/dashboard/dashboardPage";
 import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { MyProject } from "../pages/myProject/myProject.jsx";
 import ProfileScreen from "../pages/profile/profile";
+import StatementOfAccount from "../pages/statementOfAccount/statementOfAccount.jsx";
 
 export const mainRoutes = [
     {
@@ -31,6 +32,11 @@ export const mainRoutes = [
     {
         path: "/profile",
         element: <ProfileScreen></ProfileScreen>,
+
+    },
+    {
+        path: "/statement-of-account",
+        element: <StatementOfAccount></StatementOfAccount>,
 
     },
 ]
