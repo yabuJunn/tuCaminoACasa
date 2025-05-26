@@ -40,4 +40,5 @@ export const ConstructionProgress = () => {
             </div>
         </div >
     </>
+
 }
