@@ -31,8 +31,8 @@ export const ArticulosSection =({ icon, title, description })=>{
             <img src={articuloIcon} alt="articuloIcon" />
         <h3 className="cardArticleTitle">Reactivación del programa Mi Casa Ya</h3>
         <h3>Noticia</h3>
-        <p className="cardArticleDescription">Jaramillo Mora celebró la entrega de
-             dos proyectos de vivienda en Jamundí, destacando su compromiso con el progreso regional. </p>
+        <p className="cardArticleDescription">El Ministerio de Vivienda reactivó el programa
+             Mi Casa Ya, otorgando más de 800 subsidios para facilitar la compra de vivienda en Colombia.  </p>
         <button className="cardGuiaButton"> Ver más  
               <span className="span">&#8250;</span> {}
         </button>
