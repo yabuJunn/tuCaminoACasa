@@ -1,11 +1,12 @@
 import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons";
 import PaymentsTable from "../../components/PaymentsTable/PaymentsTable";
+import arrowLeft from "../../assets/Iconos/arrow-narrow-left.svg";
 
 const PaymentsAndFees = () => {
   return (
     <main className="page" id="paymentsAndFeesPage">
         <div id="icon-back">
-            <img src="#" alt="" />
+            <img src={arrowLeft} alt="back_page" />
         </div>
         <div id="paymentsAndFeesHeader">
             <h1>Tus pagos</h1>
