@@ -3,6 +3,7 @@ import firmaIcon from "../../assets/guiasCardsIcons/firma.svg"
 import registroIcon from "../../assets/guiasCardsIcons/registro.svg"
 import entregaIcon from "../../assets/guiasCardsIcons/entrega.svg"
 
+
 export const CardsGuia =({ icon, title, description })=>{
     return(
         <div className="GuiaCards">

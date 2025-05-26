@@ -1,4 +1,6 @@
 import articuloIcon from "../../assets/articulosCardsIcon/articulo.svg"
+import buttonIcon from "../../assets/articulosCardsIcon/articulo.svg"
+
 
 export const ArticulosSection =({ icon, title, description })=>{
     return(
@@ -11,7 +13,7 @@ export const ArticulosSection =({ icon, title, description })=>{
         <p className="cardArticleDescription">Desarrollo de proyectos que priorizan la
             biodiversidad y el bienestar comunitario, integrando diseño bioclimático y espacios verdes.</p>
         <button className="cardGuiaButton"> Ver más  
-              <span className="span">&#8250;</span> {}
+         <span className="span">&#8250;</span> {}
         </button>
         </div>
 
