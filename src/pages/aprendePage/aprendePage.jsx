@@ -1,4 +1,5 @@
 import { AprendeHeader } from "../../components/aprendeHeader/aprendeHeader"
+import { ArticulosSection } from "../../components/articulos/articulos"
 import { CardsGuia } from "../../components/cardsGuia/cardsGuia"
 
 export const AprendePage = () => {
@@ -18,6 +19,8 @@ export const AprendePage = () => {
        <h2>Últimos artículos </h2>
 
       <div className="articulosSection">
+            <ArticulosSection></ArticulosSection>
+
     </div>
 
     </section>
