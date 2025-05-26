@@ -1,0 +1,61 @@
+.GuiaCards {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    font-family: Archivo;
+  }
+  
+
+.GuiaCards > div {
+  background-color: #fff;
+  border: 1px solid #DDDEE1;
+  border-radius: 20px;
+  padding: 22px 14px;
+  width: 240px;
+  max-width: 240px;
+  height: 290px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.GuiaCards img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 16px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.cardGuiaTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1d;
+  margin: 0 0 12px 0;
+}
+
+.CardGuiaDescription {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cardGuiaButton {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 50px;
+  background-color: white;
+  color: #1d1d1d;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cardGuiaButton:hover {
+  background-color: #f3f3f3;
+}

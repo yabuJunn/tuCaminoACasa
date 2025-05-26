@@ -2,7 +2,7 @@ import bancoIcon from "../../assets/guiasCardsIcons/banco.svg"
 import firmaIcon from "../../assets/guiasCardsIcons/firma.svg"
 import registroIcon from "../../assets/guiasCardsIcons/registro.svg"
 import entregaIcon from "../../assets/guiasCardsIcons/entrega.svg"
-
+import "./cardsGuia.css"
 
 export const CardsGuia =({ icon, title, description })=>{
     return(

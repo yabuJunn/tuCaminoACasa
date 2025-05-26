@@ -1,0 +1,10 @@
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  .aprendeMargin {
+    margin-left: 210px;
+  }
