@@ -1,0 +1,33 @@
+#enQueVoyPage p {
+    font-size: 16px;
+    font-weight: 300px;
+    font-family: "Archivo", sans-serif;
+}
+
+#enQueVoyPage .progressSection {
+    display: flex;
+}
+
+#enQueVoyPage .page-content {
+    margin-left: 209px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#enQueVoyPage .title {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+#enQueVoyPage .subtitle {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+#enQueVoyPage .page-title {
+    color: #FF0100;
+}

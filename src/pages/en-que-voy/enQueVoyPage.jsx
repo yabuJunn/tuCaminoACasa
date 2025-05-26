@@ -1,3 +1,5 @@
+import "./enQueVoyPage.css"
+
 import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
 
 import { ConstructionProgressEnQueVoy } from "../../components/constructionProgress/constructionProgress";
@@ -24,7 +26,7 @@ export const EnQueVoyPage = () => {
           <ProgressTimeLine></ProgressTimeLine>
         </section>
 
-        <div id="construction- progress">
+        <div id="construction-progress">
           <h1>Progreso de la construcción</h1>
         </div>
 

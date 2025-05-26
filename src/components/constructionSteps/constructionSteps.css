@@ -1,4 +1,4 @@
-.number{
+.number {
     border-radius: 52px;
     border: 1px solid #D5D7DA;
     padding: 10px;
@@ -8,13 +8,13 @@
     justify-content: center;
 }
 
-.numbersColumn{
+.numbersColumn {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.completado{
+.completado {
     width: fit-content;
     padding: 8.5px;
     color: white;
@@ -22,7 +22,7 @@
     border-radius: 23.176px;
 }
 
-.generalStructureDescription{
+.generalStructureDescription {
     row-gap: 6px;
     display: flex;
     flex-direction: column;
@@ -33,13 +33,13 @@
     border-radius: 18px;
 }
 
-.title{
+.title {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
 }
 
-.stepsInfo{
+.stepsInfo {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -49,11 +49,11 @@
     border-radius: 28px;
 }
 
-line{
+line {
     direction: 90px;
 }
 
-hr{
+hr {
     width: 30px;
     position: fixed;
     transform: rotate(90deg);
@@ -61,14 +61,14 @@ hr{
     border-width: 1px;
 }
 
-.stepsRows{
+.stepsRows {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 
-.descriptionColumn{
+.descriptionColumn {
     display: flex;
     gap: 20px;
     flex-direction: column;

@@ -3,7 +3,7 @@ import LogoJM from "../../assets/Logos/Logo-JaramilloMora.svg";
 import "./logosInicio.css";
 
 const LogosInicio = () => {
-    return(
+    return (
         <>
             <div className="logo-container">
                 <img src={Logo} alt="Logo_Tu_Camino_A_Casa" />

@@ -1,5 +1,3 @@
-
-
 #register-title {
   color: var(--Neutral-colors-25, #fff);
   font-family: "Archivo", sans-serif;
@@ -11,20 +9,30 @@
   text-align: left;
   margin-bottom: 24px;
   margin-left: 80px;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 
 #register-box {
   display: flex;
-  width: 441px;
-  padding: 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 28px;
+  justify-content: flex-start;
+
+
+  width: 30%;
+  height: 60vh;
+  padding: 24px;
+  gap: 1%;
+
   border-radius: 32px;
   border: 1px solid var(--Secondary-color-Grey---secondary-button-stroke, #dddee1);
   background: #fff;
   margin-left: 80px;
+  margin-bottom: 2%;
+
+  font-family: "Archivo", sans-serif;
+  color: #000000;
+  font-size: 14px;
 }
 
 .register-heading {
@@ -35,12 +43,6 @@
   font-weight: 600;
   line-height: 38px;
   margin: 0;
-}
-
-#register-box p {
-  margin: 0;
-  color: #000000;
-  font-size: 14px;
 }
 
 #email-group,
@@ -66,11 +68,11 @@ input[type="password"] {
   width: 230%;
   box-sizing: border-box;
   margin-top: 4px;
-  
+
 }
 
 #register-description {
-  margin-top: -14px;
+  margin-top: 0;
 }
 
 input[type="email"]:focus,
@@ -106,14 +108,17 @@ input[type="password"]:focus {
   gap: 7px;
   align-self: stretch;
   color: var(--Neutral-colors-700, #414651);
-  font-family: "Archivo", sans-serif;
+
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+  margin-top: 2%;
 }
 
 #login-paragraph a {
   text-decoration: none;
   color: var(--Primary-color-Black, #000000);
+  cursor: pointer;
+  text-decoration: underline;
 }

@@ -17,6 +17,8 @@ import bankStatementIconWhite from "../../assets/svg/bankStatementIconWhite.svg"
 import bankStatementIconBlack from "../../assets/svg/bankStatementIconBlack.svg"
 import learnIconWhite from "../../assets/svg/learnIconWhite.svg"
 import learnIconBlack from "../../assets/svg/learnIconBlack.svg"
+import pqrsIconWhite from "../../assets/svg/pqrIconWhite.svg"
+import pqrsIconBlack from "../../assets/svg/pqrIconBlack.svg"
 
 export const GlobalNavBar = () => {
     const { handleNavigation } = NavigationHook()
@@ -86,6 +88,15 @@ export const GlobalNavBar = () => {
                 >
                     <img src={isActive("/learn") ? learnIconBlack : learnIconWhite} alt="learnIcon" />
                     <span>Aprende</span>
+                </button>
+
+                <button
+                    className={`sidebar__link ${isActive("/pqrs") ? "focus" : ""}`}
+                    id="pqrsButton"
+                    onClick={handleNavigation.navigateToDashboard}
+                >
+                    <img src={isActive("/pqrs") ? pqrsIconBlack : pqrsIconWhite} alt="lpqrsIcon" />
+                    <span>PQRs</span>
                 </button>
             </nav>
         </aside>

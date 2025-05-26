@@ -1,6 +1,7 @@
+import "./formLogin.css";
+
 import { useState } from "react";
 import { NavigationHook } from "../../hooks/navigationHook";
-import "./formLogin.css";
 
 const FormLogin = () => {
     const { handleNavigation } = NavigationHook()
