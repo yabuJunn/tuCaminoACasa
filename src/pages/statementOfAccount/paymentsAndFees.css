@@ -1,0 +1,41 @@
+#paymentsAndFeesHeaderText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -42px;
+}
+
+#paymentsAndFeesHeaderTitle {
+  color: var(--Secondary-color-Red, #FF0100);
+  font-family: Archivo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 126.667% */
+  margin-left: 80px;
+  margin-bottom: 2px;
+}
+
+#paymentsAndFeesHeaderSubtitle {
+  color: var(--Neutral-colors-800, #252B37);
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  margin-left: 80px;
+}
+
+#paymentsAndFeesNavButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#icon-back {
+  position: relative;
+  top: 54px;
+  left: 15px;
+}

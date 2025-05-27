@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./PaymentsTable.css";
 const initialPayments = [
   { code: "A990MJB", date: "02/2/2025", total: "3’000.000", status: "En proceso" },
   { code: "HB75SDG", date: "02/1/2025", total: "3’000.000", status: "Completado" },
@@ -41,54 +41,74 @@ const PaymentsTable = () => {
   const isAllSelected = selectedCodes.length === filteredPayments.length;
 
   return (
-    <div className="payments-table-container">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Buscar código..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
-
-      <table className="payments-table">
-        <thead>
-          <tr>
-            <th>
-              <input
-                type="checkbox"
-                checked={isAllSelected}
-                onChange={toggleSelectAll}
-              />
-            </th>
-            <th>Código</th>
-            <th>Fecha</th>
-            <th>Total</th>
-            <th>Estado</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredPayments.map((item) => (
-            <tr key={item.code}>
-              <td>
+    <div id="paymentsTableWrapper">
+      <div id="paymentsTableContainer">
+        <table id="paymentsTable">
+          <thead>
+            <tr>
+              <th>
                 <input
                   type="checkbox"
-                  checked={selectedCodes.includes(item.code)}
-                  onChange={() => toggleSelectOne(item.code)}
+                  checked={isAllSelected}
+                  onChange={toggleSelectAll}
                 />
-              </td>
-              <td>{item.code}</td>
-              <td>{item.date}</td>
-              <td>{item.total}</td>
-              <td className={`status ${item.status === "En proceso" ? "in-progress" : "completed"}`}>
-                {item.status}
-              </td>
-              <td className="dots">•••</td>
+              </th>
+              <th>Código</th>
+              <th>Fecha</th>
+              <th>Total</th>
+              <th>Estado</th>
+              <th></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {filteredPayments.map((item) => (
+              <tr key={item.code}>
+                <td>
+                  <input
+                    type="checkbox"
+                    checked={selectedCodes.includes(item.code)}
+                    onChange={() => toggleSelectOne(item.code)}
+                  />
+                </td>
+                <td>
+                  <div className="payment-code">{item.code}</div>
+                </td>
+                <td>
+                  <div className="payment-date">{item.date}</div>
+                </td>
+                <td>
+                  <div className="payment-total">{item.total}</div>
+                </td>
+                <td>
+                  <div
+                    className={`payment-status ${
+                      item.status === "En proceso"
+                        ? "payment-in-process"
+                        : "payment-completed"
+                    }`}
+                  >
+                    {item.status}
+                  </div>
+                </td>
+                <td>
+                  <div className="payment-dots">•••</div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div id="paymentsTableTopBar">
+          <div id="paymentsSearchBar">
+            <input
+              type="text"
+              placeholder="Buscar..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

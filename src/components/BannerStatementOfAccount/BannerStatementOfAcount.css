@@ -1,16 +1,18 @@
+* {
+    font-family: 'Archivo', sans-serif;
+  }
 #bannerStatementContainer {
   position: fixed;
   top: 0;
   left: 200px;
-  z-index: 10;
   width: calc(100% - 200px);
   height: 248px;
   flex-shrink: 0;
-  overflow: hidden;
-  background-color: #ccc;
+  background-color: #8f8989;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  z-index: -1;
 }
 
 #bannerStatement {
@@ -21,13 +23,19 @@
   top: 0;
   left: 0;
   z-index: -1;
+  /* width: calc(100% - 240px); */
+  /* left: -10px; */
 }
 
 #statementText {
-  margin-left: 24px;
+  margin-left: 44px;
   margin-top: 32px;
   color: #FFFFFF;
   z-index: 1;
+}
+
+#statementTextContent {
+  margin-left: 80px;
 }
 
 #statementTitle {

@@ -1,3 +1,5 @@
+import "./statementOfAccount.css";
+
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
 import { AccruedPayment } from "../../components/dashboardScreen/accruedPayment/accruedPayment";
 import { NextInstalment } from "../../components/dashboardScreen/nextInstalment/nextInstalment";
@@ -10,17 +12,27 @@ const StatementOfAccount = () => {
     <main className="page" id="statementOfAccountPage">
       <GlobalNavBar />
 
-      <div id="statementOfAccountBanner">
-        <BannerStatementOfAccount />
-      </div>
+      <div id="statementOfAccountContent">
+        <div id="statementOfAccountBanner">
+          <BannerStatementOfAccount />
+        </div>
 
-      <div id="statementOfAccountCalendar">
-        <Calendar></Calendar>
-      </div>
+        <div id="statementOfAccountCards" className="dashboardCard">
+          <div id="statementContentColumn1">
+            <Calendar />
+          </div>
 
-      <div id="statementOfAccountCardsGrid">
-        <AccruedPayment />
-        <NextInstalment />
+          <div id="statementContentColumn2">
+            <div id="statementCardsGrid">
+              <div id="accruedPaymentCard">
+                <AccruedPayment />
+              </div>
+              <div id="nextInstalmentCard">
+                <NextInstalment />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
