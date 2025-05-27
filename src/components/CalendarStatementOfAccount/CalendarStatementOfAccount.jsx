@@ -135,14 +135,16 @@ const Calendar = () => {
           })}</span>
         </div>
       </div>
-      <div id="calendar-grid" className="calendar-grid">
-        {["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"].map((d) => (
-          <div key={d} id="calendar-weekday-label" className="calendar-day-name">{d}</div>
-        ))}
-        {Array(start.getDay() - 1).fill(null).map((_, idx) => (
-          <div key={"empty-" + idx} className="calendar-cell empty" />
-        ))}
-        {days}
+      <div id="calendar-grid-wrapper" className="calendar-grid-wrapper">
+        <div id="calendar-grid" className="calendar-grid">
+          {["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"].map((d) => (
+            <div key={d} id="calendar-weekday-label" className="calendar-day-name">{d}</div>
+          ))}
+          {Array(start.getDay() - 1).fill(null).map((_, idx) => (
+            <div key={"empty-" + idx} className="calendar-cell empty" />
+          ))}
+          {days}
+        </div>
       </div>
       <CalendarModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
     </div>

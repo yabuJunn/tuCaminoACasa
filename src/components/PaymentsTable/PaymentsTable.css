@@ -1,0 +1,120 @@
+#paymentsTableWrapper {
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+}
+
+#paymentsTableContainer {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#paymentsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#paymentsTable thead th {
+  text-align: left;
+  padding: 12px;
+  color: #18181B;
+  font-weight: 700;
+  background-color: #fafafa;
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+}
+
+/* Payment data cells */
+#paymentsTable tbody td {
+  padding: 16px 12px;
+  border-top: 1px solid #f0f0f0;
+  color: #717680;
+  font-family: 'Archivo', sans-serif;
+}
+
+/* Payment code */
+.payment-code {
+  color: #18181B;
+  font-weight: 600;
+}
+
+/* Other data cells */
+.payment-date,
+.payment-total {
+  color: #717680;
+}
+
+/* Payment status */
+.payment-status {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.payment-status.completed {
+  color: #00B076;
+}
+
+.payment-status.pending {
+  color: #FF8A00;
+}
+
+/* Payment dots alignment */
+.payment-dots {
+  text-align: right;
+}
+
+#paymentsTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#paymentsTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#paymentsTable .status-completed {
+  color: #00B076;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#paymentsTable .status-pending {
+  color: #FF8A00;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #paymentsTableWrapper {
+    padding: 10px 16px;
+  }
+
+  #paymentsTableContainer {
+    padding: 16px;
+  }
+
+  #paymentsTable thead {
+    display: none;
+  }
+
+  #paymentsTable tbody td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 8px;
+  }
+
+  #paymentsTable tbody tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
