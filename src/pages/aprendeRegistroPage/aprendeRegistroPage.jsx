@@ -2,10 +2,18 @@ import { AprendeRegistroBanner } from "../../components/aprendeRegsitroBanner/ap
 import { PuntosClaveRegistro } from "../../components/puntosClaveRegistro/puntosClaveRegistro"
 import { TutorialesAprendeRegistro } from "../../components/tutorialesAprendeRegistro/tutorialesAprendeRegistro"
 
+import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar"
+import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons"
+
+
+
 export const AprendeRegistroPage = () => {
     return<> 
 
     <section className="aprendeRegistroPage">
+        <GlobalNavBar></GlobalNavBar>
+        <UpperNavButtons></UpperNavButtons>
+
             
     
             <AprendeRegistroBanner></AprendeRegistroBanner>
