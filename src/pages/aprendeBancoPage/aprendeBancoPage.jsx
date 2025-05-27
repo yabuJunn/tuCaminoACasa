@@ -9,8 +9,7 @@ export const AprendeBancoPage = () => {
 
     <section className="aprendeBancoPage">
         <div className="bannerAprendeBanco">
-            <GlobalNavBar></GlobalNavBar>
-            <UpperNavButtons></UpperNavButtons>
+            
 
 
             <AprendeBancoBanner></AprendeBancoBanner>
