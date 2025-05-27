@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+
 .common-areas {
   text-align: center;
 }
 
 .common-areas h3 {
+  font-family: 'Archivo', sans-serif;
   font-size: 30px;
   margin-bottom: 1.5rem;
   font-weight: 600;

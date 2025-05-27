@@ -1,8 +1,8 @@
 .banner-image {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 13vw; 
+  width: calc(100% - 13vw); 
   height: 150px;
   object-fit: cover;
   z-index: 0;
@@ -10,9 +10,9 @@
 
 .user-profile {
   position: absolute;
-  top: 5.5rem;      
-  left: 15rem;    
-  z-index: 2;     
+  top: 5.5rem;
+  left: 15vw; 
+  z-index: 2;
 }
 
 .profile-pic {
@@ -22,4 +22,3 @@
   object-fit: cover;
   border: 2px solid white;
 }
-

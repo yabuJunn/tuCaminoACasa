@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+
 .project-details {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -15,29 +17,27 @@
 
 
 .project-details > :not(#ProjectElements) {
-  flex: 1 1 20%;
+  flex: 1 1 10%;
 }
 
 
 #propertyProjectDetailsTitleIcon {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
+  gap: 4rem;
   margin-bottom: 1rem;
+  width: 400px;
 }
 
 .Proyect-Info h3 {
-  margin: 0;
-  text-align: center;
-  font-size: 32px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 30px;
   font-weight: 600;
   line-height: 40px;
 }
 
 .Proyect-Info > p {
+  font-family: 'Archivo', sans-serif;
   margin-bottom: 1.5rem;
   font-size: 22px;
-  font-family: Archivo;
   font-weight: 400;
   line-height: 35px;
 }
@@ -50,7 +50,6 @@
  padding-right: 50px;
 }
 
-/* Lista de elementos en 2 columnas */
 .projectElementsList {
   display: grid;
   padding-top: 10px;
@@ -59,8 +58,8 @@
 }
 
 .projectElementsList p {
+  font-family: 'Archivo', sans-serif;
   font-size: 17px;
-  font-family: Archivo;
   font-weight: 400;
   line-height: 25px;
 }
@@ -71,9 +70,9 @@
   gap: 0.5rem;
 }
 
-/* Imagen del plano */
+
 #ProjectElements {
-  flex: 1 1 32%;
+  flex: 1 1 34%;
   border: 1px solid #ccc;
   border-radius: 32px;
   padding: 1rem;
@@ -83,7 +82,7 @@
 }
 
 .projectElementsImage img {
-  max-width: 100%;
+  max-width: 96%;
   height: auto;
   border-radius: 12px;
 }
