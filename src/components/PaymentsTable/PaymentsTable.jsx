@@ -43,15 +43,6 @@ const PaymentsTable = () => {
   return (
     <div id="paymentsTableWrapper">
       <div id="paymentsTableContainer">
-        <div id="paymentsSearchBar">
-          <input
-            type="text"
-            placeholder="Buscar código..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-
         <table id="paymentsTable">
           <thead>
             <tr>
@@ -91,7 +82,9 @@ const PaymentsTable = () => {
                 <td>
                   <div
                     className={`payment-status ${
-                      item.status === "En proceso" ? "in-progress" : "completed"
+                      item.status === "En proceso"
+                        ? "payment-in-process"
+                        : "payment-completed"
                     }`}
                   >
                     {item.status}
@@ -104,6 +97,17 @@ const PaymentsTable = () => {
             ))}
           </tbody>
         </table>
+
+        <div id="paymentsTableTopBar">
+          <div id="paymentsSearchBar">
+            <input
+              type="text"
+              placeholder="Buscar..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

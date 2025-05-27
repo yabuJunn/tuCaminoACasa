@@ -9,10 +9,12 @@ const PaymentsAndFees = () => {
             <img src={arrowLeft} alt="back_page" />
         </div>
         <div id="paymentsAndFeesHeader">
-            <h1>Tus pagos</h1>
-            <p>Historial de pagos con tu fiducia.</p>
+            <div id="paymentsAndFeesHeaderText">
+              <h1 id="paymentsAndFeesHeaderTitle">Tus pagos</h1>
+              <p id="paymentsAndFeesHeaderSubtitle">Historial de pagos con tu fiducia.</p>
+            </div>
         </div>
-        <div id="">
+        <div id="paymentsAndFeesNavButtons">
             <UpperNavButtons></UpperNavButtons>
         </div>
         <div id="paymentsAndFeesTableHistory">
