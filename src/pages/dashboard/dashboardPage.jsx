@@ -20,8 +20,8 @@ export const DashboardPage = () => {
 
 			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>
-					<h1>¡Hola, {mockUserName}!</h1>
-					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Ve, qué alegría tenerte por acá!</p>
+					<h1>¡Que mas vé, {mockUserName}!</h1>
+					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Qué alegría tenerte por acá oís!</p>
 				</div>
 
 				<div id="dashboardPageCards" className='dashboardCard'>

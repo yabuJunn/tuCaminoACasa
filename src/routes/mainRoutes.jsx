@@ -10,6 +10,9 @@ import { AprendeFirmaPage } from "../pages/aprendeFirmaPage/aprendeFirmaPage.jsx
 import { AprendeRegistroPage } from "../pages/aprendeRegistroPage/aprendeRegistroPage.jsx"
 import { AprendeEntregaPage } from "../pages/aprendeEntregaPage/aprendeEntregaPage.jsx"
 import { AprendeNoticiasPage } from "../pages/aprendeNoticiasPage/aprendeNoticiasPage.jsx"
+import StatementOfAccount from "../pages/statementOfAccount/statementOfAccount.jsx";
+import PaymentsAndFees from "../pages/statementOfAccount/paymentsAndFees.jsx";
+import PQRs from "../pages/PQRs/PQRs.jsx";
 
 export const mainRoutes = [
     {
@@ -64,5 +67,20 @@ export const mainRoutes = [
         path: '/aprende/noticias',
         element: <AprendeNoticiasPage></AprendeNoticiasPage>,
     },
+    {
 
+        path: "/statement-of-account",
+        element: <StatementOfAccount></StatementOfAccount>,
+
+    },
+    {
+        path: "/payments-and-fees",
+        element: <PaymentsAndFees></PaymentsAndFees>,
+
+    },
+    {
+        path: "/PQRs",
+        element: <PQRs></PQRs>,
+
+    },
 ]

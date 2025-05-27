@@ -1,0 +1,148 @@
+.estado-pendiente {
+  color: #F04438; /* Semantic-colors-Error-500 */
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.estado-en-proceso {
+  color: #FDB022; /* Semantic-colors-Warning-400 */
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.estado-resuelta {
+  color: #12B76A; /* Semantic-colors-Success-500 */
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+
+#pqr-section-title {
+  color: #FF0100; /* Secondary-color-Red */
+  font-family: Archivo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 4px;
+}
+
+#pqr-section-subtitle {
+  color: #252B37; /* Neutral-colors-800 */
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+
+#table-history-pqrs {
+  width: 111%;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  margin-left: -200px; /* move table to the left */
+}
+
+#table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Archivo;
+}
+
+#table-header th {
+  text-align: left;
+  padding: 12px;
+  color: #252B37;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+#table-body td {
+  padding: 12px;
+  font-size: 14px;
+  color: #4B5563;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+#table-body tr:nth-child(even) {
+  background-color: #F9FAFB;
+}
+
+#table-body tr:last-child td {
+  border-bottom: none;
+}
+
+#pqr-form-container {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.pqr-input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.pqr-input-group > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pqr-input-group select,
+.pqr-input-group textarea {
+  font-family: Archivo;
+  font-size: 14px;
+  border: 1px solid #D1D5DB;
+  border-radius: 24px;
+  padding: 12px 16px;
+  outline: none;
+}
+
+.pqr-input-group textarea {
+  border-radius: 16px;
+  height: 150px;
+  resize: none;
+}
+
+#pqr-submit-button {
+  background-color: #18181B;
+  color: white;
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+#pqr-submit-button:hover {
+  background-color: #000;
+}
+
+* {
+  font-family: 'Archivo', sans-serif;
+}

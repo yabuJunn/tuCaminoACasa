@@ -14,7 +14,7 @@ export const EnQueVoyPage = () => {
       <div className='page-content'>
         <div className='title'>
           <h2 className='page-title'>¿En qué voy?</h2>
-          <p>Mirá ve, el estado actual de tu compra y lo que sigue en el camino a tu nuevo hogar.</p>
+          <p>Mirá ve, vos acá podés ver estado actual de tu compra y lo que sigue en el camino a tu nuevo hogar.</p>
         </div>
 
         <div className='subtitle'>
@@ -22,7 +22,7 @@ export const EnQueVoyPage = () => {
           <p>Trámites</p>
         </div>
         <section className="construction-progress">
-          <ConstructionProgress></ConstructionProgress>x
+          <ConstructionProgressEnQueVoy></ConstructionProgressEnQueVoy>x
         </section>
 
         <section className="progress-timeLine">

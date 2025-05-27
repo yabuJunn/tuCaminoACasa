@@ -75,7 +75,7 @@ export const GlobalNavBar = () => {
                 <button
                     className={`sidebar__link ${isActive("/bank-statement") ? "focus" : ""}`}
                     id="bankStatementButton"
-                    onClick={handleNavigation.navigateToDashboard}
+                    onClick={handleNavigation.navigateToStatementOfAccount}
                 >
                     <img src={isActive("/bank-statement") ? bankStatementIconBlack : bankStatementIconWhite} alt="bankStatementIcon" />
                     <span>Estado cuenta</span>
@@ -93,7 +93,7 @@ export const GlobalNavBar = () => {
                 <button
                     className={`sidebar__link ${isActive("/pqrs") ? "focus" : ""}`}
                     id="pqrsButton"
-                    onClick={handleNavigation.navigateToDashboard}
+                    onClick={handleNavigation.navigateToPqrs}
                 >
                     <img src={isActive("/pqrs") ? pqrsIconBlack : pqrsIconWhite} alt="lpqrsIcon" />
                     <span>PQRs</span>
