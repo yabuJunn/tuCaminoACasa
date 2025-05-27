@@ -10,21 +10,19 @@ export const PuntosClaveEntrega = () => {
         <div  className="puntoClaveEntregaCard">
                         <img src={verificacionEntrega} alt="verificacionEntrega" />
                         <h3 className="cardPuntoTitleEntrega">Firma de la escritura</h3>
-                        <p className="cardPuntoDescriptionEntrega">Carga el documento con tú firma de la escritura
-                             para que la entrega del inmueble no tenga retrasos. </p>
+                        <p className="cardPuntoDescriptionEntrega">Revisa que la vivienda cumpla con lo pactado y reporta detalles a corregir. </p>
                         </div>
 
         <div  className="puntoClaveEntregaCard">
                         <img src= {firmaEntrega} alt="firmaEntrega" />
-                        <h3 className="cardPuntoTitleEntrega">Revisión del acuerdo final</h3>
-                        <p className="cardPuntoDescriptionEntrega">Repasa las condiciones del contrato y asegúrate de que todo esté correcto. </p>
+                        <h3 className="cardPuntoTitleEntrega">Firma de acta de entrega</h3>
+                        <p className="cardPuntoDescriptionEntrega">Firma el documento oficial donde recibes el inmueble en buen estado. </p>
                         </div>
 
          <div  className="puntoClaveEntregaCard">
                         <img src={llavesEntrega} alt="llavesEntrega" />
-                        <h3 className="cardPuntoTitleEntrega">Registro de propiedad</h3>
-                        <p className="cardPuntoDescriptionEntrega">El trámite final: inscribir la escritura en la Oficina de Registro para
-                            quedar como propietario legal. </p>
+                        <h3 className="cardPuntoTitleEntrega">Entrega de llaves</h3>
+                        <p className="cardPuntoDescriptionEntrega">Recibe las llaves y comienza a disfrutar de tu nuevo hogar. </p>
                         </div>
         
       
