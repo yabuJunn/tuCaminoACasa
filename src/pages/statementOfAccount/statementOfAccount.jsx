@@ -9,10 +9,10 @@ import Calendar from "../../components/statementOfAccountScreen/CalendarStatemen
 
 const StatementOfAccount = () => {
   return (
-    <main className="page" id="statementOfAccountPage">
+    <main className="page full-page-height" id="statementOfAccountPage">
       <GlobalNavBar />
 
-      <div id="statementOfAccountContent">
+  <div id="statementOfAccountContent" className="scroll-container">
         <div id="statementOfAccountBanner">
           <BannerStatementOfAccount />
         </div>
