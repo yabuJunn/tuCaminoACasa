@@ -1,0 +1,18 @@
+.aprendeHeader h1{
+    color: #FF0100;
+    font-family: Archivo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem;
+    margin-top: 10px;
+}
+
+.aprendeHeader p{
+    color: #18181B;
+    font-family: Archivo;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 2.375rem;
+}

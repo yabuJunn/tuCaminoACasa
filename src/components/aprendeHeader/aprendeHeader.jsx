@@ -1,3 +1,4 @@
+import "./aprendeHeader.css"
 export const AprendeHeader =()=>{
     return(
         <div className="aprendeHeader">

@@ -1,25 +1,21 @@
 import iconBack from "../../assets/svgIconsAprende/iconBack.svg"
-
 import bannerImg from "../../assets/ImgBannerAprende/bannerBanco.svg"
-
+import "./bancoBanner.css"
 
 export const AprendeBancoBanner = () => {
-    return<>
+  return (
+    <div className="bannerAprendeBanco">
 
-    <section className="aprendeBancoPage">
-        <div className="bannerAprendeBanco">
-        <img src={iconBack} alt="iconBack" />
-
-        <img src={bannerImg} alt="bannerImg" />
-
-         <div className="breadCrumb">
+      <div className="breadCrumb">
         <span className="page">Aprende</span>
         <span className="separator">&gt;</span>
         <span className="subPage">Trámite con el banco</span>
       </div>
 
-        </div>
+      <img src={bannerImg} alt="bannerImg" className="bgBanner" />
+      <img src={iconBack} alt="iconBack" className="backIcon" />
 
-    </section>
-    </>
+
+    </div>
+  )
 }

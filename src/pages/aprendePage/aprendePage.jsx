@@ -1,3 +1,4 @@
+import "./aprendePage.css"
 import { AprendeHeader } from "../../components/aprendeHeader/aprendeHeader"
 import { ArticulosSection } from "../../components/articulos/articulos"
 import { CardsGuia } from "../../components/cardsGuia/cardsGuia"
@@ -8,31 +9,30 @@ export const AprendePage = () => {
   return <>
     <section className="aprendePage">
       <GlobalNavBar></GlobalNavBar>
-      {/* <UpperNavButtons></UpperNavButtons> */}
-
-      <div className="headerSection">
-        <AprendeHeader></AprendeHeader>
-      </div>
-
-      <h2>Guía del proceso</h2>
-
-      <div className="guiaSection">
-        <CardsGuia></CardsGuia>
-      </div>
-
-      <h2>Últimos artículos </h2>
-
-      <div className="articulosSection">
-        <ArticulosSection></ArticulosSection>
-
-      </div>
 
 
-    </section>
+      <div className="aprendeMargin">
+        <div className="headerSection">
+          <AprendeHeader />
+          <UpperNavButtons />
+        </div>
 
 
+        <h2 className="aprendeTitle">Guía del proceso</h2>
 
+        <div className="guiaSection">
+          <CardsGuia></CardsGuia>
+        </div>
 
+        <h2 className="aprendeTitle">Últimos artículos </h2>
 
+        <div className="articulosSection">
+          <ArticulosSection></ArticulosSection>
+
+        </div>
+
+      </div >
+
+    </section >
   </>
 }
