@@ -1,7 +1,7 @@
 import { AprendeHeader } from "../../components/aprendeHeader/aprendeHeader"
 import { ArticulosSection } from "../../components/articulos/articulos"
 import { CardsGuia } from "../../components/cardsGuia/cardsGuia"
-import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar"
+import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar"
 import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons"
 import "./aprendePage.css"
 
