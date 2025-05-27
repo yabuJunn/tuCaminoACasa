@@ -2,11 +2,18 @@ import { AprendeFirmaBanner } from "../../components/aprendeFirmaBanner/aprendeF
 import { PuntosClaveFirma } from "../../components/puntosClaveFirma/puntosClaveFirma.jsx"
 import { TutorialesAprendeFirma } from "../../components/tutorialesAprendeFirma/tutorialesAprendeFirma.jsx"
 
+import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar.jsx"
+import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons.jsx"
+
+
 
 export const AprendeFirmaPage = () => {
     return<>
 
     <section className="aprendeFirmaPage">
+          <GlobalNavBar></GlobalNavBar>
+        <UpperNavButtons></UpperNavButtons>
+
         <AprendeFirmaBanner></AprendeFirmaBanner>
         <div className="bannerAprendeFirma">
         

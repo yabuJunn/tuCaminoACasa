@@ -3,7 +3,7 @@ import { PuntosClaveBanco } from "../../components/puntosClaveBanco/puntosClaveB
 import { TutorialesAprendeBanco } from "../../components/tutorialesAprendeBanco/tutorialesAprendeBanco"
 
 import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar"
-import { UpperNavButtons } from "../../components/UpperNavButtons/UpperNavButtons"
+import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons"
 
 
 
