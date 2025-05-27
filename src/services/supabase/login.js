@@ -31,3 +31,23 @@ export async function getUserData() {
 
     return data;
 }
+
+export async function getSession() {
+    const {
+        data: { session },
+        error,
+    } = await supabase.auth.getSession();
+
+    console.log("Token actual:", session?.access_token);
+    console.log("Usuario:", session?.user);
+}
+
+export async function signOut() {
+    const { error } = await supabase.auth.signOut();
+
+    if (error) {
+        console.error("Error cerrando sesión:", error.message);
+    } else {
+        console.log("Sesión cerrada exitosamente");
+    }
+}
