@@ -1,4 +1,5 @@
 import videoBanco from "../../assets/svgIconsAprendeBanco/videoIcon.svg"
+import documentoGuiaIcon from "../../assets/svgIconsAprendeBanco/documentoGuiaIcon.svg"
 
 export const TutorialesAprendeBanco = () => {
     return<>
@@ -12,6 +13,18 @@ export const TutorialesAprendeBanco = () => {
                     que tu solicitud de crédito hipotecario sea aprobada sin complicaciones. </p>
                 </div>
                 <button className="verAhora">Ver ahora</button>
+
+                 <div  className="turotialesBancoCard">
+                <img src={documentoGuiaIcon} alt="documentoGuiaIcon" />
+                <h3 className="documentoGuía">Documento/Guía</h3>
+                <h3 className="cardTutorialTitle">Certificación laboral</h3>
+                <p className="cardTutorialDescription">Este documento debe incluir tu cargo, salario, tipo de contrato y antigüedad laboral. 
+                    Es esencial para que las entidades financieras evalúen tu capacidad de pago al solicitar un crédito hipotecario.  </p>
+                </div>
+                <button className="descargarGuia">Descargar Guía</button>
+
+                
+
 
                 
 

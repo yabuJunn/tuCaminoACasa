@@ -11,9 +11,11 @@ export const AprendeBancoPage = () => {
     return<>
 
     <section className="aprendeBancoPage">
+        <GlobalNavBar></GlobalNavBar>
+        <UpperNavButtons></UpperNavButtons>
         <div className="bannerAprendeBanco">
         
-            <AprendeBancoBanner></AprendeBancoBanner>
+        <AprendeBancoBanner></AprendeBancoBanner>
         </div>
         <h1 className="pageTitle">Trámite con el banco</h1>
         <h2 className="puntosClave">Puntos clave</h2>
