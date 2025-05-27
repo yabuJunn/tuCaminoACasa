@@ -73,11 +73,11 @@ export const GlobalNavBar = () => {
                 </button>
 
                 <button
-                    className={`sidebar__link ${isActive("/bank-statement") ? "focus" : ""}`}
+                    className={`sidebar__link ${isActive("/statement-of-account") ? "focus" : ""}`}
                     id="bankStatementButton"
                     onClick={handleNavigation.navigateToStatementOfAccount}
                 >
-                    <img src={isActive("/bank-statement") ? bankStatementIconBlack : bankStatementIconWhite} alt="bankStatementIcon" />
+                    <img src={isActive("/statement-of-account") ? bankStatementIconBlack : bankStatementIconWhite} alt="bankStatementIcon" />
                     <span>Estado cuenta</span>
                 </button>
 

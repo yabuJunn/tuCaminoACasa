@@ -1,85 +1,85 @@
 #enQueVoyPage {
-    display: flex;
-    min-height: 100vh;
-    overflow: hidden;
-    font-family: 'Archivo', sans-serif;
-    background-color: #fff;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Archivo', sans-serif;
+  background-color: #fff;
 }
 
 #enQueVoyPage p {
-    font-size: 0.9rem;
-    color: #414651;
+  font-size: 0.9rem;
+  color: #414651;
 }
 
 #enQueVoyPage .page-content {
-    margin-left: 13vw;
-    padding: 2.5rem 3rem;
-    width: calc(100vw - 13vw);
-    box-sizing: border-box;
-    overflow-y: auto;
+  margin-left: 13vw;
+  padding: 2.5rem 3rem;
+  width: calc(100vw - 13vw);
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 #enQueVoyPage .title {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 #enQueVoyPage .page-title {
-    color: #FF0100;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
+  color: #FF0100;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
 #enQueVoyPage .title p {
-    font-size: 1rem;
-    color: #414651;
-    margin: 0;
+  font-size: 1rem;
+  color: #414651;
+  margin: 0;
 }
 
 #enQueVoyPage .subtitle {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #enQueVoyPage .subtitle h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 #enQueVoyPage .subtitle p {
-    font-size: 0.9rem;
-    color: #414651;
-    margin: 0.25rem 0 0 0;
+  font-size: 0.9rem;
+  color: #414651;
+  margin: 0.25rem 0 0 0;
 }
 
 #enQueVoyPage .progress-timeLine {
-    margin: 1.5rem 0 3rem 0;
+  margin: 1.5rem 0 3rem 0;
 }
 
 #enQueVoyPage #construction-progress h1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #414651;
-    margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #414651;
+  margin-bottom: 1.5rem;
 }
 
 #enQueVoyPage .progressSection {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 #enQueVoyPage .construction-progress {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    min-width: 350px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 350px;
 }
 
 #enQueVoyPage .construction-steps {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }

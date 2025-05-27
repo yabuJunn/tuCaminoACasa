@@ -3,21 +3,18 @@ import bannerFirma from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bann
 
 
 export const AprendeFirmaBanner = () => {
-    return<>
+  return <>
 
-        <div className="bannerAprendeFirma">
-        <img src={iconBack} alt="iconBack" />
+    <div className="bannerAprendeFirma">
+      <img src={iconBack} alt="iconBack" />
 
-        <img src={bannerFirma} alt="bannerFirma" />
+      <img src={bannerFirma} alt="bannerFirma" />
 
-         <div className="breadCrumb">
+      <div className="breadCrumb">
         <span className="page">Aprende</span>
         <span className="separator">&gt;</span>
         <span className="subPage">Firma de la escritura</span>
       </div>
-
-        </div>
-
-
-    </>
+    </div>
+  </>
 }
