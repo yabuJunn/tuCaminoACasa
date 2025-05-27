@@ -1,5 +1,6 @@
 import { AprendeFirmaBanner } from "../../components/aprendeFirmaBanner/aprendeFirmaBanner.jsx"
 import { PuntosClaveFirma } from "../../components/puntosClaveFirma/puntosClaveFirma.jsx"
+import { TutorialesAprendeFirma } from "../../components/tutorialesAprendeFirma/tutorialesAprendeFirma.jsx"
 
 
 export const AprendeFirmaPage = () => {
@@ -14,6 +15,7 @@ export const AprendeFirmaPage = () => {
         <h2 className="puntosClaveFirma">Puntos clave</h2>
         <PuntosClaveFirma></PuntosClaveFirma>
         <div className="cardsAprendeFirma">
+        <TutorialesAprendeFirma></TutorialesAprendeFirma>
         
         <h2 className="tutorialesCardsFirma">Tutoriales y recursos</h2>
 
