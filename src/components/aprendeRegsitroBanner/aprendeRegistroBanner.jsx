@@ -1,5 +1,5 @@
 import iconBack from "../../assets/svgIconsAprende/iconBack.svg"
-import bannerFirma from "../../assets/ImgBannerAprende/bannerFirma.svg"
+import bannerRegistro from "../../assets/ImgBannerAprende/bannerRegistro.svg"
 
 
 export const AprendeRegistroBanner = () => {
@@ -8,7 +8,7 @@ export const AprendeRegistroBanner = () => {
         <div className="bannerAprendeRegistro">
         <img src={iconBack} alt="iconBack" />
 
-        <img src={bannerFirma} alt="bannerFirma" />
+        <img src={bannerRegistro} alt="bannerRegistro" />
 
          <div className="breadCrumb">
         <span className="page">Aprende</span>

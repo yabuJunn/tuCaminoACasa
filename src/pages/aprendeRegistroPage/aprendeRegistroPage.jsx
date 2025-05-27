@@ -1,4 +1,5 @@
 import { AprendeRegistroBanner } from "../../components/aprendeRegsitroBanner/aprendeRegistroBanner"
+import { PuntosClaveRegistro } from "../../components/puntosClaveRegistro/puntosClaveRegistro"
 
 export const AprendeRegistroPage = () => {
     return<> 
@@ -12,6 +13,7 @@ export const AprendeRegistroPage = () => {
             </div>
             <h1 className="pageRegistroTitle">Firma de la escritura</h1>
             <h2 className="puntosClaveRegistro">Puntos clave</h2>
+            <PuntosClaveRegistro></PuntosClaveRegistro>
 
             <div className="cardsAprendeRegistro">
             
