@@ -5,7 +5,7 @@ export const TutorialesAprendeBanco = () => {
     return<>
 
     <section className="tutorialesBancoGeneralCards">
-        <div  className="turotialesBancoCard">
+        <div  className="tutorialesBancoCard">
                 <img src={videoBanco} alt="videoBanco" />
                 <h3 className="video">Vídeo</h3>
                 <h3 className="cardTutorialTitle">Paso a paso para solicitar tu crédito</h3>
@@ -14,7 +14,7 @@ export const TutorialesAprendeBanco = () => {
                 </div>
                 <button className="verAhora">Ver ahora</button>
 
-                 <div  className="turotialesBancoCard">
+                 <div  className="tutorialesBancoCard">
                 <img src={documentoGuiaIcon} alt="documentoGuiaIcon" />
                 <h3 className="documentoGuía">Documento/Guía</h3>
                 <h3 className="cardTutorialTitle">Certificación laboral</h3>
