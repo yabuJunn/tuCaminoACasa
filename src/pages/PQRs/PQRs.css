@@ -4,7 +4,7 @@ html, body, * {
 #pqr-wrapper {
   padding-left: 200px;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 1%;
 }
 
 #PQRsHeader {
@@ -79,7 +79,7 @@ html, body, * {
   flex-direction: column;
   gap: 24px;
   box-sizing: border-box;
-  max-width: 1600px;
+  width: 93%;
   align-self: center;
 }
 
