@@ -1,7 +1,7 @@
 import './dashboardPage.css'
 
 import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
-//import { UpperNavButtons } from '../../components/upperNavButtons/upperNavButtons'
+import { UpperNavButtons } from '../../components/navigation/upperNavButtons/upperNavButtons'
 import { PropertySummmary } from '../../components/dashboardScreen/propertySummary/propertySummary'
 import { PropertyProjectDetails } from '../../components/dashboardScreen/propertyProjectDetails/propertyProjectDetails'
 import { GeneralPropertyTimeline } from '../../components/dashboardScreen/generalPropertyTimeline/generalPropertyTimeline'
@@ -16,7 +16,7 @@ export const DashboardPage = () => {
 	return <>
 		<main className='page' id='dashboardPage'>
 			<GlobalNavBar></GlobalNavBar>
-			{/* <UpperNavButtons></UpperNavButtons> */}
+			<UpperNavButtons></UpperNavButtons>
 
 			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>

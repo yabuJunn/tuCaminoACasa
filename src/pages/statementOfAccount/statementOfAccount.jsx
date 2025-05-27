@@ -4,8 +4,8 @@ import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNav
 import { AccruedPayment } from "../../components/dashboardScreen/accruedPayment/accruedPayment";
 import { NextInstalment } from "../../components/dashboardScreen/nextInstalment/nextInstalment";
 
-import BannerStatementOfAccount from "../../components/BannerStatementOfAccount/BannerStatementOfAcount";
-import Calendar from "../../components/CalendarStatementOfAccount/CalendarStatementOfAccount";
+import BannerStatementOfAccount from "../../components/statementOfAccountScreen/BannerStatementOfAccount/BannerStatementOfAcount";
+import Calendar from "../../components/statementOfAccountScreen/CalendarStatementOfAccount/CalendarStatementOfAccount";
 
 const StatementOfAccount = () => {
   return (

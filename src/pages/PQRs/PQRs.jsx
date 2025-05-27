@@ -1,9 +1,10 @@
 import "./PQRs.css";
 
-import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
-// import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons";
-import RequestTable from "../../components/historyPQRsTable/historyPQRsTable";
 import { useRef } from "react";
+
+import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
+import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
+import RequestTable from "../../components/PQRsScreen/historyPQRsTable/historyPQRsTable";
 
 const PQRs = () => {
   const dialogRef = useRef(null);
@@ -27,7 +28,7 @@ const PQRs = () => {
               <h1 id="PQRsTitle">PQR</h1>
               <h2 id="PQRsSubtitle">Diligencie el siguiente formulario para radicar sus solicitudes.</h2>
               <div id="PQRsNavButtons">
-                {/* <UpperNavButtons /> */}
+                <UpperNavButtons></UpperNavButtons>
               </div>
             </div>
 
@@ -106,7 +107,7 @@ const PQRs = () => {
           </div>
         </div>
       </div>
-    </main>
+    </main >
   );
 };
 
