@@ -1,0 +1,39 @@
+* {
+    font-family: 'Archivo', sans-serif;
+  }
+
+#statementOfAccountCards {
+  position: absolute;
+  right: 48px;
+  top: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 214px;
+  height: auto;
+}
+
+
+
+#statementOfAccountCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#accruedPaymentCard,
+#nextInstalmentCard {
+  display: flex;
+  width: 367.241px;
+  height: 344.196px;
+  padding: 19.753px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}

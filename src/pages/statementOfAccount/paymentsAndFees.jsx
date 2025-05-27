@@ -1,7 +1,7 @@
 import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons";
 import PaymentsTable from "../../components/PaymentsTable/PaymentsTable";
 import arrowLeft from "../../assets/Iconos/arrow-narrow-left.svg";
-
+import "./PaymentsAndFees.css";
 const PaymentsAndFees = () => {
   return (
     <main className="page" id="paymentsAndFeesPage">
