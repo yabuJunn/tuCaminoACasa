@@ -2,10 +2,6 @@ import documentoIcon from "../../assets/svgIconsAprendeBanco/documentoIcon.svg"
 import revisionIcon from "../../assets/svgIconsAprendeBanco/revisionIcon.svg"
 import firmaIcon from "../../assets/svgIconsAprendeBanco/firmaIcon.svg"
 
-
-
-
-
 export const PuntosClaveCards = () => {
     return<>
 
