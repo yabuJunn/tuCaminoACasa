@@ -1,8 +1,8 @@
-import documentoIcon from "../../assets/svgIconsAprendeBanco/documentoIcon.svg"
-import revisionIcon from "../../assets/svgIconsAprendeBanco/revisionIcon.svg"
-import firmaIcon from "../../assets/svgIconsAprendeBanco/firmaIcon.svg"
+import documentoIcon from "../../assets/svgIconsAprende/documentoIcon.svg"
+import revisionIcon from "../../assets/svgIconsAprende/revisionIcon.svg"
+import firmaIcon from "../../assets/svgIconsAprende/firmaIcon.svg"
 
-export const PuntosClaveCards = () => {
+export const PuntosClaveBanco = () => {
     return<>
 
     <section className="puntosClaveGeneralCards">

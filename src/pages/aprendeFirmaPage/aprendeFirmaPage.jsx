@@ -1,9 +1,10 @@
+import { AprendeFirmaBanner } from "../../components/aprendeFirmaBanner/aprendeFirmaBanner.jsx"
 
 export const AprendeFirmaPage = () => {
     return<>
 
     <section className="aprendeFirmaPage">
-      
+        <AprendeFirmaBanner></AprendeFirmaBanner>
         <div className="bannerAprendeFirma">
         
         </div>

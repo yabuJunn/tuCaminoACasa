@@ -1,5 +1,5 @@
-import videoBanco from "../../assets/svgIconsAprendeBanco/videoIcon.svg"
-import documentoGuiaIcon from "../../assets/svgIconsAprendeBanco/documentoGuiaIcon.svg"
+import videoBanco from "../../assets/svgIconsAprende/videoIcon.svg"
+import documentoGuiaIcon from "../../assets/svgIconsAprende/documentoGuiaIcon.svg"
 
 export const TutorialesAprendeBanco = () => {
     return<>

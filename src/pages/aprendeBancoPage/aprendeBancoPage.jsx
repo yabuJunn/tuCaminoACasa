@@ -1,5 +1,5 @@
 import { AprendeBancoBanner } from "../../components/aprendeBancoBanner/aprendeBancoBanner"
-import { PuntosClaveCards } from "../../components/puntosClaveCards/puntosClaveCards"
+import { PuntosClaveBanco } from "../../components/puntosClaveBanco/puntosClaveBanco"
 import { TutorialesAprendeBanco } from "../../components/tutorialesAprendeBanco/tutorialesAprendeBanco"
 
 import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar"
@@ -20,7 +20,7 @@ export const AprendeBancoPage = () => {
         <h1 className="pageTitle">Trámite con el banco</h1>
         <h2 className="puntosClave">Puntos clave</h2>
         <div className="cardsAprendeBanco">
-        <PuntosClaveCards></PuntosClaveCards>
+        <PuntosClaveBanco></PuntosClaveBanco>
         
         <h2 className="tutorialesCards">Tutoriales y recursos</h2>
         <TutorialesAprendeBanco></TutorialesAprendeBanco>

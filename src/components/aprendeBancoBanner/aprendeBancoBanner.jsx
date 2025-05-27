@@ -1,6 +1,6 @@
-import iconBack from "../../assets/ImgBannerAprendeBanco/bannerBanco.svg"
+import iconBack from "../../assets/svgIconsAprende/iconBack.svg"
 
-import bannerImg from "../../assets/svgIconsAprendeBanco/iconBack.svg"
+import bannerImg from "../../assets/ImgBannerAprende/bannerBanco.svg"
 
 
 export const AprendeBancoBanner = () => {

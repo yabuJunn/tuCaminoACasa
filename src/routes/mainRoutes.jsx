@@ -2,6 +2,8 @@ import { DashboardPage } from "../pages/dashboard/dashboardPage.jsx"
 import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { AprendePage } from "../pages/aprendePage/aprendePage.jsx"
 import { AprendeBancoPage } from "../pages/aprendeBancoPage/aprendeBancoPage.jsx"
+import { AprendeFirmaPage } from "../pages/aprendeFirmaPage/aprendeFirmaPage.jsx"
+
 
 export const mainRoutes = [
     {
@@ -21,7 +23,7 @@ export const mainRoutes = [
     },
 
     { path: '/aprende/firma', 
-       element: <AprendeBancoPage></AprendeBancoPage>,
+       element: <AprendeFirmaPage></AprendeFirmaPage>,
     },
     
 ]
