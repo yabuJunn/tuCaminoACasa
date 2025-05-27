@@ -1,4 +1,4 @@
-//import "./Header.css";
+import "./Header.css";
 
 import BannerImage from "../../../assets/jpg/BannerViolet.jpg";
 import ProfileImage from "../../../assets/jpg/ProfileViolet.jpg";

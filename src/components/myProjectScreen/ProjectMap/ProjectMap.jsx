@@ -1,4 +1,4 @@
-//import "./ProjectMap.css";
+import "./ProjectMap.css";
 
 import SiteMapImage from "../../../assets/png/myProjectScreen/PlanoAereo.png";
 import PoolIcon from '../../../assets/svg/myProjectScreen/poolArea2.svg';
