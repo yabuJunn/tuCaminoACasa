@@ -1,5 +1,7 @@
 import { AprendeBancoBanner } from "../../components/aprendeBancoBanner/aprendeBancoBanner"
 import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar"
+import { UpperNavButtons } from "../../components/UpperNavButtons/UpperNavButtons"
+
 
 
 export const AprendeBancoPage = () => {
@@ -8,7 +10,7 @@ export const AprendeBancoPage = () => {
     <section className="aprendeBancoPage">
         <div className="bannerAprendeBanco">
             <GlobalNavBar></GlobalNavBar>
-            <GlobalNavBar></GlobalNavBar>
+            <UpperNavButtons></UpperNavButtons>
 
 
             <AprendeBancoBanner></AprendeBancoBanner>
