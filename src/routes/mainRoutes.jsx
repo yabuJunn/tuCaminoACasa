@@ -15,6 +15,9 @@ export const mainRoutes = [
     path: '/aprende', 
        element: <AprendePage></AprendePage>,
     },
+ { path: '/aprende', 
+       element: <AprendePage></AprendePage>,
+    },
 
     
 ]
