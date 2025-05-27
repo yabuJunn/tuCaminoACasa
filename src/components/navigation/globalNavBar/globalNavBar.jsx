@@ -84,7 +84,7 @@ export const GlobalNavBar = () => {
                 <button
                     className={`sidebar__link ${isActive("/learn") ? "focus" : ""}`}
                     id="learnButton"
-                    onClick={handleNavigation.navigateToDashboard}
+                    onClick={handleNavigation.navigateToAprende}
                 >
                     <img src={isActive("/learn") ? learnIconBlack : learnIconWhite} alt="learnIcon" />
                     <span>Aprende</span>

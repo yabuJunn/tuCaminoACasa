@@ -21,6 +21,9 @@ export const EnQueVoyPage = () => {
           <h3>Progreso Postventa</h3>
           <p>Trámites</p>
         </div>
+        <section className="construction-progress">
+          <ConstructionProgress></ConstructionProgress>x
+        </section>
 
         <section className="progress-timeLine">
           <ProgressTimeLine></ProgressTimeLine>

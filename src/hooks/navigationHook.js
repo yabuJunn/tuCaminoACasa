@@ -10,6 +10,7 @@ export const NavigationHook = () => {
     const navigateToProfile = useCallback(() => navigate("/profile"), [navigate]);
     const navigateToMyProject = useCallback(() => navigate("/my-project"), [navigate]);
     const navigateToEnQueVoy = useCallback(() => navigate("/en-que-voy"), [navigate]);
+    const navigateToAprende = useCallback(() => navigate("/aprende"), [navigate]);
 
     const handleNavigation = {
         navigateToLogin,
@@ -17,7 +18,8 @@ export const NavigationHook = () => {
         navigateToDashboard,
         navigateToProfile,
         navigateToMyProject,
-        navigateToEnQueVoy
+        navigateToEnQueVoy,
+        navigateToAprende
     }
 
     return {
