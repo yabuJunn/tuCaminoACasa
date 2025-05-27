@@ -20,5 +20,8 @@ export const mainRoutes = [
        element: <AprendeBancoPage></AprendeBancoPage>,
     },
 
+    { path: '/aprende/firma', 
+       element: <AprendeBancoPage></AprendeBancoPage>,
+    },
     
 ]
