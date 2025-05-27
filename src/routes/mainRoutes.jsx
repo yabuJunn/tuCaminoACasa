@@ -6,6 +6,7 @@ import { MyProject } from "../pages/myProject/myProject.jsx";
 import ProfileScreen from "../pages/profile/profile";
 import StatementOfAccount from "../pages/statementOfAccount/statementOfAccount.jsx";
 import PaymentsAndFees from "../pages/statementOfAccount/paymentsAndFees.jsx";
+import PQRs from "../pages/PQRs/PQRs.jsx";
 
 export const mainRoutes = [
     {
@@ -43,6 +44,11 @@ export const mainRoutes = [
     {
         path: "/payments-and-fees",
         element: <PaymentsAndFees></PaymentsAndFees>,
+
+    },
+    {
+        path: "/PQRs",
+        element: <PQRs></PQRs>,
 
     },
 ]
