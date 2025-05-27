@@ -1,5 +1,7 @@
 import { AprendeNoticiasBanner } from "../../components/aprendeNoticiasBanner/aprendeNoticiasBanner"
 import { DescripcionNoticias } from "../../components/descripcionNoticias/descripcionNoticias"
+import { MasNoticiasAprende } from "../../components/masNoticiasAprende/masnNoticiasAprende"
+
 import bannerAprendeNoticias from "../../assets/ImgBannerAprende/bannerAprendeNoticias.svg"
 
 export const AprendeNoticiasPage = () => {
@@ -16,7 +18,9 @@ export const AprendeNoticiasPage = () => {
         <DescripcionNoticias></DescripcionNoticias>
         </div>
 
-        <div className=""></div>
+        <div className="masNoticiasSesion">
+            <MasNoticiasAprende></MasNoticiasAprende>
+        </div>
 
         <img src={bannerAprendeNoticias} alt="bannerAprendeNoticias" />
         

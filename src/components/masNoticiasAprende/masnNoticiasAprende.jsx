@@ -1,5 +1,10 @@
 import iconBack from "../../assets/svgIconsAprende/iconBack.svg"
 import primera from "../../assets/masNoticiasImgs/primera.svg"
+import segunda from "../../assets/masNoticiasImgs/segunda.svg"
+import tercera from "../../assets/masNoticiasImgs/tercera.svg"
+import cuarta from "../../assets/masNoticiasImgs/cuarta.svg"
+
+
 
 
 export const MasNoticiasAprende = () => {
@@ -10,7 +15,7 @@ export const MasNoticiasAprende = () => {
 
         <div className="noticia">
             <div className="imgNoticia">
-                <img src={iconBack} alt="iconBack" />
+                <img src={primera} alt="primera" />
             </div>
 
             <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
@@ -19,7 +24,7 @@ export const MasNoticiasAprende = () => {
 
          <div className="noticia">
             <div className="imgNoticia">
-                <img src={iconBack} alt="iconBack" />
+                <img src={segunda} alt="segunda" />
             </div>
 
             <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
@@ -28,7 +33,7 @@ export const MasNoticiasAprende = () => {
 
          <div className="noticia">
             <div className="imgNoticia">
-                <img src={iconBack} alt="iconBack" />
+                <img src={tercera} alt="tercera" />
             </div>
 
             <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
@@ -37,7 +42,7 @@ export const MasNoticiasAprende = () => {
 
          <div className="noticia">
             <div className="imgNoticia">
-                <img src={iconBack} alt="iconBack" />
+                <img src={cuarta} alt="cuarta" />
             </div>
 
             <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
