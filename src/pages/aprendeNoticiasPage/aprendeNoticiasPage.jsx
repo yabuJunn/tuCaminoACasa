@@ -1,31 +1,38 @@
 import { AprendeNoticiasBanner } from "../../components/aprendeNoticiasBanner/aprendeNoticiasBanner"
+import { DescripcionNoticias } from "../../components/descripcionNoticias/descripcionNoticias"
+import { MasNoticiasAprende } from "../../components/masNoticiasAprende/masnNoticiasAprende"
+
+import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar"
+import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons"
+
+
+import bannerAprendeNoticias from "../../assets/ImgBannerAprende/bannerAprendeNoticias.svg"
 
 export const AprendeNoticiasPage = () => {
     return <>
 
         <section className="aprendeNoticiasPage">
+            <GlobalNavBar></GlobalNavBar>
+            <UpperNavButtons></UpperNavButtons>
+
 
 
             <div className="bannerAprendeNoticias">
                 <AprendeNoticiasBanner></AprendeNoticiasBanner>
             </div>
-            <h1 className="pageFirmaTitle">Firma de la escritura</h1>
-            <h2 className="puntosClaveFirma">Puntos clave</h2>
-            <div className="cardsAprendeFirma">
 
-                <h2 className="tutorialesCardsFirma">Tutoriales y recursos</h2>
-
-                <div className="bannerAprendeFirma">
-
-                </div>
-                <h1 className="pageFirmaTitle">Firma de la escritura</h1>
-                <h2 className="puntosClaveFirma">Puntos clave</h2>
-                <div className="cardsAprendeFirma">
-
-                    <h2 className="tutorialesCardsFirma">Tutoriales y recursos</h2>
-
-                </div>
+            <div className="descripcionNoticias">
+                <DescripcionNoticias></DescripcionNoticias>
             </div>
+
+            <div className="masNoticiasSesion">
+                <MasNoticiasAprende></MasNoticiasAprende>
+            </div>
+
+            <img src={bannerAprendeNoticias} alt="bannerAprendeNoticias" />
+
+
+
         </section>
     </>
 }
