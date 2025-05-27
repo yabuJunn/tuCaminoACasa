@@ -1,11 +1,11 @@
 import "./myProject.css";
 
-import { Header } from "../../components/Header/Header";
-import { ProjectDescription } from "../../components/ProjectDescription/ProjectDescription";
-import { ProjectMap } from "../../components/ProjectMap/ProjectMap";
-import { CommonAreas } from "../../components/CommonAreas/CommonAreas";
-import { ProjectDetails } from "../../components/ProjectDetails/ProjectDetails";
-import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar";
+import { Header } from "../../components/myProjectScreen/Header/Header";
+import { ProjectDescription } from "../../components/myProjectScreen/ProjectDescription/ProjectDescription";
+import { ProjectMap } from "../../components/myProjectScreen/ProjectMap/ProjectMap";
+import { CommonAreas } from "../../components/myProjectScreen/CommonAreas/CommonAreas";
+import { ProjectDetails } from "../../components/myProjectScreen/ProjectDetails/ProjectDetails";
+import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
 
 export function MyProject() {
   return (

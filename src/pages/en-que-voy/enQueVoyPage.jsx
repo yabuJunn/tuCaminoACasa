@@ -1,10 +1,10 @@
 import "./enQueVoyPage.css"
 
-import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
+import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 
-import { ConstructionProgressEnQueVoy } from "../../components/constructionProgress/constructionProgress";
-import { ConstructionSteps } from "../../components/constructionSteps/constructionSteps";
-import { ProgressTimeLine } from "../../components/progressTimeLine/progressTimeLine"
+import { ConstructionProgressEnQueVoy } from "../../components/enQueVoyScreen/constructionProgressEnQueVoy/constructionProgressEnQueVoy";
+import { ConstructionSteps } from "../../components/enQueVoyScreen/constructionSteps/constructionSteps";
+import { ProgressTimeLine } from "../../components/enQueVoyScreen/progressTimeLine/progressTimeLine"
 
 export const EnQueVoyPage = () => {
   return (

@@ -1,14 +1,14 @@
 import './dashboardPage.css'
 
-import { GlobalNavBar } from '../../components/globalNavBar/globalNavBar'
+import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 //import { UpperNavButtons } from '../../components/upperNavButtons/upperNavButtons'
-import { PropertySummmary } from '../../components/propertySummary/propertySummary'
-import { PropertyProjectDetails } from '../../components/propertyProjectDetails/propertyProjectDetails'
-import { GeneralPropertyTimeline } from '../../components/generalPropertyTimeline/generalPropertyTimeline'
-import { ConstructionProgress } from '../../components/constructionProgress/constructionProgress'
-import { DocumentsState } from '../../components/documentsState/documentsState'
-import { AccruedPayment } from '../../components/accruedPayment/accruedPayment'
-import { NextInstalment } from '../../components/nextInstalment/nextInstalment'
+import { PropertySummmary } from '../../components/dashboardScreen/propertySummary/propertySummary'
+import { PropertyProjectDetails } from '../../components/dashboardScreen/propertyProjectDetails/propertyProjectDetails'
+import { GeneralPropertyTimeline } from '../../components/dashboardScreen/generalPropertyTimeline/generalPropertyTimeline'
+import { ConstructionProgress } from '../../components/dashboardScreen/constructionProgress/constructionProgress'
+import { DocumentsState } from '../../components/dashboardScreen/documentsState/documentsState'
+import { AccruedPayment } from '../../components/dashboardScreen/accruedPayment/accruedPayment'
+import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/nextInstalment'
 
 const mockUserName = "Carolina"
 

@@ -1,10 +1,12 @@
-import FormProfile from "../../components/FormProfile/formProfile";
-import FormPrefrences from "../../components/FormPreferences/formPreferences";
-import { GlobalNavBar} from "../../components/globalNavBar/globalNavBar"
 import "./profile.css";
 
+import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar"
+
+import FormProfile from "../../components/profileScreen/FormProfile/formProfile";
+import FormPrefrences from "../../components/profileScreen/FormPreferences/formPreferences";
+
 const ProfileScreen = () => {
-    return(
+    return (
         <>
             <main className='page' id='profilePage'>
                 <GlobalNavBar />

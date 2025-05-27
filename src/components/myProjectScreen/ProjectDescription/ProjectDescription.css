@@ -1,0 +1,117 @@
+.project-description {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  margin-top: 155px; 
+}
+
+.project-description h2{
+  font-family: Archivo;
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+}
+
+.intro-paragraph {
+  font-family: Archivo;
+  font-size: 18px; 
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.details-paragraph {
+  font-family: Archivo;
+  font-size: 16px; 
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.project-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  height: 330px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info-highlights {
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.highlight-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.highlight-card .text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+  font-family: Archivo;
+  font-size: 16px;
+  color: red;
+  line-height: 24px;
+}
+
+.tipo {
+  font-size: 14px;
+  color: #535862;
+  font-family: Archivo;
+  line-height: 20px;
+}
+
+.value {
+  font-size: 14px;
+  color: #18181b;
+  line-height: 20px;
+}
+
+.amenities-text{
+  margin-top: 30px;
+}
+
+.amenities-text h4{
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.amenities-text p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 5px;
+}

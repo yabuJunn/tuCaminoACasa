@@ -1,7 +1,9 @@
-import FormRegister from '../../components/FormRegister/formRegister';
-import LogosInicio from '../../components/LogosInicio/logosInicio';
-import FondoRegister from '../../assets/FondoLoginRegister/Fondo-LoginRegister.svg';
 import "./register.css";
+
+import FormRegister from '../../components/registerScreen/FormRegister/formRegister';
+import LogosInicio from '../../components/loginScreen/LogosInicio/logosInicio';
+import FondoRegister from '../../assets/svg/loginScreen/Fondo-LoginRegister.svg';
+
 const RegisterScreen = () => {
     return (
         <>
