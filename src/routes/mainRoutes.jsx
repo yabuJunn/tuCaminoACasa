@@ -1,6 +1,7 @@
 import { DashboardPage } from "../pages/dashboard/dashboardPage.jsx"
 import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { AprendePage } from "../pages/aprendePage/aprendePage.jsx"
+import { AprendeBancoPage } from "../pages/aprendeBancoPage/aprendeBancoPage.jsx"
 
 export const mainRoutes = [
     {
@@ -15,8 +16,8 @@ export const mainRoutes = [
     path: '/aprende', 
        element: <AprendePage></AprendePage>,
     },
- { path: '/aprende', 
-       element: <AprendePage></AprendePage>,
+ { path: '/aprende/banco', 
+       element: <AprendeBancoPage></AprendeBancoPage>,
     },
 
     
