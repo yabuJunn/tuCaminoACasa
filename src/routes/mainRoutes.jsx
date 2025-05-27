@@ -3,6 +3,7 @@ import { EnQueVoyPage } from "../pages/en-que-voy/enQueVoyPage.jsx"
 import { AprendePage } from "../pages/aprendePage/aprendePage.jsx"
 import { AprendeBancoPage } from "../pages/aprendeBancoPage/aprendeBancoPage.jsx"
 import { AprendeFirmaPage } from "../pages/aprendeFirmaPage/aprendeFirmaPage.jsx"
+import { AprendeRegistroPage } from "../pages/aprendeRegistroPage/aprendeRegistroPage.jsx"
 
 
 export const mainRoutes = [
@@ -24,6 +25,9 @@ export const mainRoutes = [
 
     { path: '/aprende/firma', 
        element: <AprendeFirmaPage></AprendeFirmaPage>,
+    },
+     { path: '/aprende/registro', 
+       element: <AprendeRegistroPage></AprendeRegistroPage>,
     },
     
 ]

@@ -2,7 +2,7 @@ import { AprendeFirmaBanner } from "../../components/aprendeFirmaBanner/aprendeF
 import { PuntosClaveFirma } from "../../components/puntosClaveFirma/puntosClaveFirma.jsx"
 import { TutorialesAprendeFirma } from "../../components/tutorialesAprendeFirma/tutorialesAprendeFirma.jsx"
 
-import { GlobalNavBar } from "../../components/GlobalNavBar/GlobalNavBar.jsx"
+import { GlobalNavBar } from "../../components/globalNavBar/globalNavBar.jsx"
 import { UpperNavButtons } from "../../components/upperNavButtons/upperNavButtons.jsx"
 
 
