@@ -1,8 +1,4 @@
-
-
-import { AprendeNoticiasBanner } from "../../components/aprendeNoticiasBanner/aprendeNoticiasBanner"
-
-export const descripcionNoticias = () => {
+export const DescripcionNoticias = () => {
     return<>
 
     <section className="aprendeNoticiasDescripcion">
