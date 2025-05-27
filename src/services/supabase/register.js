@@ -1,6 +1,10 @@
-export async function signUp(email, password, additionalData) {
+import { supabase } from "./supabaseKeys";
+
+export async function signUpSupabase(email, password, additionalData) {
+
+
     // Crear el usuario en Supabase Auth
-    const { user, error: signUpError } = await supabase.auth.signUp({
+    const { data, error: signUpError } = await supabase.auth.signUp({
         email,
         password,
     });
@@ -10,23 +14,36 @@ export async function signUp(email, password, additionalData) {
         return;
     }
 
-    // Insertar datos adicionales en la tabla `users`
+    const user = data?.user;
+
+    const cedula = parseInt(additionalData.cedula, 10);
+    const cellphone = parseInt(additionalData.cellphone, 10);
+
+    // Guardar el usuario recién creado
     const { error: insertError } = await supabase
         .from("users")
         .insert([
             {
-                id: user.id, // usa el mismo id del auth
+                id: user.id,
                 name: additionalData.name,
                 email,
-                cedula: additionalData.cedula,
-                cellphone: additionalData.cellphone,
+                cedula: isNaN(cedula) ? null : cedula,
+                cellphone: isNaN(cellphone) ? null : cellphone,
                 created_at: new Date().toISOString(),
             },
         ]);
 
     if (insertError) {
         console.error("Error guardando datos adicionales:", insertError.message);
+        return {
+            success: false,
+            message: "Error guardando datos adicionales: " + insertError.message,
+        };
     } else {
         console.log("¡Registro completo!");
+        return {
+            success: true,
+            message: "¡Registro completo!",
+        };
     }
 }

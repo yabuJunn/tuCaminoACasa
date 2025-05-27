@@ -1,6 +1,8 @@
-import { useState } from "react";
 import "./FormRegister.css";
+
+import { useState } from "react";
 import { NavigationHook } from "../../../hooks/navigationHook";
+import { signUpSupabase } from "../../../services/supabase/register";
 
 const FormRegister = () => {
     const { handleNavigation } = NavigationHook()
@@ -8,7 +10,7 @@ const FormRegister = () => {
     const [success, setSuccess] = useState("");
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const email = e.target.email.value;
@@ -21,25 +23,22 @@ const FormRegister = () => {
             return;
         }
 
-        const newUser = { email, password };
+        // Guardar el nuevo usuario
+        const signUpResponse = await signUpSupabase(email, password, {
+            name: e.target.name?.value || "", // Si tienes un campo de nombre
+            cedula: e.target.cedula?.value || null, // Si tienes un campo de cédula
+            cellphone: e.target.cellphone?.value || null // Si tienes un campo de celular
+        });
 
-        // Obtener usuarios existentes
-        const users = JSON.parse(localStorage.getItem("users")) || [];
-
-        // Verificar si el usuario ya existe
-        const userExists = users.some(user => user.email === email);
-        if (userExists) {
-            setError("Este email ya está registrado.");
+        if (!signUpResponse || !signUpResponse.success) {
+            setError(signUpResponse ? signUpResponse.message : "Error al crear la cuenta.");
             setSuccess("");
             return;
+        } else {
+            setSuccess(signUpResponse.message);
+            setError("");
+            handleNavigation.navigateToDashboard(); // Redirigir a la dashboard después del registro exitoso
         }
-
-        // Guardar el nuevo usuario
-        users.push(newUser);
-        localStorage.setItem("users", JSON.stringify(users));
-
-        setError("");
-        setSuccess("¡Registro exitoso!");
 
         // Limpiar el formulario
         e.target.reset();
