@@ -16,6 +16,8 @@ export const AprendeNoticiasPage = () => {
         <DescripcionNoticias></DescripcionNoticias>
         </div>
 
+        <div className=""></div>
+
         <img src={bannerAprendeNoticias} alt="bannerAprendeNoticias" />
         
 
