@@ -22,10 +22,6 @@ export const TutorialesAprendeEntrega = () => {
                     y cómo asegurar que todo esté en orden antes de recibir las llaves.  </p>
                 </div>
                 <button className="descargarGuia">Descargar Guía</button>
-
-                
-
-
                 
 
     </section>
