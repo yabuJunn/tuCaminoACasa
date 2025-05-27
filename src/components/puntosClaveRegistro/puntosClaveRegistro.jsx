@@ -22,8 +22,7 @@ export const PuntosClaveRegistro = () => {
                         <h3 className="cardPuntoTitleRegistro">Inscripción oficial</h3>
                         <p className="cardPuntoDescriptionRegistro">Firma final para formalizar tu crédito y avanzar hacia tu nueva vivienda. </p>
                         </div>
-       
-      
+    
     </section>
     </>
 }

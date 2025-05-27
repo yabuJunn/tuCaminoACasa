@@ -1,5 +1,6 @@
 import { AprendeRegistroBanner } from "../../components/aprendeRegsitroBanner/aprendeRegistroBanner"
 import { PuntosClaveRegistro } from "../../components/puntosClaveRegistro/puntosClaveRegistro"
+import { TutorialesAprendeRegistro } from "../../components/tutorialesAprendeRegistro/tutorialesAprendeRegistro"
 
 export const AprendeRegistroPage = () => {
     return<> 
@@ -11,13 +12,14 @@ export const AprendeRegistroPage = () => {
             <div className="bannerAprendeFirma">
             
             </div>
-            <h1 className="pageRegistroTitle">Firma de la escritura</h1>
+            <h1 className="pageRegistroTitle">Registro de la escritura</h1>
             <h2 className="puntosClaveRegistro">Puntos clave</h2>
             <PuntosClaveRegistro></PuntosClaveRegistro>
 
             <div className="cardsAprendeRegistro">
             
             <h2 className="tutorialesCardsRegistro">Tutoriales y recursos</h2>
+            <TutorialesAprendeRegistro></TutorialesAprendeRegistro>
     
     
     
