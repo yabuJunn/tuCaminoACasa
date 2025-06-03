@@ -1,0 +1,56 @@
+.puntosClaveGeneralCardsFirma {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  
+  .puntoClaveFirmaCard {
+    flex: 1 1 300px;
+    max-width: 370px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .puntoClaveFirmaCard:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .puntoClaveFirmaCard img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-bottom: 10px;
+  }
+  
+  .cardPuntoTitleFirma {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 12px 0;
+  }
+  
+  .cardPuntoDescriptionFirma {
+    font-size: 15px;
+    color: #4f4f4f;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

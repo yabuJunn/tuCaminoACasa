@@ -19,9 +19,11 @@ body {
 
 .puntosClave {
   margin-bottom: -25px;
+  font-weight:500;
 }
 
 .tutorialesCards {
   margin-left: 200px;
   margin-bottom: -25px;
+  font-weight:500;
 }

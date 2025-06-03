@@ -1,7 +1,7 @@
 import firmaIconOrange from "../../../assets/svg/aprendeScreen/svgIconsAprende/firmaIconOrange.svg"
 import glassesIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/glassesIcon.svg"
 import homeIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/homeIcon.svg"
-
+import "./puntosFirma.css"
 
 export const PuntosClaveFirma = () => {
     return <>
