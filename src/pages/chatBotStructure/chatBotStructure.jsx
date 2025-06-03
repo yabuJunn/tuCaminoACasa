@@ -1,8 +1,11 @@
 import {BotonesChat} from "../../components/botonesChatScreen/botonesChat.jsx"
+import ImhgChat from "../../assets/svg/chatBot/imgChat.svg"
 
 export const ChatBotStructure = () => {
   return (
     <div className="chatBotStructure">
+        <img src={ImhgChat} alt="Icono" className="ImhgChat" />    
+        
         <h5 className="date">Hoy 10:30 am</h5>
 
         <div className="mensaje">
