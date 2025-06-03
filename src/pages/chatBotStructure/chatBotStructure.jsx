@@ -1,3 +1,4 @@
+import {BotonesChat} from "../../components/botonesChatScreen/botonesChat.jsx"
 
 export const ChatBotStructure = () => {
   return (
@@ -9,7 +10,10 @@ export const ChatBotStructure = () => {
             <h1 className="preguntaMensaje">¿Cómo puedo ayudarte el día de hoy? </h1>
             <h2 className="descripcionMensaje">Obtén respuestas instantáneas sobre tu proyecto, documentos o comunícate con un asesor. </h2>
             <h4 className="dateMensaje">10:30 am</h4>
+            </div>
 
+            <div className="botonesComponent">
+                <BotonesChat></BotonesChat>
             </div>
 
 
