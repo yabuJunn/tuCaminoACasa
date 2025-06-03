@@ -2,7 +2,7 @@
     padding-top: 40px;
     padding-left: 20px;
     width: 280px;
-    margin-left: -70px;
+    margin-right: 60px;
 }
 
 .masNoticiasTituloSeccion {
@@ -20,8 +20,8 @@
 }
 
 .masNoticiaImagen img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 70px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 12px;
