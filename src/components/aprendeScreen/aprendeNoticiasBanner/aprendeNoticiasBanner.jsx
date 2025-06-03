@@ -1,23 +1,22 @@
 import iconBack from "../../../assets/svg/aprendeScreen/svgIconsAprende/iconBack.svg"
-import bannerRegistro from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerRegistro.svg"
-
+import bannerRegistro from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerNoticias.svg"
+import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import "./noticiasBanner.css"
 
 export const AprendeNoticiasBanner = () => {
-  return <>
-
+  return (
     <div className="bannerAprendeNoticias">
-      <img src={iconBack} alt="iconBack" />
+      <div className="bannerOverlayNoticias">
+        <div className="topBarNoticias">
+          <img src={iconBack} alt="Volver" className="backIconNoticias" />
+          <UpperNavButtons />
+        </div>
 
-      <img src={bannerRegistro} alt="bannerNoticias" />
-
-      <div className="breadCrumb">
-        <span className="page">Aprende</span>
-        <span className="separator">&gt;</span>
-        <span className="subPage">Noticias</span>
+        <div className="breadcrumbTextNoticias">
+          <span className="breadcrumb">Aprende &gt;</span>
+          <span className="titulo"> Noticias</span>
+        </div>
       </div>
-
     </div>
-
-
-  </>
+  )
 }

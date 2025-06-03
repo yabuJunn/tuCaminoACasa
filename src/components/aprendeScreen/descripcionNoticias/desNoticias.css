@@ -1,0 +1,44 @@
+.aprendeNoticiasDescripcion {
+    max-width: 820px;
+    padding: 40px 20px;
+    margin-left: 190px;
+}
+
+.fechaAprendeNoticias {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.pageNoticiasTitle {
+    font-size: 32px;
+    font-weight: 500;
+    color: #e60000; 
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.pageNoticiasSubtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.pageNoticiasDescripcion,
+.aprendeNoticiasDescripcion p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 26px;
+}
+
+.aprendeNoticiasDescripcion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 30px 0;
+}
