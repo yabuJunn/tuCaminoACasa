@@ -1,7 +1,7 @@
-import mensaje from "../../assets/svg/chatBot/mensaje.svg"
-import alert from "../../assets/svg/chatBot/alert.svg"
-import documentos from "../../assets/svg/chatBot/documentos.svg"
-import asesor from "../../assets/svg/chatBot/asesor.svg"
+import mensaje from "../../../assets/svg/chatBot/mensaje.svg"
+import alert from "../../../assets/svg/chatBot/alert.svg"
+import documentos from "../../../assets/svg/chatBot/documentos.svg"
+import asesor from "../../../assets/svg/chatBot/asesor.svg"
 
 export const BotonesChat =()=>{
     return(

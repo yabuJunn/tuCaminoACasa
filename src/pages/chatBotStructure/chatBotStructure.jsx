@@ -1,4 +1,5 @@
-import {BotonesChat} from "../../components/botonesChatScreen/botonesChat.jsx"
+import {BotonesChat} from "../../components/botonesChatScreen/botonesChat/botonesChat.jsx"
+import { EnviarInput } from "../../components/botonesChatScreen/enviarInput/enviarInput.jsx"
 import ImhgChat from "../../assets/svg/chatBot/imgChat.svg"
 
 export const ChatBotStructure = () => {
@@ -17,6 +18,10 @@ export const ChatBotStructure = () => {
 
             <div className="botonesComponent">
                 <BotonesChat></BotonesChat>
+            </div>
+
+            <div className="enviarComponent">
+                <EnviarInput></EnviarInput>
             </div>
 
 
