@@ -5,8 +5,6 @@ import tercera from "../../assets/masNoticiasImgs/tercera.svg"
 import cuarta from "../../assets/masNoticiasImgs/cuarta.svg"
 
 
-
-
 export const MasNoticiasAprende = () => {
     return<>
 
