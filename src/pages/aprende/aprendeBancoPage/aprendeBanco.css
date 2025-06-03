@@ -1,18 +1,27 @@
 body {
     font-family: Archivo;
 }
+
 .bancoInfoExtra {
   margin-left: 200px;
-}
-
-.bannerAprendeBanco {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  z-index: 0;
 }
 
 .globalNavBarBanco {
   position: relative;
   z-index: 6;
+}
+
+.pageTitle {
+  color: #FF0100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.puntosClave {
+  margin-bottom: -25px;
+}
+
+.tutorialesCards {
+  margin-left: 200px;
+  margin-bottom: -25px;
 }
