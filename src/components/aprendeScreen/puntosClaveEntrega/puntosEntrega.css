@@ -1,0 +1,51 @@
+.puntosClaveGeneralCardsEntrega {
+    display: flex;
+    gap: 24px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 160px;
+  }
+  
+  .puntoClaveEntregaCard {
+    flex: 1;
+    min-width: 280px;
+    max-width: 330px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .puntoClaveEntregaCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .puntoClaveEntregaCard img {
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+  
+  .cardPuntoTitleEntrega {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f0f0f;
+    margin: 0 0 8px 0;
+  }
+  
+  .cardPuntoDescriptionEntrega {
+    font-size: 16px;
+    color: #535862;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
