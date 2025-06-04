@@ -1,0 +1,49 @@
+.botonesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+  
+  .mensajeButton, .alertButton, .documentosButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d0d4da;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: white;
+    color: #111;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .botonesContainer button img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .asesorBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d0d4da;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .mensajeButton:hover, .alertButton:hover, .documentosButton:hover {
+    background-color: #f3f4f6;
+  }
+ 
+  .asesorBtn:hover {
+    background-color: #3e3e3e;
+  }

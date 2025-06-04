@@ -1,11 +1,10 @@
 import "./aprendePage.css"
-
 import { AprendeHeader } from "../../../components/aprendeScreen/aprendeHeader/aprendeHeader"
 import { ArticulosSection } from "../../../components/aprendeScreen/articulos/articulos"
 import { CardsGuia } from "../../../components/aprendeScreen/cardsGuia/cardsGuia"
-
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
 import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import { BotComponente } from "../../../components/botonesChatScreen/botComponente/botComponente"
 
 export const AprendePage = () => {
   return <>
@@ -35,6 +34,7 @@ export const AprendePage = () => {
 
       </div >
 
+<BotComponente/>
     </section >
   </>
 }

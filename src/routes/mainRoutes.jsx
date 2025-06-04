@@ -82,5 +82,5 @@ export const mainRoutes = [
         path: "/PQRs",
         element: <PQRs></PQRs>,
 
-    },
+    }
 ]
