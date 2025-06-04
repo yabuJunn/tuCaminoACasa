@@ -1,0 +1,29 @@
+body {
+    font-family: Archivo;
+}
+
+.noticiasInfoExtra {
+    margin-left: 230px;
+    margin-top: 310px;
+}
+
+.noticiasInfoExtra {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.descripcionNoticias {
+    flex: 0 0 55%;
+}
+
+.masNoticiasSesion {
+    flex: 0 0 40%;
+}
+
+.noticiasImg{
+    height: 365px;
+    padding-left: 15vw;
+}

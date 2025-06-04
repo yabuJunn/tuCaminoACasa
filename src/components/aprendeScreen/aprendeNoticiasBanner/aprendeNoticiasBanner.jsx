@@ -1,5 +1,6 @@
 import iconBack from "../../../assets/svg/aprendeScreen/svgIconsAprende/iconBack.svg"
 import bannerRegistro from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerRegistro.svg"
+import "./aprendeNoticiasBanner.css"
 
 
 export const AprendeNoticiasBanner = () => {

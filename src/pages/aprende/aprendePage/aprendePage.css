@@ -1,21 +1,16 @@
 body {
     font-family: Archivo;
 }
-.headerSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; 
-  }
   
   .aprendeMargin {
-    margin-left: 210px;
+    margin-left: 230px;
   }
 
 .aprendeTitle {
     font-size: 20px;
     font-weight: semibold;
-    margin-top: -20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .guiaSection {
@@ -23,5 +18,5 @@ body {
   }
 
   .articulosSection {
-    margin-top: -30px;
+  margin-bottom: -60px;
   }

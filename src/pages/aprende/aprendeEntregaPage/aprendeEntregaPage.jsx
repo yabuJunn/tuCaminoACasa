@@ -4,6 +4,7 @@ import { TutorialesAprendeEntrega } from "../../../components/aprendeScreen/tuto
 
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
 import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import "./aprenderEntregaPage.css"
 
 export const AprendeEntregaPage = () => {
     return <>
@@ -16,6 +17,8 @@ export const AprendeEntregaPage = () => {
 
 
             </div>
+
+            <div className="entregaInfoExtra">
             <h1 className="pageEntregaTitle">Entrega del inmueble</h1>
             <h2 className="puntosClaveEntrega">Puntos clave</h2>
             <PuntosClaveEntrega></PuntosClaveEntrega>
@@ -26,6 +29,7 @@ export const AprendeEntregaPage = () => {
 
 
 
+            </div>
             </div>
 
         </section>

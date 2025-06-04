@@ -1,3 +1,5 @@
+import "./descripcionNoticias.css"
+
 export const DescripcionNoticias = () => {
     return <>
 

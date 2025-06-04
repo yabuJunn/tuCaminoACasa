@@ -1,14 +1,14 @@
-.aprendeBancoPage {
+.bannerAprendeNoticias {
   position: absolute;
   top: 0;
-  left: 13vw; 
+  left: 6.5vw; 
   height: 150px;
   object-fit: cover;
   z-index: 0;
   }
 
   
-  .bannerAprendeBanco > img[alt="iconBack"] {
+  .bannerAprendeNoticias > img[alt="iconBack"] {
     position: absolute;
     top: 20px;
     left: 40px;

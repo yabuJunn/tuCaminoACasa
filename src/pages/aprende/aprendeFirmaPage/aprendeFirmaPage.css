@@ -2,11 +2,12 @@ body {
     font-family: Archivo;
 }
 
-.bancoInfoExtra {
-  margin-left: 40px;
+.firmaInfoExtra {
+    margin-left: 230px;
+    margin-top: 310px;
 }
 
-.pageTitle {
+.pageFirmaTitle {
   color: red;
   font-size: 30px;
   font-weight: 600;
@@ -14,14 +15,14 @@ body {
   line-height: 38px;
 }
 
-.puntosClave {
+.puntosClaveFirma {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   margin-top: 30px;
 }
 
-.tutorialesCards{
+.tutorialesCardsFirma{
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
