@@ -15,15 +15,16 @@
 }
 
 .completado {
-    width: fit-content;
+    width: 60px;
+    height: 8px;
     padding: 8.5px;
     color: white;
+    font-size: 10px;
     background-color: #01C764;
     border-radius: 23.176px;
 }
 
 .generalStructureDescription {
-    row-gap: 6px;
     display: flex;
     flex-direction: column;
     border: 1px solid #DDDEE1;
@@ -33,9 +34,17 @@
     border-radius: 18px;
 }
 
-.title {
-    font-size: 18px;
+.description{
+    font-size: 14px;
     font-style: normal;
+    color: #535862;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 16px;
+    font-style: normal;
+    color: #01C764;
     font-weight: 600;
 }
 
@@ -47,6 +56,7 @@
     gap: 25px;
     border: 1px solid #D5D7DA;
     border-radius: 28px;
+    margin-top: 30px;
 }
 
 line {
@@ -70,6 +80,6 @@ hr {
 
 .descriptionColumn {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-direction: column;
 }
