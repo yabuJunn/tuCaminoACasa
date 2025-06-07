@@ -1,11 +1,11 @@
 // components/documentsScreen/foreignModal/ForeignModal.jsx
-import React, { useState } from 'react';
-import './foreignModal.css'; // si usas CSS separado
+import React, { useState } from "react";
+import "./foreignModal.css"; // si usas CSS separado
 
 const ForeignModal = ({ onClose, onSubmit }) => {
-  const [country, setCountry] = useState('');
-  const [visaType, setVisaType] = useState('');
-  const [entryDate, setEntryDate] = useState('');
+  const [country, setCountry] = useState("");
+  const [visaType, setVisaType] = useState("");
+  const [entryDate, setEntryDate] = useState("");
   const [additionalFile, setAdditionalFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -17,12 +17,12 @@ const ForeignModal = ({ onClose, onSubmit }) => {
       onSubmit({ country, visaType, entryDate, additionalFile });
       onClose();
     } else {
-      alert('Por favor, completa todos los campos obligatorios.');
+      alert("Por favor, completa todos los campos obligatorios.");
     }
   };
 
   return (
-    <div className="modal-overlay">
+    <section id="modal-overlay">
       <div className="modal foreign-modal">
         <h2>Información para usuarios extranjeros</h2>
         <label>
@@ -51,14 +51,18 @@ const ForeignModal = ({ onClose, onSubmit }) => {
         </label>
         <label>
           Documento adicional:
-          <input type="file" onChange={handleFileChange} />
+          <label htmlFor="fileUpload" className="file-upload-label">
+            Seleccionar archivo
+          </label>
+          <input type="file" id="fileUpload" onChange={handleFileChange} />
         </label>
+
         <div className="modal-actions">
           <button onClick={onClose}>Cancelar</button>
           <button onClick={handleSubmit}>Enviar</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,6 +3,7 @@ import './completionModal.css';
 
 const CompletionModal = ({ onClose, onNext }) => {
   return (
+    <section id="completion-modal">
     <div className="upload-modal">
       <div className="popup-content">
         <h2>¡Documentación completa!</h2>
@@ -13,6 +14,7 @@ const CompletionModal = ({ onClose, onNext }) => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

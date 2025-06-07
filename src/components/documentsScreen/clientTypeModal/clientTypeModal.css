@@ -1,0 +1,69 @@
+/* Fondo oscuro que cubre toda la pantalla */
+#client-type-modal .upload-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* asegúrate de que esté por encima */
+}
+
+/* Contenedor del popup */
+#client-type-modal .popup-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Botones */
+#client-type-modal .option-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+#client-type-modal .upload-btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: #161918;
+  border: 1px solid #161918;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+/* Hover y clic */
+#client-type-modal .upload-btn:hover,
+#client-type-modal .upload-btn:active {
+  background-color: #161918;
+  color: white;
+}
+
+/* Botón de cerrar */
+#client-type-modal .close-button,
+#client-type-modal .close-icon {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #161918;
+  font-weight: bold;
+}
+
+#client-type-modal .close-button:hover,
+#client-type-modal .close-icon:hover {
+  color: #000;
+}

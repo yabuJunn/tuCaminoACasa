@@ -1,0 +1,277 @@
+/* Modal Overlay */
+#upload-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Popup content */
+#upload-modal .popup-content {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Alínea todo a la izquierda */
+}
+
+/* Close button */
+#upload-modal .close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+#upload-modal .close-button:hover {
+  color: #161918;
+}
+
+/* Header with icon and title, aligned left with bottom border */
+#upload-modal .upload-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  justify-content: flex-start;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Smaller icon */
+#upload-modal .upload-header img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Text container in header */
+#upload-modal .upload-header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Header main title */
+#upload-modal .upload-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161918;
+  margin: 0;
+}
+
+/* Header subtitle */
+#upload-modal .upload-header p {
+  font-size: 12px;
+  margin: 0;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Document title smaller and aligned left without background */
+#upload-modal .doc-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #161918;
+  margin: 12px 0 8px 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Instructions */
+#upload-modal .upload-instructions {
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 16px 0;
+  color: #555;
+  text-align: left;
+}
+
+/* File picker area */
+#upload-modal .file-picker-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fafafa;
+  padding: 14px 20px;
+  border: 2px dashed #161918;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  justify-content: center;
+  position: relative;
+  color: #161918;
+  font-weight: 600;
+  user-select: none;
+}
+
+#upload-modal .file-picker-area:hover {
+  background-color: #f5eaff;
+  border-color: #161918;
+}
+
+#upload-modal .file-picker-area input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#upload-modal .file-picker-area label {
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1;
+}
+
+/* File list */
+#upload-modal .file-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#upload-modal .file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+#upload-modal .file-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+#upload-modal .pdf-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Remove file button */
+#upload-modal .remove-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #161918;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+#upload-modal .remove-btn:hover {
+  color: #161918;
+}
+
+/* Progress bar */
+#upload-modal .progress-bar {
+  background: #2a2a2a;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.7);
+}
+
+#upload-modal .progress-bar.small {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+  flex: 1;
+}
+
+#upload-modal .progress-fill {
+  height: 100%;
+  background: #161918;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 4px #16191899;
+}
+
+
+/* Buttons */
+#upload-modal .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+#upload-modal .buttons button {
+  padding: 10px 24px;
+  border-radius: 24px;
+  border: 1px solid #161918;
+  background-color: white;
+  color: #161918;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#upload-modal .buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#upload-modal .buttons button:hover:not(:disabled),
+#upload-modal .buttons button:active:not(:disabled) {
+  background-color: #161918;
+  color: white;
+}
+
+.upload-header.left {
+  justify-content: flex-start;
+  text-align: left;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.upload-header.left h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #161918;
+}
+
+.upload-header.left p {
+  font-size: 12px;
+  color: #555;
+  margin: 4px 0 0;
+}
+
+.doc-title.small-left {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+  text-align: left;
+  color: #222;
+  margin-bottom: 12px;
+}
