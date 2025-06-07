@@ -1,0 +1,10 @@
+.documentsPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 1.5rem 1.5rem 1.5rem 14.5rem;
+    width: calc(100% - 14.5rem - 3rem);    
+    box-sizing: border-box;
+  }
