@@ -53,8 +53,8 @@
   margin-top: 16px;
 }
 
-input[type="email"],
-input[type="password"] {
+#login-box input[type="email"],
+#login-box input[type="password"] {
   padding: 12px 16px;
   border: 1px solid #dddee1;
   border-radius: 16px;
@@ -69,7 +69,7 @@ input[type="password"] {
   margin-top: 0px;
 }
 
-#email {
+#login-box #email {
   color: var(--Neutral-colors-500, #717680);
   font-family: "Archivo", sans-serif;
   font-size: 12px;
@@ -79,10 +79,10 @@ input[type="password"] {
   /* 150% */
 }
 
-#contraseña {
+#login-box #contraseña {
   color: var(--Neutral-colors-500, #717680);
   font-family: "Archivo", sans-serif;
-  font-size: 12px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -90,13 +90,13 @@ input[type="password"] {
   margin-top: 34px;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus {
+#login-box input[type="email"]:focus,
+#login-boxinput[type="password"]:focus {
   outline: none;
   border-color: #717680;
 }
 
-#submit-button {
+#login-box #submit-button {
   border-radius: 32px;
   background: var(--Primary-color-Black, #18181b);
   display: flex;
@@ -117,20 +117,20 @@ input[type="password"]:focus {
   margin-top: 24px;
 }
 
-.signup-link {
+#login-box .signup-link {
   font-size: 13px;
   text-align: center;
   color: #717680;
   margin-top: 12px;
 }
 
-.signup-link a {
+#login-box .signup-link a {
   font-weight: 600;
   color: #000;
   text-decoration: none;
 }
 
-#email-group {
+#login-box #email-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -138,7 +138,7 @@ input[type="password"]:focus {
   align-self: stretch;
 }
 
-#password-group {
+#login-box #password-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -146,7 +146,7 @@ input[type="password"]:focus {
   align-self: stretch;
 }
 
-#forgot-password-link {
+#login-box #forgot-password-link {
   color: var(--Neutral-colors-500, #717680);
   text-align: right;
   font-family: "Archivo", sans-serif;
@@ -163,7 +163,7 @@ input[type="password"]:focus {
   color: var(--Primary-color-Black, #000000);
 }
 
-#signup-paragraph {
+#login-box #signup-paragraph {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +177,7 @@ input[type="password"]:focus {
   margin-top: 2%;
 }
 
-#signup-paragraph a {
+#login-box #signup-paragraph a {
   text-decoration: none;
   color: var(--Primary-color-Black, #000000);
   cursor: pointer;

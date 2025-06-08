@@ -8,3 +8,9 @@
   height: 100vh;
   object-fit: cover;
 }
+
+#registerPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

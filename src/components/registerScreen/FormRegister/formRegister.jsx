@@ -46,7 +46,7 @@ const FormRegister = () => {
 
     return (
         <div id="registerForm">
-            <h1 id="register-title">¡Regístrate ahora!</h1>
+            {/* <h1 id="register-title">¡Regístrate ahora!</h1> */}
             <div id="register-box">
                 <h2 id="register-heading" className="register-heading">Crear una cuenta</h2>
                 <p id="register-description">Ingresa tus datos para crear una cuenta</p>
@@ -54,15 +54,27 @@ const FormRegister = () => {
                 <form id="register-form" onSubmit={handleSubmit}>
                     <div id="email-group">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required placeholder="Ingresa tu email" />
+                    </div>
+                    <div id="name-group">
+                        <label htmlFor="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre" />
+                    </div>
+                    <div id="phone-group">
+                        <label htmlFor="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Ingresa tu teléfono" />
+                    </div>
+                    <div id="id-group">
+                        <label htmlFor="id">Cédula</label>
+                        <input type="text" id="id" name="id" required placeholder="Ingresa tu cédula" />
                     </div>
                     <div id="password-group">
                         <label htmlFor="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña" />
                     </div>
                     <div id="confirm-password-group">
                         <label htmlFor="password-confirm">Confirmar contraseña</label>
-                        <input type="password" id="password-confirm" name="password-confirm" required />
+                        <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirma tu contraseña" />
                     </div>
                     <button type="submit" id="register-button">Registrarse</button>
                 </form>

@@ -9,7 +9,7 @@ const RegisterScreen = () => {
         <>
             <main className='page' id='registerPage'>
                 <img id="fondoRegister" src={FondoRegister} alt="Fondo-LoginRegister" />
-                <LogosInicio></LogosInicio>
+                {/* <LogosInicio></LogosInicio> */}
                 <FormRegister></FormRegister>
             </main>
         </>
