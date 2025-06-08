@@ -51,7 +51,7 @@
 #register-box #email-group,
 #register-box #id-group,
 #register-box #name-group,
-#register-box #phone-group,
+#register-box #cellphone-group,
 #register-box #password-group,
 #register-box #confirm-password-group {
   display: flex;

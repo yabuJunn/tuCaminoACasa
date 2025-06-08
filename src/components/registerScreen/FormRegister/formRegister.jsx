@@ -60,9 +60,9 @@ const FormRegister = () => {
                         <label htmlFor="name">Nombre</label>
                         <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre" />
                     </div>
-                    <div id="phone-group">
-                        <label htmlFor="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="Ingresa tu teléfono" />
+                    <div id="cellphone-group">
+                        <label htmlFor="cellphone">Teléfono</label>
+                        <input type="tel" id="cellphone" name="cellphone" required placeholder="Ingresa tu teléfono" />
                     </div>
                     <div id="id-group">
                         <label htmlFor="id">Cédula</label>

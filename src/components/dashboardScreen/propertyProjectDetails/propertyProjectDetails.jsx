@@ -38,14 +38,12 @@ export const PropertyProjectDetails = () => {
             <p>Área privada construida total {projectMock.size}</p>
 
             <div id="propertyProjectDetailsDescription">
-                {projectMock.elements.map((element) => {
-                    return <>
-                        <div className="propertyProjectDetailsDescriptionElement">
-                            <img src={starListIcon} alt="" />
-                            <p>{element}</p>
-                        </div>
-                    </>
-                })}
+                {projectMock.elements.map((element, index) => (
+                    <div className="propertyProjectDetailsDescriptionElement" key={`${element}-${index}`}>
+                        <img src={starListIcon} alt="" />
+                        <p>{element}</p>
+                    </div>
+                ))}
             </div>
         </div>
     </>

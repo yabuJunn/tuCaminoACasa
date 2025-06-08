@@ -38,45 +38,40 @@ export const GeneralPropertyTimeline = () => {
             <h2>{"Progreso del proyecto >"}</h2>
 
             <div id="generalPropertyTimelineContent">
-                {
-                    projectStateMock.map((stage) => {
-                        if (stage.completed) {
-                            return <>
-                                <div className="generalPropertyTimeLineStage completed" key={stage.id}>
-                                    <div className="generalPropertyTimeLineStageCircle">
-                                        <img src={checkIcon} alt={checkIcon} />
-                                    </div>
+                {projectStateMock.map((stage) => {
+                    const isFirstIncomplete = firstNotCompletedIndex === stage.id;
 
-                                    <p>{stage.title}</p>
+                    if (stage.completed) {
+                        return (
+                            <div className="generalPropertyTimeLineStage completed" key={stage.id}>
+                                <div className="generalPropertyTimeLineStageCircle">
+                                    <img src={checkIcon} alt="checkIcon" />
                                 </div>
-                            </>
-                        }
+                                <p>{stage.title}</p>
+                            </div>
+                        );
+                    }
 
-                        if (stage.completed === false) {
-                            if (firstNotCompletedIndex === stage.id) {
-                                return <>
-                                    <div className="generalPropertyTimeLineStage firstNotCompleted" key={stage.id}>
-                                        <div className="generalPropertyTimeLineStageCircle">
-                                            <p>{stage.id + 1}</p>
-                                        </div>
+                    if (!stage.completed && isFirstIncomplete) {
+                        return (
+                            <div className="generalPropertyTimeLineStage firstNotCompleted" key={stage.id}>
+                                <div className="generalPropertyTimeLineStageCircle">
+                                    <p>{stage.id + 1}</p>
+                                </div>
+                                <p>{stage.title}</p>
+                            </div>
+                        );
+                    }
 
-                                        <p>{stage.title}</p>
-                                    </div>
-                                </>
-                            } else {
-                                return <>
-                                    <div className="generalPropertyTimeLineStage notCompleted" key={stage.id}>
-                                        <div className="generalPropertyTimeLineStageCircle">
-                                            <p>{stage.id + 1}</p>
-                                        </div>
-
-                                        <p>{stage.title}</p>
-                                    </div>
-                                </>
-                            }
-                        }
-                    })
-                }
+                    return (
+                        <div className="generalPropertyTimeLineStage notCompleted" key={stage.id}>
+                            <div className="generalPropertyTimeLineStageCircle">
+                                <p>{stage.id + 1}</p>
+                            </div>
+                            <p>{stage.title}</p>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     </>

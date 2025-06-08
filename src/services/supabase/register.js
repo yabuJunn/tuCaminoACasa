@@ -19,6 +19,9 @@ export async function signUpSupabase(email, password, additionalData) {
     const cedula = parseInt(additionalData.cedula, 10);
     const cellphone = parseInt(additionalData.cellphone, 10);
 
+    console.log(cedula);
+    
+
     // Guardar el usuario recién creado
     const { error: insertError } = await supabase
         .from("users")
