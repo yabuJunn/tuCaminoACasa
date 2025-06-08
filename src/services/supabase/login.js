@@ -1,17 +1,20 @@
 import { supabase } from "./supabaseKeys";
 
 export async function signIn(email, password) {
-    const { user, error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
     });
 
-    if (error) {
-        console.error("Error iniciando sesión:", error.message);
-    } else {
-        console.log("Inicio de sesión exitoso:", user);
-    }
+    console.log(data, error);
+
+
+    return {
+        user: data?.user || null,
+        error,
+    };
 }
+
 
 export async function getUserData() {
     const {

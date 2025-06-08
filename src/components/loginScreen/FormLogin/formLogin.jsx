@@ -1,44 +1,52 @@
 import "./formLogin.css";
-
 import { useState } from "react";
 import { NavigationHook } from "../../../hooks/navigationHook";
+import { signIn, getUserData } from "../../../services/supabase/login";
 
 const FormLogin = () => {
-    const { handleNavigation } = NavigationHook()
+    const { handleNavigation } = NavigationHook();
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        const users = JSON.parse(localStorage.getItem("users")) || [];
+        console.log(email, password);
 
-        const foundUser = users.find(user => user.email === email && user.password === password);
 
-        if (foundUser) {
+        // Autenticación con Supabase
+        const { user, error } = await signIn(email, password);
+
+        if (error || !user) {
+            setError(`Correo o contraseña incorrectos: ${error?.message || "Error desconocido"}`);
+            setSuccess("");
+            return;
+        }
+
+        // Obtener datos extra del usuario
+        const userData = await getUserData();
+
+        if (userData) {
             setSuccess("Inicio de sesión exitoso.");
             setError("");
 
-            // Puedes guardar en localStorage que el usuario inició sesión
-            localStorage.setItem("currentUser", JSON.stringify(foundUser));
-
-            // Limpiar formulario
-            e.target.reset();
-            handleNavigation.navigateToDashboard()
+            handleNavigation.navigateToDashboard();
         } else {
-            setError("Correo o contraseña incorrectos.");
+            setError("No se pudo obtener la información del usuario.");
             setSuccess("");
         }
+
+        e.target.reset();
     };
 
     return (
         <div id="loginForm">
             <h1 id="login-title">¡Bienvenido de nuevo!</h1>
             <div id="login-box">
-                <h2 id="login-heading" className="login-heading">Iniciar sesión</h2>
+                <h2 className="login-heading">Iniciar sesión</h2>
                 <p id="login-description">Ingresa tus datos para acceder a tu cuenta</p>
 
                 <form id="login-form" onSubmit={handleSubmit}>
@@ -57,7 +65,9 @@ const FormLogin = () => {
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 {success && <p style={{ color: "green" }}>{success}</p>}
 
-                <p id="signup-paragraph">¿Aun no tienes una cuenta? <a onClick={handleNavigation.navigateToRegister}>Regístrate ahora</a></p>
+                <p id="signup-paragraph">
+                    ¿Aun no tienes una cuenta? <a onClick={handleNavigation.navigateToRegister}>Regístrate ahora</a>
+                </p>
             </div>
         </div>
     );
