@@ -1,10 +1,12 @@
 html, body, * {
   font-family: 'Archivo', sans-serif !important;
+  
 }
 #pqr-wrapper {
   padding-left: 200px;
   box-sizing: border-box;
   margin-top: 1%;
+  
 }
 
 #PQRsHeader {
@@ -75,7 +77,6 @@ html, body, * {
   border: 1px solid #D1D5DB;
   border-radius: 24px;
   padding: 24px;
-  display: flex;
   flex-direction: column;
   gap: 24px;
   box-sizing: border-box;
@@ -153,9 +154,6 @@ html, body, * {
   color: #6B7280;
 }
 
-.PQRsInputWrapper {
-  position: relative;
-}
 
 #PQRsFormButton {
   margin-top: 16px;
@@ -182,4 +180,9 @@ html, body, * {
   cursor: pointer;
   padding: 14px 40px;
   width: fit-content;
+}
+
+html, body {
+  position: fixed;
+  width: 100%;
 }
