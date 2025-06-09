@@ -4,6 +4,7 @@ import { MasNoticiasAprende } from "../../../components/aprendeScreen/masNoticia
 
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
 import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import "./aprendeNoticiasPage.css"
 
 
 import bannerAprendeNoticias from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerAprendeNoticias.svg"
@@ -21,15 +22,17 @@ export const AprendeNoticiasPage = () => {
                 <AprendeNoticiasBanner></AprendeNoticiasBanner>
             </div>
 
-            <div className="descripcionNoticias">
-                <DescripcionNoticias></DescripcionNoticias>
+            <div className="noticiasInfoExtra">
+                <div className="descripcionNoticias">
+                    <DescripcionNoticias></DescripcionNoticias>
+                </div>
+
+                <div className="masNoticiasSesion">
+                    <MasNoticiasAprende></MasNoticiasAprende>
+                </div>
             </div>
 
-            <div className="masNoticiasSesion">
-                <MasNoticiasAprende></MasNoticiasAprende>
-            </div>
-
-            <img src={bannerAprendeNoticias} alt="bannerAprendeNoticias" />
+            <img className="noticiasImg" src={bannerAprendeNoticias} alt="bannerAprendeNoticias" />
 
 
 

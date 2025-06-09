@@ -1,10 +1,11 @@
 import iconBack from "../../../assets/svg/aprendeScreen/svgIconsAprende/iconBack.svg"
 import bannerEntrega from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerEntrega.svg"
+import "./aprendeEntregaBanner.css"
 
 export const AprendeEntregaBanner = () => {
   return <>
 
-    <div className="bannerAprendeFirma">
+    <div className="bannerEntregaFirma">
       <img src={iconBack} alt="iconBack" />
 
       <img src={bannerEntrega} alt="bannerFirma" />

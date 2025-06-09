@@ -1,0 +1,42 @@
+.puntosClaveGeneralCards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  font-family: Archivo;
+}
+
+.puntoClaveCard {
+  background-color: #fff;
+  border: 1px solid #dddee1;
+  border-radius: 20px;
+  padding: 20px 14px;
+  width: 350px;
+  height: 160px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.puntoClaveCard img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.cardPuntoTitle {
+  font-size: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  color: #1d1d1d;
+
+}
+
+.cardPuntoDescription {
+  font-size: 16px;
+  padding-top: 20px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

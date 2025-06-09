@@ -1,4 +1,4 @@
-.aprendeBancoPage {
+.bannerAprendeFirma {
   position: absolute;
   top: 0;
   left: 13vw; 
@@ -8,7 +8,7 @@
   }
 
   
-  .bannerAprendeBanco > img[alt="iconBack"] {
+  .bannerAprendeFirma > img[alt="iconBack"] {
     position: absolute;
     top: 20px;
     left: 40px;

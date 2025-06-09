@@ -1,0 +1,41 @@
+.puntosClaveGeneralCardsRegistro {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  font-family: Archivo;
+}
+
+.puntoClaveRegistroCard {
+  background-color: #fff;
+  border: 1px solid #dddee1;
+  border-radius: 20px;
+  padding: 20px 14px;
+  width: 350px;
+  height: 180px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.puntoClaveRegistroCard img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.cardPuntoTitleRegistro {
+  font-size: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  color: #1d1d1d;
+}
+
+.cardPuntoDescriptionRegistro {
+  font-size: 16px;
+  padding-top: 20px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

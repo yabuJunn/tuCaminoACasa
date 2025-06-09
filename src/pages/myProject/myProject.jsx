@@ -6,13 +6,16 @@ import { ProjectMap } from "../../components/myProjectScreen/ProjectMap/ProjectM
 import { CommonAreas } from "../../components/myProjectScreen/CommonAreas/CommonAreas";
 import { ProjectDetails } from "../../components/myProjectScreen/ProjectDetails/ProjectDetails";
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
+import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
 
 export function MyProject() {
   return (
     <div>
       <GlobalNavBar />
       <div className="my-project">
+
         <Header />
+        <UpperNavButtons />
         <main className="content">
           <ProjectDescription />
           <CommonAreas />

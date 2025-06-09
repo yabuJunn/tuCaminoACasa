@@ -1,0 +1,36 @@
+.fechaAprendeNoticias {
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    color: #717680;
+}
+
+.pageNoticiasTitle {
+    font-family: Archivo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    color: red;
+    padding-top: 10px;
+}
+
+.pageNoticiasSubtitle{
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.pageNoticiasDescripcion{
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+}

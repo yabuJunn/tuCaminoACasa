@@ -4,6 +4,7 @@ import { TutorialesAprendeRegistro } from "../../../components/aprendeScreen/tut
 
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
 import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import "./aprendeRegistroPage.css"
 
 export const AprendeRegistroPage = () => {
     return <>
@@ -16,8 +17,9 @@ export const AprendeRegistroPage = () => {
 
             <AprendeRegistroBanner></AprendeRegistroBanner>
             <div className="bannerAprendeFirma">
-
             </div>
+
+            <div className="registroInfoExtra">
             <h1 className="pageRegistroTitle">Registro de la escritura</h1>
             <h2 className="puntosClaveRegistro">Puntos clave</h2>
             <PuntosClaveRegistro></PuntosClaveRegistro>
@@ -29,6 +31,7 @@ export const AprendeRegistroPage = () => {
 
 
 
+            </div>
             </div>
         </section>
 
