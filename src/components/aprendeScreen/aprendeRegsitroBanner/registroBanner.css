@@ -1,4 +1,4 @@
-.bannerAprendeFirma {
+.bannerAprendeRegistro {
     position: relative;
     width: 100%;
     height: 200px;
@@ -8,7 +8,7 @@
     overflow: hidden;
   }
   
-  .bannerFirmaOverlay {
+  .bannerOverlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
     box-sizing: border-box;
   }
   
-  .firmaTopBar {
+  .topBar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -30,13 +30,13 @@
     z-index: 2;
   }
   
-  .firmaBackIcon {
+  .backIcon {
     width: 44px;
     height: 44px;
     cursor: pointer;
   }
   
-  .firmaBreadcrumbText {
+  .breadcrumbText {
     font-size: 16px;
     margin-left: 185px;
     color: white;

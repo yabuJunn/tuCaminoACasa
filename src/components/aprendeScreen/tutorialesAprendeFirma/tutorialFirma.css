@@ -1,0 +1,65 @@
+.tutorialesFirmaGeneralCards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    margin-left: -230px;
+    margin-top: -30px;
+  }
+  
+  .tutorialesFirmaCard {
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 430px;
+    position: relative;
+  }
+  
+  .tutorialesFirmaCard img {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-left: -15px;
+  }
+  
+  .video,
+  .documentoGuía {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin: 0;
+  }
+  
+  .cardTutorialTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+    color: #111827;
+  }
+  
+  .cardTutorialDescription {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  .verAhora,
+  .descargarGuia {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid #e5e7eb;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .verAhora:hover,
+  .descargarGuia:hover {
+    background-color: #f3f4f6;
+  }
+  

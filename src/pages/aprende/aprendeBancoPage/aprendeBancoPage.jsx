@@ -4,7 +4,6 @@ import { AprendeBancoBanner } from "../../../components/aprendeScreen/aprendeBan
 import { PuntosClaveBanco } from "../../../components/aprendeScreen/puntosClaveBanco/puntosClaveBanco"
 import { TutorialesAprendeBanco } from "../../../components/aprendeScreen/tutorialesAprendeBanco/tutorialesAprendeBanco"
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
-import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
 
 export const AprendeBancoPage = () => {
     return <>
@@ -25,14 +24,12 @@ export const AprendeBancoPage = () => {
                 <h2 className="puntosClave">Puntos clave</h2>
                 <div className="cardsAprendeBanco">
                     <PuntosClaveBanco></PuntosClaveBanco>
-
-                    <h2 className="tutorialesCards">Tutoriales y recursos</h2>
-                    <TutorialesAprendeBanco></TutorialesAprendeBanco>
                 </div>
-
 
             </div>
 
+            <h2 className="tutorialesCards">Tutoriales y recursos</h2>
+            <TutorialesAprendeBanco></TutorialesAprendeBanco>
         </section >
     </>
 }

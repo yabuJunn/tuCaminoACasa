@@ -2,67 +2,52 @@ import primera from "../../../assets/svg/aprendeScreen/masNoticiasImgs/primera.s
 import segunda from "../../../assets/svg/aprendeScreen/masNoticiasImgs/segunda.svg"
 import tercera from "../../../assets/svg/aprendeScreen/masNoticiasImgs/tercera.svg"
 import cuarta from "../../../assets/svg/aprendeScreen/masNoticiasImgs/cuarta.svg"
-import "./masnNoticiasAprende.css"
+import "./noticiasColumn.css"
 
 export const MasNoticiasAprende = () => {
-    return <>
+    return (
+        <section className="masNoticiasContainer">
+            <h4 className="masNoticiasTituloSeccion">Más noticias</h4>
 
-        <section className="masNoticiasGeneral">
-            <h4 className="titleMas">Más noticias</h4>
-
-            <div className="noticia1">
-                <div className="imgNoticia">
+            <div className="masNoticiaItem">
+                <div className="masNoticiaImagen">
                     <img src={primera} alt="primera" />
                 </div>
-
-                <div className="infoNoticias">
-                <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
-                <h2 className="diaNoticia">Hace 1 día</h2>
+                <div>
+                    <h3 className="masNoticiaTitulo">Entrega de viviendas en Jamundí</h3>
+                    <h2 className="masNoticiaFecha">Hace 1 día</h2>
                 </div>
-                
             </div>
 
-            <div className="noticia2">
-                <div className="imgNoticia">
+            <div className="masNoticiaItem">
+                <div className="masNoticiaImagen">
                     <img src={segunda} alt="segunda" />
                 </div>
-
-                <div className="infoNoticias">
-                <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
-                <h2 className="diaNoticia">Hace 1 día</h2>
+                <div>
+                    <h3 className="masNoticiaTitulo">Entrega de viviendas en Jamundí</h3>
+                    <h2 className="masNoticiaFecha">Hace 1 día</h2>
                 </div>
-                
             </div>
 
-            <div className="noticia3">
-                <div className="imgNoticia">
+            <div className="masNoticiaItem">
+                <div className="masNoticiaImagen">
                     <img src={tercera} alt="tercera" />
                 </div>
-
-                <div className="infoNoticias">
-                <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
-                <h2 className="diaNoticia">Hace 1 día</h2>
+                <div>
+                    <h3 className="masNoticiaTitulo">Entrega de viviendas en Jamundí</h3>
+                    <h2 className="masNoticiaFecha">Hace 1 día</h2>
                 </div>
-                
             </div>
 
-            <div className="noticia4">
-                <div className="imgNoticia">
+            <div className="masNoticiaItem">
+                <div className="masNoticiaImagen">
                     <img src={cuarta} alt="cuarta" />
                 </div>
-
-                <div className="infoNoticias">
-                <h3 className="titleNoticia">Entrega de viviendas en Jamundí</h3>
-                <h2 className="diaNoticia">Hace 1 día</h2>
+                <div>
+                    <h3 className="masNoticiaTitulo">Entrega de viviendas en Jamundí</h3>
+                    <h2 className="masNoticiaFecha">Hace 1 día</h2>
                 </div>
-                
             </div>
-
-
-
-
         </section>
-
-
-    </>
+    )
 }

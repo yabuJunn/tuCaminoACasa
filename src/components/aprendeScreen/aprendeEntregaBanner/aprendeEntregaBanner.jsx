@@ -1,23 +1,22 @@
 import iconBack from "../../../assets/svg/aprendeScreen/svgIconsAprende/iconBack.svg"
 import bannerEntrega from "../../../assets/svg/aprendeScreen/ImgBannerAprende/bannerEntrega.svg"
-import "./aprendeEntregaBanner.css"
+import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
+import "./entregaBanner.css"
 
 export const AprendeEntregaBanner = () => {
-  return <>
+  return (
+    <div className="bannerAprendeEntrega" style={{ backgroundImage: `url(${bannerEntrega})` }}>
+      <div className="bannerOverlay">
+        <div className="topBar">
+          <img src={iconBack} alt="Volver" className="backIcon" />
+          <UpperNavButtons />
+        </div>
 
-    <div className="bannerEntregaFirma">
-      <img src={iconBack} alt="iconBack" />
-
-      <img src={bannerEntrega} alt="bannerFirma" />
-
-      <div className="breadCrumb">
-        <span className="page">Aprende</span>
-        <span className="separator">&gt;</span>
-        <span className="subPage">Entrega del inmueble</span>
+        <div className="breadcrumbText">
+          <span className="breadcrumb">Aprende &gt;</span>
+          <span className="titulo">Entrega del inmueble</span>
+        </div>
       </div>
-
     </div>
-
-
-  </>
-}
+  );
+};

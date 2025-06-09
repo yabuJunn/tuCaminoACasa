@@ -1,0 +1,52 @@
+.puntosClaveGeneralCardsRegistro {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;   
+    margin-top: -40px;
+    margin-left: -50px;
+  }
+  
+  .puntoClaveRegistroCard {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    width: 320px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0; 
+  }
+  
+  .puntoClaveRegistroCard:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .puntoClaveRegistroCard img {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-bottom: -10px;
+  }
+  
+  .cardPuntoTitleRegistro {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+  }
+  
+  .cardPuntoDescriptionRegistro {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

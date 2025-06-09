@@ -1,10 +1,10 @@
 import { AprendeRegistroBanner } from "../../../components/aprendeScreen/aprendeRegsitroBanner/aprendeRegistroBanner"
 import { PuntosClaveRegistro } from "../../../components/aprendeScreen/puntosClaveRegistro/puntosClaveRegistro"
 import { TutorialesAprendeRegistro } from "../../../components/aprendeScreen/tutorialesAprendeRegistro/tutorialesAprendeRegistro"
-
 import { GlobalNavBar } from "../../../components/navigation/globalNavBar/globalNavBar"
 import { UpperNavButtons } from "../../../components/navigation/upperNavButtons/upperNavButtons"
 import "./aprendeRegistroPage.css"
+import "./registroPage.css"
 
 export const AprendeRegistroPage = () => {
     return <>
@@ -13,27 +13,20 @@ export const AprendeRegistroPage = () => {
             <GlobalNavBar></GlobalNavBar>
             <UpperNavButtons></UpperNavButtons>
 
-
-
             <AprendeRegistroBanner></AprendeRegistroBanner>
-            <div className="bannerAprendeFirma">
-            </div>
 
-            <div className="registroInfoExtra">
-            <h1 className="pageRegistroTitle">Registro de la escritura</h1>
-            <h2 className="puntosClaveRegistro">Puntos clave</h2>
-            <PuntosClaveRegistro></PuntosClaveRegistro>
+            <div className="itemsRegistro">
+                <h1 className="pageRegistroTitle">Registro de la escritura</h1>
+                <h2 className="puntosClaveRegistro">Puntos clave</h2>
+                <PuntosClaveRegistro></PuntosClaveRegistro>
+
+
+            </div>
 
             <div className="cardsAprendeRegistro">
-
                 <h2 className="tutorialesCardsRegistro">Tutoriales y recursos</h2>
                 <TutorialesAprendeRegistro></TutorialesAprendeRegistro>
-
-
-
-            </div>
             </div>
         </section>
-
     </>
 }

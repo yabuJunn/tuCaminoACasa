@@ -1,7 +1,7 @@
 import documentoIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/documentoIcon.svg"
 import revisionIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/revisionIcon.svg"
 import firmaIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/firmaIcon.svg"
-import "./puntosClaveBanco.css" 
+import "./puntosBanco.css"
 
 export const PuntosClaveBanco = () => {
     return <>

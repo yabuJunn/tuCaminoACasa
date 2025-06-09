@@ -1,12 +1,12 @@
 import videoBanco from "../../../assets/svg/aprendeScreen/svgIconsAprende/videoIcon.svg"
 import documentoGuiaIcon from "../../../assets/svg/aprendeScreen/svgIconsAprende/documentoGuiaIcon.svg"
-import "./tutorialesAprendeEntrega.css"
+import "./tutorialEntrega.css"
 
 export const TutorialesAprendeEntrega = () => {
     return <>
 
-        <section className="tutorialesEntregaGeneralCards">
-            <div className="tutorialesEntregaCard">
+        <section className="tutorialesBancoGeneralCards">
+            <div className="tutorialesBancoCard">
                 <img src={videoBanco} alt="videoBanco" />
                 <h3 className="video">Vídeo</h3>
                 <h3 className="cardTutorialTitle">Paso a paso para recibir tu vivienda</h3>
@@ -14,7 +14,6 @@ export const TutorialesAprendeEntrega = () => {
                     y qué hacer si encuentras detalles pendientes.</p>
                     <button className="verAhora">Ver ahora</button>
             </div>
-            
 
             <div className="tutorialesFirmaCard">
                 <img src={documentoGuiaIcon} alt="documentoGuiaIcon" />
@@ -24,7 +23,6 @@ export const TutorialesAprendeEntrega = () => {
                     y cómo asegurar que todo esté en orden antes de recibir las llaves.</p>
                     <button className="descargarGuia">Descargar Guía</button>
             </div>
-            
 
 
         </section>

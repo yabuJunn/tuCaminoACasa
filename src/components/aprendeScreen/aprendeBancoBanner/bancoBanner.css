@@ -1,37 +1,57 @@
-.aprendeBancoPage {
+.bannerAprendeBanco {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bannerOverlay {
   position: absolute;
   top: 0;
-  left: 13vw; 
-  height: 150px;
-  object-fit: cover;
-  z-index: 0;
-  }
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
 
-  
-  .bannerAprendeBanco > img[alt="iconBack"] {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    width: 32px;
-    height: 32px;
-    z-index: 2;
-    cursor: pointer;
-  }
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 200px; 
+  gap: 16px;
+  z-index: 2;
+}
 
-  .breadCrumb {
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-    z-index: 1;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-  
-  
-  .breadCrumb .subPage {
-    font-weight: 600;
-  }
+.backIcon {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.breadcrumbText {
+  font-size: 16px;
+  margin-left: 185px;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  z-index: 2;
+}
+
+.breadcrumbText,
+.topBar {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.breadcrumbHighlight {
+  font-weight: bold;
+}

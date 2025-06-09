@@ -1,7 +1,7 @@
 import verificacionEntrega from "../../../assets/svg/aprendeScreen/svgIconsAprende/verificacionEntrega.svg"
 import firmaEntrega from "../../../assets/svg/aprendeScreen/svgIconsAprende/firmaEntrega.svg"
 import llavesEntrega from "../../../assets/svg/aprendeScreen/svgIconsAprende/llavesEntrega.svg"
-import "./puntosClaveEntrega.css"
+import "./puntosEntrega.css"
 
 export const PuntosClaveEntrega = () => {
     return<>

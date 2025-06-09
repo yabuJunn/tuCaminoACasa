@@ -1,0 +1,21 @@
+.firmaItems {
+    margin-left: 200px;
+}
+
+.pageFirmaTitle {
+    color: #FF0100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tutorialesCardsFirma {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight:500;
+}
+
+.puntosClaveFirma {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight:500;
+}
