@@ -1,0 +1,146 @@
+#documentsPageContent {
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* para que todo quede alineado a la izquierda */
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 14.5rem; /* espacio para la barra lateral */
+  width: calc(100% - 14.5rem - 3rem);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; /* que esté encima de navbar si es necesario */
+}
+
+#documentsPageContent .document-stage {
+  width: 900px; /* ancho fijo para todas las etapas */
+  margin-bottom: 32px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+}
+
+#documentsPageContent .document-stage.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #f9f9f9;
+}
+
+/* MÁS ESPACIO ENTRE TÍTULO Y SUBTÍTULO */
+#documentsPageContent .stage-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px; /* antes era 4px, ahora más separación */
+  color: #1e1e1e;
+}
+
+#documentsPageContent .stage-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+/* Document list dentro de etapa */
+#documentsPageContent .documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Cada documento */
+#documentsPageContent .document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100px; /* altura fija */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Contenedor del texto (icono + nombre + estado) */
+#documentsPageContent .document-info-group {
+  flex-grow: 1;
+  max-width: calc(100% - 140px); /* espacio para botón */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#documentsPageContent .document-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+#documentsPageContent .status-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#documentsPageContent .document-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+#documentsPageContent .document-status-text {
+  font-size: 14px;
+  color: #888;
+  padding-left: 36px; /* para alinear con el icono */
+}
+
+/* Botón a la derecha */
+#documentsPageContent .upload-button {
+  margin-left: 24px;
+  flex-shrink: 0;
+  width: 140px;
+  height: 38px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+#documentsPageContent .upload-button:hover {
+  background-color: #f5f5f5;
+}
+
+#documentsPageContent .upload-button:disabled {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+  color: #aaa;
+  border-color: #ccc;
+}
+
+#documentsPageContent .document-stage.inactive .status-icon {
+  filter: grayscale(100%) opacity(0.5);
+}
+
+#documentsPageContent .page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #f20c00;
+}
+
+#documentsPageContent .page-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
+}

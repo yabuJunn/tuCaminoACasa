@@ -13,6 +13,7 @@ import { AprendeNoticiasPage } from "../pages/aprende/aprendeNoticiasPage/aprend
 import StatementOfAccount from "../pages/statementOfAccount/statementOfAccount.jsx";
 import PaymentsAndFees from "../pages/statementOfAccount/paymentsAndFees.jsx";
 import PQRs from "../pages/PQRs/PQRs.jsx";
+import DocumentsPage from "../pages/documents/documentsPage.jsx";
 
 export const mainRoutes = [
     {
@@ -41,6 +42,10 @@ export const mainRoutes = [
         path: "/profile",
         element: <ProfileScreen></ProfileScreen>,
 
+    },
+    {
+        path: "/documents",
+        element: <DocumentsPage></DocumentsPage>,
     },
     {
         path: '/aprende',

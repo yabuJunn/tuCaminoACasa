@@ -1,0 +1,113 @@
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-overlay .foreign-modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+#modal-overlay .foreign-modal h2 {
+  font-size: 20px;
+  color: #161918;
+  margin-bottom: 1.5rem;
+}
+
+#modal-overlay .foreign-modal label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #333;
+}
+
+#modal-overlay .foreign-modal input[type="text"],
+#modal-overlay .foreign-modal input[type="date"],
+#modal-overlay .foreign-modal input[type="file"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#modal-overlay .foreign-modal input[type="file"] {
+  padding: 6px;
+  font-size: 13px;
+}
+
+#modal-overlay .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+#modal-overlay .modal-actions button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #161918;
+  border: 1px solid #161918;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#modal-overlay .modal-actions button:hover {
+  background-color: #161918;
+  color: white;
+}
+
+#modal-overlay .close-icon {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #161918;
+  font-weight: bold;
+}
+
+#modal-overlay .foreign-modal input[type="file"] {
+  display: none; /* ocultamos el input real */
+}
+
+#modal-overlay .file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #161918;
+  border-radius: 20px;
+  background-color: white;
+  color: #161918;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 6px;
+}
+
+#modal-overlay .file-upload-label:hover {
+  background-color: #161918;
+  color: white;
+}
