@@ -9,6 +9,9 @@ const initialState = {
         cellphone: null,
         created_at: ""
     },
+    projects: [],
+    documents: [],
+    payments: [],
 };
 
 const mainSlice = createSlice({
@@ -20,6 +23,14 @@ const mainSlice = createSlice({
         },
         setUserLogOut: (state) => {
             state.user = initialState.user;
+        }, setUserProjects: (state, action) => {
+            state.projects = action.payload;
+        },
+        setUserDocuments: (state, action) => {
+            state.documents = action.payload;
+        },
+        setUserPayments: (state, action) => {
+            state.payments = action.payload;
         },
         setError: (state, action) => {
             state.error = action.payload;
@@ -30,6 +41,9 @@ const mainSlice = createSlice({
 export const {
     setUser,
     setUserLogOut,
+    setUserProjects,
+    setUserDocuments,
+    setUserPayments,
     setError
 } = mainSlice.actions;
 

@@ -5,6 +5,7 @@ import { isUserLoggedIn } from '../../services/supabase/login'
 import { NavigationHook } from '../../hooks/navigationHook'
 import { useGetUserData } from '../../hooks/getUserDataHook.js'
 import { useSelector } from "react-redux";
+import { useUserFullData } from '../../hooks/getRestInfoDataHook.js'
 
 import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/navigation/upperNavButtons/upperNavButtons'
@@ -19,6 +20,9 @@ import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/
 export const DashboardPage = () => {
 	const { handleNavigation } = NavigationHook();
 	const userStore = useSelector((state) => state.main.user);
+	const mainStore = useSelector((state) => state.main);
+	console.log(mainStore);
+	
 
 	useEffect(() => {
 		async function checkAuth() {
@@ -31,7 +35,8 @@ export const DashboardPage = () => {
 		checkAuth();
 	}, []);
 
-	useGetUserData();
+	// useGetUserData();
+	useUserFullData();
 
 	return <>
 		<main className='page' id='dashboardPage'>
