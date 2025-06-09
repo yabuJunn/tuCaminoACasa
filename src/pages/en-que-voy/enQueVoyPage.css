@@ -1,7 +1,6 @@
 #enQueVoyPage {
   display: flex;
   min-height: 100vh;
-  overflow: hidden;
   font-family: 'Archivo', sans-serif;
   background-color: #fff;
 }
@@ -19,7 +18,6 @@
   padding: 2.5rem 3rem;
   width: calc(100vw - 13vw);
   box-sizing: border-box;
-  overflow-y: auto;
 }
 
 #enQueVoyPage .title {

@@ -10,7 +10,6 @@
 .map-column {
   flex: 1 1 45%;
   border-radius: 16px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

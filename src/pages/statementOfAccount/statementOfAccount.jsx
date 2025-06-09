@@ -12,24 +12,22 @@ const StatementOfAccount = () => {
     <main className="page full-page-height" id="statementOfAccountPage">
       <GlobalNavBar />
 
-  <div id="statementOfAccountContent" className="scroll-container">
-        <div id="statementOfAccountBanner">
-          <BannerStatementOfAccount />
+      <div id="statementOfAccountBanner">
+        <BannerStatementOfAccount />
+      </div>
+
+      <div id="statementOfAccountCards" className="dashboardCard">
+        <div id="statementContentColumn1">
+          <Calendar />
         </div>
 
-        <div id="statementOfAccountCards" className="dashboardCard">
-          <div id="statementContentColumn1">
-            <Calendar />
-          </div>
-
-          <div id="statementContentColumn2">
-            <div id="statementCardsGrid">
-              <div id="accruedPaymentCard">
-                <AccruedPayment />
-              </div>
-              <div id="nextInstalmentCard">
-                <NextInstalment />
-              </div>
+        <div id="statementContentColumn2">
+          <div id="statementCardsGrid">
+            <div id="accruedPaymentCard">
+              <AccruedPayment />
+            </div>
+            <div id="nextInstalmentCard">
+              <NextInstalment />
             </div>
           </div>
         </div>

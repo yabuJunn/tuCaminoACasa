@@ -1,24 +1,19 @@
-* {
-    font-family: 'Archivo', sans-serif;
-  }
+#statementOfAccountPage {
+  overflow-x: hidden;
+}
 
 #statementOfAccountCards {
-  position: fixed;
-  left: 50%;
   top: 18.75rem;
   display: flex;
   justify-content: center;
   gap: 9.125rem;
+  margin-top: 2rem;
+  margin-left: 30rem;
+  width: 50rem;
 }
 
-
-
-
-
-@media (max-width: 1920px) {
-  #statementOfAccountCards {
-    transform: translateX(-42%) scale(1.0);
-  }
+#statementOfAccountBanner {
+  width: 100%;
 }
 
 #accruedPaymentCard,
@@ -26,6 +21,5 @@
   width: 14.765rem;
   height: 14.13725rem;
   padding: 1.23456rem;
-  
-}
 
+}

@@ -3,13 +3,17 @@
   font-family: 'Archivo', sans-serif !important;
 }
 
+#calendar-container {
+  padding-bottom: 2rem;
+}
+
 #calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 8px;
   min-width: 840px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 0;
   box-sizing: border-box;
 }
 

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 h1,
@@ -17,4 +18,5 @@ p {
 .page {
     width: 99vw;
     min-height: 100vh;
+    overflow: auto;
 }

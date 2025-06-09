@@ -1,7 +1,3 @@
-html, body, * {
-  font-family: 'Archivo', sans-serif !important;
-  
-}
 #pqr-wrapper {
   padding-left: 200px;
   box-sizing: border-box;
@@ -180,9 +176,4 @@ html, body, * {
   cursor: pointer;
   padding: 14px 40px;
   width: fit-content;
-}
-
-html, body {
-  position: fixed;
-  width: 100%;
 }
