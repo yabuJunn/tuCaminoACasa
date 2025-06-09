@@ -101,10 +101,6 @@
   line-height: 24px;
 }
 
-#formProfile #credential {
-  color: var(--Neutral-colors-400, #A4A7AE);
-}
-
 #formProfile img {
   width: 24px;
   height: 24px;

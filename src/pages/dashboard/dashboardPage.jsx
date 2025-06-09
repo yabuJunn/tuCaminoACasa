@@ -3,6 +3,8 @@ import './dashboardPage.css'
 import { useEffect } from 'react'
 import { isUserLoggedIn } from '../../services/supabase/login'
 import { NavigationHook } from '../../hooks/navigationHook'
+import { useGetUserData } from '../../hooks/getUserDataHook.js'
+import { useSelector } from "react-redux";
 
 import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/navigation/upperNavButtons/upperNavButtons'
@@ -14,10 +16,9 @@ import { DocumentsState } from '../../components/dashboardScreen/documentsState/
 import { AccruedPayment } from '../../components/dashboardScreen/accruedPayment/accruedPayment'
 import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/nextInstalment'
 
-const mockUserName = "Carolina"
-
 export const DashboardPage = () => {
 	const { handleNavigation } = NavigationHook();
+	const userStore = useSelector((state) => state.main.user);
 
 	useEffect(() => {
 		async function checkAuth() {
@@ -30,6 +31,8 @@ export const DashboardPage = () => {
 		checkAuth();
 	}, []);
 
+	useGetUserData();
+
 	return <>
 		<main className='page' id='dashboardPage'>
 			<GlobalNavBar></GlobalNavBar>
@@ -37,7 +40,7 @@ export const DashboardPage = () => {
 
 			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>
-					<h1>¡Que mas vé, {mockUserName}!</h1>
+					<h1>¡Que mas vé, {userStore.name}!</h1>
 					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Qué alegría tenerte por acá!</p>
 				</div>
 

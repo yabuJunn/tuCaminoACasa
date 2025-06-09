@@ -1,33 +1,37 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
+const initialState = {
+    user: {
+        id: null,
+        name: "",
+        email: "",
+        cedula: null,
+        cellphone: null,
+        created_at: ""
+    },
+};
+
 const mainSlice = createSlice({
     name: "main",
-    initialState: {
-        isLogged: false,
-        user: null,
-        token: null,
-        loading: false,
-        error: null
-    },
+    initialState,
     reducers: {
-        setLogin: (state, action) => {
-            state.isLogged = true;
-            state.user = action.payload.user;
-            state.token = action.payload.token;
+        setUser: (state, action) => {
+            state.user = { ...action.payload.user };
         },
-        setLogout: (state) => {
-            state.isLogged = false;
-            state.user = null;
-            state.token = null;
-        },
-        setLoading: (state, action) => {
-            state.loading = action.payload;
+        setUserLogOut: (state) => {
+            state.user = initialState.user;
         },
         setError: (state, action) => {
             state.error = action.payload;
         }
     }
 });
+
+export const {
+    setUser,
+    setUserLogOut,
+    setError
+} = mainSlice.actions;
 
 export const store = configureStore({
     reducer: {
