@@ -13,52 +13,62 @@ export const ConstructionProgressEnQueVoy = () => {
 
         <section className="progressImgs">
 
-            <div className="fObranegra">
-                <img src={obraNegra} alt="constructionImg" />
-
-                <div className="obraNegra">
-                    <img src={constructionIcon} alt="constructionIcon" />
-                    <div className="description">
-                        <h4>Etapa actual</h4>
-                        <h2>Obra negra</h2>
-                    </div>
+            <div className="primeraParte">
+            <div className="obraNegra1"
+                style={{ backgroundImage: `url(${obraNegra})` }}
+            >
+            <div className="content1">
+                <img src={constructionIcon} alt="construction icon" />
+                <div className="description">
+                <h4>Etapa actual</h4>
+                <h2>Obra negra</h2>
                 </div>
             </div>
+            </div>
+
 
             <div className="graphicProgress">
                 <h2 className="graphicTitle">Progreso de la construcción</h2>
 
                 <img src={graphicProgress} alt="graphicProgress" />
 
-                <div className="content">
+                <div className="content2">
                     <h2>Etapa actual</h2>
                     <p>Instalación de servivicios</p>
                 </div>
             </div>
+            </div>
 
-            <div className="s-obraNegra">
-                <img src={obraNegra2} alt="constructionImg" />
-
-                <div className="obraNegra">
-                    <img src={constructionIcon} alt="constructionIcon" />
-                    <div className="description">
-                        <h4>Etapa actual</h4>
-                        <h2>Obra negra</h2>
-                    </div>
+                        <div className="segundaParte">
+            {/* Primer bloque - 40% */}
+            <div
+                className="obraNegra bloqueIzquierdo"
+                style={{ backgroundImage: `url(${obraNegra2})` }}
+            >
+                <div className="content">
+                <img src={constructionIcon} alt="construction icon" />
+                <div className="description">
+                    <h4>Etapa actual</h4>
+                    <h2>Obra negra</h2>
+                </div>
                 </div>
             </div>
 
-            <div className="t-obraNegra">
-                <img src={obraNegra3} className="constructionImgt" />
-
-                <div className="obraNegra">
-                    <img src={constructionIcon} alt="constructionIcon" />
-                    <div className="description">
-                        <h4>Etapa actual</h4>
-                        <h2>Obra negra</h2>
-                    </div>
+            {/* Segundo bloque - 60% */}
+            <div
+                className="obraNegra bloqueDerecho"
+                style={{ backgroundImage: `url(${obraNegra3})` }}
+            >
+                <div className="content">
+                <img src={constructionIcon} alt="construction icon" />
+                <div className="description">
+                    <h4>Etapa actual</h4>
+                    <h2>Obra negra</h2>
+                </div>
                 </div>
             </div>
+            </div>
+
 
         </section>
 

@@ -7,8 +7,11 @@
 }
 
 #enQueVoyPage p {
-  font-size: 0.9rem;
-  color: #414651;
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 #enQueVoyPage .page-content {
@@ -20,20 +23,27 @@
 }
 
 #enQueVoyPage .title {
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #enQueVoyPage .page-title {
-  color: #FF0100;
-  font-size: 1.8rem;
-  font-weight: 700;
+  color: var(--Secondary-color-Red, #FF0100);
+  font-family: Archivo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
   margin-bottom: 0.25rem;
 }
 
 #enQueVoyPage .title p {
-  font-size: 1rem;
-  color: #414651;
-  margin: 0;
+  color: var(--Neutral-colors-700, #414651);
+  font-family: Archivo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 #enQueVoyPage .subtitle {
@@ -42,26 +52,34 @@
 }
 
 #enQueVoyPage .subtitle h3 {
-  font-size: 1.2rem;
+  color: var(--Neutral-colors-700, #414651);
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 600;
-  margin: 0;
+  line-height: 32px;
 }
 
 #enQueVoyPage .subtitle p {
-  font-size: 0.9rem;
-  color: #414651;
-  margin: 0.25rem 0 0 0;
+  color: var(--Neutral-colors-600, #535862);
+  font-family: Archivo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 #enQueVoyPage .progress-timeLine {
   margin: 1.5rem 0 3rem 0;
 }
 
-#enQueVoyPage #construction-progress h1 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #414651;
-  margin-bottom: 1.5rem;
+.progresoC h2 {
+  color: var(--Neutral-colors-700, #414651);
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 #enQueVoyPage .progressSection {
@@ -81,5 +99,4 @@
 
 #enQueVoyPage .construction-steps {
   flex: 1;
-  min-width: 300px;
 }

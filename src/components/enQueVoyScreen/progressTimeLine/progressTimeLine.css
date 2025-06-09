@@ -2,6 +2,15 @@
     border: none;
 }
 
+#progress-time-line h1{
+    color: var(--Primary-color-Black, #18181B);
+    font-family: Archivo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 .checkSesion{
     display: flex;
     flex-direction: column;
@@ -9,16 +18,6 @@
     border-radius: 17px;
     padding: 20px;
     gap:20px;
-}
-
-h1{
-    color: #414651;
-}
-
-.check{
-    color: white;
-    background-color: #01C764;
-
 }
 
 .generalStructureCheck{
@@ -32,3 +31,63 @@ h1{
     display: flex;
     justify-content: space-between;
 }
+
+.number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.number h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* === PASOS 1-3 === */
+.number.verde {
+  background-color: #01C764; 
+}
+
+.number.verde h4 {
+  color: white;
+}
+
+/* === PASO 4 === */
+.number.amarillo {
+  background-color: #F79009;
+}
+
+.number.amarillo h4 {
+  color: white;
+}
+
+/* === PASOS 5-6 === */
+.number.gris {
+  background-color: #D5D7DA; 
+}
+
+.number.gris h4 {
+  color: #A4A7AE; 
+}
+
+.texto-verde {
+  color: #01C764;
+  font-weight: 500;
+}
+
+.texto-amarillo {
+  color: #F79009;
+  font-weight: 500;
+}
+
+.texto-gris {
+  color: #A4A7AE;
+  font-weight: 500;
+}
+
+

@@ -5,11 +5,14 @@ import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNav
 import { ConstructionProgressEnQueVoy } from "../../components/enQueVoyScreen/constructionProgressEnQueVoy/constructionProgressEnQueVoy";
 import { ConstructionSteps } from "../../components/enQueVoyScreen/constructionSteps/constructionSteps";
 import { ProgressTimeLine } from "../../components/enQueVoyScreen/progressTimeLine/progressTimeLine"
+import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
 
 export const EnQueVoyPage = () => {
   return (
     <main className="page" id="enQueVoyPage">
       <GlobalNavBar></GlobalNavBar>
+      <UpperNavButtons />
+
 
       <div className='page-content'>
         <div className='title'>
@@ -27,7 +30,7 @@ export const EnQueVoyPage = () => {
         </section>
 
         <div id="construction- progress">
-          <h1>Progreso de la construcción</h1>
+          <h2 className="progresoC">Progreso de la construcción</h2>
         </div>
 
         <div className='progressSection'>
