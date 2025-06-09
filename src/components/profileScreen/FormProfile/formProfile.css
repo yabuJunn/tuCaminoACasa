@@ -1,7 +1,7 @@
 #formProfile .input-edit-wrapper {
   position: relative;
   width: 370px;
-  
+
 }
 
 #formProfile .input-edit-wrapper input {
@@ -18,7 +18,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  
+
 }
 
 #formProfile .input-edit-wrapper .edit-button img {
@@ -118,15 +118,48 @@
 #formProfile #phone-group {
   margin-top: 20px;
 }
-#formProfile #profile-submit-button {
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.formActions .deactivated {
   align-self: flex-end;
   margin-top: 20px;
-  margin-left: 87%;
+  background-color: var(--Primary-color-Black, #54545c);
+  color: #fff;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 32px;
+  cursor: default;
+}
+
+.formActions .activated {
+  align-self: flex-end;
+  margin-top: 20px;
   background-color: var(--Primary-color-Black, #18181B);
   color: #fff;
   font-family: Archivo;
   font-size: 16px;
   font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+#formProfile #profile-activate-update {
+  align-self: flex-end;
+  margin-top: 20px;
+  background-color: var(--Primary-color-Black, #18181B);
+  color: #fff;
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 500;
   padding: 12px 28px;
   border: none;
   border-radius: 32px;

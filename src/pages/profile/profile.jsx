@@ -1,11 +1,14 @@
 import "./profile.css";
 
+import { useGetUserData } from "../../hooks/getUserDataHook";
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar"
 
 import FormProfile from "../../components/profileScreen/FormProfile/formProfile";
 import FormPrefrences from "../../components/profileScreen/FormPreferences/formPreferences";
 
 const ProfileScreen = () => {
+    useGetUserData();
+
     return (
         <>
             <main className='page' id='profilePage'>
