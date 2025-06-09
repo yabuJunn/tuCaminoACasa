@@ -12,6 +12,7 @@ const initialState = {
     projects: [],
     documents: [],
     payments: [],
+    projectSelected: 1,
 };
 
 const mainSlice = createSlice({
@@ -32,6 +33,9 @@ const mainSlice = createSlice({
         setUserPayments: (state, action) => {
             state.payments = action.payload;
         },
+        setProjectSelected: (state, action) => {
+            state.projectSelected = action.payload;
+        },
         setError: (state, action) => {
             state.error = action.payload;
         }
@@ -44,6 +48,7 @@ export const {
     setUserProjects,
     setUserDocuments,
     setUserPayments,
+    setProjectSelected,
     setError
 } = mainSlice.actions;
 

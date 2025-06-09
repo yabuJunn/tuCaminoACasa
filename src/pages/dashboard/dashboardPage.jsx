@@ -1,9 +1,6 @@
 import './dashboardPage.css'
 
-import { useEffect } from 'react'
-import { isUserLoggedIn } from '../../services/supabase/login'
-import { NavigationHook } from '../../hooks/navigationHook'
-import { useGetUserData } from '../../hooks/getUserDataHook.js'
+import { useCheckAuth } from '../../hooks/useCheckAuth.js';
 import { useSelector } from "react-redux";
 import { useUserFullData } from '../../hooks/getRestInfoDataHook.js'
 
@@ -18,25 +15,14 @@ import { AccruedPayment } from '../../components/dashboardScreen/accruedPayment/
 import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/nextInstalment'
 
 export const DashboardPage = () => {
-	const { handleNavigation } = NavigationHook();
+	useCheckAuth();
+
+	useUserFullData();
+
 	const userStore = useSelector((state) => state.main.user);
 	const mainStore = useSelector((state) => state.main);
 	console.log(mainStore);
-	
 
-	useEffect(() => {
-		async function checkAuth() {
-			const isLoggedIn = await isUserLoggedIn();
-			if (!isLoggedIn) {
-				handleNavigation.navigateToLogin()
-			}
-		}
-
-		checkAuth();
-	}, []);
-
-	// useGetUserData();
-	useUserFullData();
 
 	return <>
 		<main className='page' id='dashboardPage'>
