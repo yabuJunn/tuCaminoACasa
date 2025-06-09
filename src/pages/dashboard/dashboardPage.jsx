@@ -1,5 +1,9 @@
 import './dashboardPage.css'
 
+import { useEffect } from 'react'
+import { isUserLoggedIn } from '../../services/supabase/login'
+import { NavigationHook } from '../../hooks/navigationHook'
+
 import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/navigation/upperNavButtons/upperNavButtons'
 import { PropertySummmary } from '../../components/dashboardScreen/propertySummary/propertySummary'
@@ -13,6 +17,19 @@ import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/
 const mockUserName = "Carolina"
 
 export const DashboardPage = () => {
+	const { handleNavigation } = NavigationHook();
+
+	useEffect(() => {
+		async function checkAuth() {
+			const isLoggedIn = await isUserLoggedIn();
+			if (!isLoggedIn) {
+				handleNavigation.navigateToLogin()
+			}
+		}
+
+		checkAuth();
+	}, []);
+
 	return <>
 		<main className='page' id='dashboardPage'>
 			<GlobalNavBar></GlobalNavBar>

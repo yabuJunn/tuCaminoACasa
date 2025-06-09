@@ -56,3 +56,17 @@ export async function signOut() {
         console.log("Sesión cerrada exitosamente");
     }
 }
+
+export async function isUserLoggedIn() {
+    const {
+        data: { session },
+        error,
+    } = await supabase.auth.getSession();
+
+    if (error) {
+        console.error("Error al verificar la sesión:", error.message);
+        return false;
+    }
+
+    return !!session; // true si hay sesión activa, false si no
+}
