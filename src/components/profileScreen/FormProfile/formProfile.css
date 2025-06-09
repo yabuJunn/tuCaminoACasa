@@ -6,12 +6,13 @@
 
 #formProfile .input-edit-wrapper input {
   width: 100%;
+  font-size: 1rem;
 }
 
 #formProfile .input-edit-wrapper .edit-button {
   position: absolute;
-  right: 0;
-  top: 50%;
+  right: -10%;
+  top: 60%;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -35,7 +36,6 @@
   gap: 20px;
   margin-top: 3%;
   margin-left: 70px;
-
 }
 
 #formProfile #editProfileForm {
@@ -47,7 +47,7 @@
   margin-left: -24px;
   color: var(--Secondary-color-Red, #FF0100);
   font-family: Archivo;
-  font-size: 24px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
@@ -79,7 +79,7 @@
 
 #formProfile label {
   font-family: Archivo;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 30px;
   color: var(--Primary-color-Black, #18181B);
@@ -89,6 +89,7 @@
 #formProfile input[type="email"],
 #formProfile input[type="number"] {
   display: flex;
+  align-items: center;
   width: 370px;
   padding: 10px 24px;
   justify-content: space-between;
@@ -96,7 +97,7 @@
   border-radius: 50px;
   border: 1px solid var(--Neutral-colors-400, #A4A7AE);
   font-family: Archivo;
-  font-size: 16px;
+  font-size: 0.75rem;
   line-height: 24px;
 }
 

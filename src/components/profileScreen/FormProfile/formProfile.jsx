@@ -33,7 +33,12 @@ const FormProfile = () => {
             <div id="2">
               <div className="formGroup" id="credential-group">
                 <label id="cedula" htmlFor="credential">Cédula</label>
-                <input type="text" id="credential" name="credential" placeholder="1182673870" />
+                <div className="input-edit-wrapper">
+                  <input type="text" id="credential" name="credential" placeholder="1182673870" />
+                  <button type="button" className="edit-button">
+                    <img src={IconEdit} alt="Icono de editar" />
+                  </button>
+                </div>
               </div>
               <div className="formGroup" id="phone-group">
                 <label id="telefono" htmlFor="phone">Celular</label>

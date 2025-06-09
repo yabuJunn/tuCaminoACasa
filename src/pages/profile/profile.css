@@ -1,23 +1,27 @@
+#profilePage {
+  overflow-x: hidden;
+}
+
 #profile-title {
   color: var(--Secondary-color-Red, #ff0100);
   font-family: "Archivo", sans-serif;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 38px; /* 126.667% */
-  margin-left: 200px;
-  margin-top: 30px;
+  margin-left: 15rem;
+  margin-top: 2rem;
 
 }
 
 #profile-subtitle {
   color: var(--Primary-color-Black, #18181b);
   font-family: "Archivo", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
-  margin-left: 200px;
+  margin-left: 15rem;
 }
 
 #photo-profile {  

@@ -1,13 +1,23 @@
 import "./formPreferences.css";
 
+import { signOut } from "../../../services/supabase/login";
+import { NavigationHook } from "../../../hooks/navigationHook";
+
 import IconLanguage from "../../../assets/svg/profileScreen/Icon-language.svg";
 import IconNotify from "../../../assets/svg/profileScreen/Icon-notification.svg";
 
 const FormPrefrences = () => {
+  const { handleNavigation } = NavigationHook();
+
+  const handleLogout = () => {
+    signOut()
+    handleNavigation.navigateToLogin();
+  };
+
   return (
     <>
       <div id="formPreferences">
-        <h1 id="preferences-title">Preferencias</h1>
+        {/* <h1 id="preferences-title">Preferencias</h1>
         <div id="preferences-container">
           <div className="preference-block" id="language">
             <img src={IconLanguage} alt="Ícono lenguaje" className="preference-icon" />
@@ -30,9 +40,9 @@ const FormPrefrences = () => {
             </div>
             <button id="deactivate-button">Desactivar</button>
           </div>
-        </div>
+        </div> */}
 
-        <button id="logout-button">Cerrar sesión</button>
+        <button id="logout-button" onClick={handleLogout}>Cerrar sesión</button>
       </div>
     </>
   )

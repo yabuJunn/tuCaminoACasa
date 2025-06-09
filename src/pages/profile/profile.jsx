@@ -15,9 +15,9 @@ const ProfileScreen = () => {
                     <p id="profile-subtitle">Bienvenida a tu <strong>Perfil</strong>, ¡Ve, aquí podrás cambiar tú información para tenerla actualizada!</p>
                 </div>
                 <div id="photo-profile">
-                    <img id="profile-photo" src="https://www.w3schools.com/howto/img_avatar.png" alt="Foto de perfil" />
-                    <input type="file" name="photo-user" id="upload-photo-user" style={{ display: 'none' }} />
-                    <label htmlFor="upload-photo-user" id="upload-photo-label">Editar</label>
+                    <img id="profile-photo" src="https://media.istockphoto.com/id/1131164548/vector/avatar-5.jpg?s=612x612&w=0&k=20&c=CK49ShLJwDxE4kiroCR42kimTuuhvuo2FH5y_6aSgEo=" alt="Foto de perfil" />
+                    {/* <input type="file" name="photo-user" id="upload-photo-user" style={{ display: 'none' }} />
+                    <label htmlFor="upload-photo-user" id="upload-photo-label">Editar</label> */}
                 </div>
                 <FormProfile />
                 <FormPrefrences />
