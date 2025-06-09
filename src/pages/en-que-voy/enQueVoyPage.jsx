@@ -13,7 +13,6 @@ export const EnQueVoyPage = () => {
       <GlobalNavBar></GlobalNavBar>
       <UpperNavButtons />
 
-
       <div className='page-content'>
         <div className='title'>
           <h2 className='page-title'>¿En qué voy?</h2>

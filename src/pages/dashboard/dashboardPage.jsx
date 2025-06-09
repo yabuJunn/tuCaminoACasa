@@ -21,7 +21,7 @@ export const DashboardPage = () => {
 			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>
 					<h1>¡Que mas vé, {mockUserName}!</h1>
-					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Qué alegría tenerte por acá oís!</p>
+					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Qué alegría tenerte por acá!</p>
 				</div>
 
 				<div id="dashboardPageCards" className='dashboardCard'>
@@ -39,11 +39,9 @@ export const DashboardPage = () => {
 							<DocumentsState />
 							<NextInstalment />
 						</div>
-
 					</div>
 				</div>
 			</div>
-
 		</main>
 	</>
 }

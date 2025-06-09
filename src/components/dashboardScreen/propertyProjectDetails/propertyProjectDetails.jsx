@@ -30,9 +30,6 @@ export const PropertyProjectDetails = () => {
         <div id="propertyProjectDetailsContainer">
             <div id="propertyProjectDetailsTitleContainer">
                 <h2>Detalles de tu Proyecto</h2>
-                <div id="propertyProjectDetailsTitleIcon">
-                    <img src={buildingIcon} alt="" />
-                </div>
             </div>
 
             <p>Área privada construida total {projectMock.size}</p>

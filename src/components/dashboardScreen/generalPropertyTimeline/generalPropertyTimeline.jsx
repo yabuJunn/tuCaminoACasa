@@ -35,7 +35,7 @@ export const GeneralPropertyTimeline = () => {
 
     return <>
         <div id="generalPropertyTimelineContainer">
-            <h2>{"Progreso del proyecto >"}</h2>
+            <h2>{"Progreso del proyecto"}</h2>
 
             <div id="generalPropertyTimelineContent">
                 {projectStateMock.map((stage) => {

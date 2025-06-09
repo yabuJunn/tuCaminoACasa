@@ -31,7 +31,7 @@ export const PropertySummmary = () => {
           </div>
 
           <button id="propertySummaryViewMoreButton">
-            Ver más &gt;
+            Ver más
           </button>
         </div>
       </div>

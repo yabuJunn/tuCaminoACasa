@@ -35,7 +35,7 @@ export const ConstructionProgress = () => {
                 </div>
 
                 <button id="constructionProgressNextStageButton">
-                    {"Próximo paso >"}
+                    {"Próximo paso"}
                 </button>
             </div>
         </div >

@@ -12,9 +12,11 @@ const StatementOfAccount = () => {
     <main className="page full-page-height" id="statementOfAccountPage">
       <GlobalNavBar />
 
-      <div id="statementOfAccountBanner">
+      {/* <div id="statementOfAccountBanner">
         <BannerStatementOfAccount />
-      </div>
+      </div> */}
+
+      <h2 className='page-title-statement-account'>Estado de Cuenta</h2>
 
       <div id="statementOfAccountCards" className="dashboardCard">
         <div id="statementContentColumn1">

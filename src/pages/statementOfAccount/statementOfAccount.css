@@ -2,6 +2,18 @@
   overflow-x: hidden;
 }
 
+.page-title-statement-account {
+  color: var(--Secondary-color-Red, #FF0100);
+  font-family: Archivo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 0.25rem;
+  margin-left: 15.5rem;
+  margin-top: 2rem;
+}
+
 #statementOfAccountCards {
   top: 18.75rem;
   display: flex;

@@ -25,7 +25,7 @@ export const NextInstalment = () => {
       </div>
 
       <button>
-        Pagar cuota &gt;
+        Pagar cuota
       </button>
     </div>
   );
