@@ -1,4 +1,4 @@
-import "./FormRegister.css";
+import "./formRegister.css";
 
 import { useState } from "react";
 import { NavigationHook } from "../../../hooks/navigationHook";
