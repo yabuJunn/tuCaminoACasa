@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import iconUpload from "../../../assets/svg/documentScreen/iconUpload.svg";
-import iconPdf from "../../../assets/svg/documentScreen/iconPdf.svg";
 import "./uploadModal.css";
+import { useState } from "react";
+
+import iconUpload from "../../../assets/svg/documentScreen/iconUpload.svg";
+// import iconPdf from "../../../assets/svg/documentScreen/iconPdf.svg";
+import iconPdf from "../../../assets/svg/documentScreen/iconPDF.svg"
 
 const UploadModal = ({ document, onClose, onUpload }) => {
   const [files, setFiles] = useState([]); // [{ file, progress, status }]
