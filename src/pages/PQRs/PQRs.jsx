@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
 import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
 import RequestTable from "../../components/PQRsScreen/historyPQRsTable/historyPQRsTable";
+import { BotComponente } from "../../components/botonesChatScreen/botComponente/botComponente";
 
 const PQRs = () => {
   const dialogRef = useRef(null);
@@ -107,6 +108,7 @@ const PQRs = () => {
           </div>
         </div>
       </div>
+      <BotComponente />
     </main >
   );
 };

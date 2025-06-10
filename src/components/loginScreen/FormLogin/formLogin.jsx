@@ -52,11 +52,11 @@ const FormLogin = () => {
                 <form id="login-form" onSubmit={handleSubmit}>
                     <div id="email-group">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required placeholder="Ingresa tu email"/>
                     </div>
                     <div id="password-group">
                         <label htmlFor="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña"/>
                         <a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
                     </div>
                     <button type="submit" className="form-button" id="submit-button">Iniciar sesión</button>

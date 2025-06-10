@@ -3,6 +3,7 @@ import "./statementOfAccount.css";
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
 import { AccruedPayment } from "../../components/dashboardScreen/accruedPayment/accruedPayment";
 import { NextInstalment } from "../../components/dashboardScreen/nextInstalment/nextInstalment";
+import { BotComponente } from "../../components/botonesChatScreen/botComponente/botComponente";
 
 import BannerStatementOfAccount from "../../components/statementOfAccountScreen/BannerStatementOfAccount/BannerStatementOfAcount";
 import Calendar from "../../components/statementOfAccountScreen/CalendarStatementOfAccount/CalendarStatementOfAccount";
@@ -34,6 +35,7 @@ const StatementOfAccount = () => {
           </div>
         </div>
       </div>
+      <BotComponente />
     </main>
   );
 };

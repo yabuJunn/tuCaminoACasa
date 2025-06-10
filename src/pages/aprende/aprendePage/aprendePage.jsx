@@ -34,7 +34,7 @@ export const AprendePage = () => {
 
       </div >
 
-<BotComponente/>
+      <BotComponente />
     </section >
   </>
 }

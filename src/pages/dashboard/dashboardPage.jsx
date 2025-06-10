@@ -14,6 +14,7 @@ import { DocumentsState } from '../../components/dashboardScreen/documentsState/
 import { AccruedPayment } from '../../components/dashboardScreen/accruedPayment/accruedPayment'
 import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/nextInstalment'
 import { fallbackProject } from '../../utils/fallbakcProject.js';
+import { BotComponente } from '../../components/botonesChatScreen/botComponente/botComponente.jsx';
 
 export const DashboardPage = () => {
 	useCheckAuth();
@@ -62,6 +63,7 @@ export const DashboardPage = () => {
 					</div>
 				</div>
 			</div>
+			<BotComponente/>
 		</main>
 	</>
 }

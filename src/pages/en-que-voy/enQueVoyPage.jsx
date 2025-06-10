@@ -6,6 +6,7 @@ import { ConstructionProgressEnQueVoy } from "../../components/enQueVoyScreen/co
 import { ConstructionSteps } from "../../components/enQueVoyScreen/constructionSteps/constructionSteps";
 import { ProgressTimeLine } from "../../components/enQueVoyScreen/progressTimeLine/progressTimeLine"
 import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
+import { BotComponente } from "../../components/botonesChatScreen/botComponente/botComponente";
 
 export const EnQueVoyPage = () => {
   return (
@@ -42,6 +43,7 @@ export const EnQueVoyPage = () => {
           </section>
         </div>
       </div>
+      <BotComponente />
     </main>
   );
 };

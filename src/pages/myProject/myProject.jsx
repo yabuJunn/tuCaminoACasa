@@ -7,6 +7,7 @@ import { CommonAreas } from "../../components/myProjectScreen/CommonAreas/Common
 import { ProjectDetails } from "../../components/myProjectScreen/ProjectDetails/ProjectDetails";
 import { GlobalNavBar } from "../../components/navigation/globalNavBar/globalNavBar";
 import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
+import { BotComponente } from "../../components/botonesChatScreen/botComponente/botComponente";
 
 export function MyProject() {
   return (
@@ -23,6 +24,7 @@ export function MyProject() {
           {/* <ProjectMap /> */}
         </main>
       </div>
+      <BotComponente/>
     </div>
   );
 }

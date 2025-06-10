@@ -53,6 +53,17 @@
   margin-top: 16px;
 }
 
+#email-group label,
+#password-group label {
+  color: var(--Neutral-colors-500, #717680);
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 150% */
+}
+
 #login-box input[type="email"],
 #login-box input[type="password"] {
   padding: 12px 16px;

@@ -3,6 +3,7 @@ import "./paymentsAndFees.css";
 import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
 import PaymentsTable from "../../components/statementOfAccountScreen/PaymentsTable/PaymentsTable";
 import arrowLeft from "../../assets/svg/profileScreen/arrow-narrow-left.svg";
+import { BotComponente } from "../../components/botonesChatScreen/botComponente/botComponente";
 
 const PaymentsAndFees = () => {
     return (
@@ -22,7 +23,7 @@ const PaymentsAndFees = () => {
             <div id="paymentsAndFeesTableHistory">
                 <PaymentsTable />
             </div>
-
+            <BotComponente />
         </main>
     );
 };
