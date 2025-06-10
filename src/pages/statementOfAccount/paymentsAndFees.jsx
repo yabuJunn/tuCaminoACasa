@@ -1,4 +1,4 @@
-import "./PaymentsAndFees.css";
+import "./paymentsAndFees.css";
 
 import { UpperNavButtons } from "../../components/navigation/upperNavButtons/upperNavButtons";
 import PaymentsTable from "../../components/statementOfAccountScreen/PaymentsTable/PaymentsTable";
