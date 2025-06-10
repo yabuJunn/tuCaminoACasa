@@ -6,13 +6,14 @@ import { useUserFullData } from '../../hooks/getRestInfoDataHook.js'
 
 import { GlobalNavBar } from '../../components/navigation/globalNavBar/globalNavBar'
 import { UpperNavButtons } from '../../components/navigation/upperNavButtons/upperNavButtons'
-import { PropertySummmary } from '../../components/dashboardScreen/propertySummary/propertySummary'
+import { PropertySummary } from '../../components/dashboardScreen/propertySummary/propertySummary'
 import { PropertyProjectDetails } from '../../components/dashboardScreen/propertyProjectDetails/propertyProjectDetails'
 import { GeneralPropertyTimeline } from '../../components/dashboardScreen/generalPropertyTimeline/generalPropertyTimeline'
 import { ConstructionProgress } from '../../components/dashboardScreen/constructionProgress/constructionProgress'
 import { DocumentsState } from '../../components/dashboardScreen/documentsState/documentsState'
 import { AccruedPayment } from '../../components/dashboardScreen/accruedPayment/accruedPayment'
 import { NextInstalment } from '../../components/dashboardScreen/nextInstalment/nextInstalment'
+import { fallbackProject } from '../../utils/fallbakcProject.js';
 
 export const DashboardPage = () => {
 	useCheckAuth();
@@ -20,8 +21,16 @@ export const DashboardPage = () => {
 	useUserFullData();
 
 	const userStore = useSelector((state) => state.main.user);
-	const mainStore = useSelector((state) => state.main);
-	console.log(mainStore);
+	// const mainStore = useSelector((state) => state.main);
+	// console.log(mainStore);
+
+	const selectedProjectId = useSelector((state) => state.main.projectSelected);
+	const allProjects = useSelector((state) => state.main.projects || []);
+
+	const selectedProject = allProjects.find((p) => p.id === selectedProjectId);
+
+	// Usamos el proyecto seleccionado si existe, si no usamos el de respaldo
+	const project = selectedProject || fallbackProject;
 
 
 	return <>
@@ -32,12 +41,12 @@ export const DashboardPage = () => {
 			<div id='dashboardPageContent'>
 				<div id='dashboardPagePresentation'>
 					<h1>¡Que mas vé, {userStore.name}!</h1>
-					<p>Bienvenida a tu proyecto <strong>Violet</strong>. ¡Qué alegría tenerte por acá!</p>
+					<p>Bienvenida a tu proyecto <strong>{project.name}</strong>. ¡Qué alegría tenerte por acá!</p>
 				</div>
 
 				<div id="dashboardPageCards" className='dashboardCard'>
 					<div id='dashboardContentColumn1'>
-						<PropertySummmary></PropertySummmary>
+						<PropertySummary></PropertySummary>
 						<PropertyProjectDetails></PropertyProjectDetails>
 					</div>
 

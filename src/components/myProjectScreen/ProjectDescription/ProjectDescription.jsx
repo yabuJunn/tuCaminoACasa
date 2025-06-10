@@ -1,5 +1,9 @@
 import "./ProjectDescription.css";
 
+import { fallbackProject } from "../../../utils/fallbakcProject";
+import { useSelector } from "react-redux";
+import { formatPrice } from "../../../utils/formatPrice";
+
 import Project3D from "../../../assets/jpg/VisualizationProject3D.png";
 
 import IconUbicacion from "../../../assets/svg/myProjectScreen/ubiIcon.svg";
@@ -7,58 +11,78 @@ import IconPrecio from "../../../assets/svg/myProjectScreen/payIcon.svg";
 import IconArea from "../../../assets/svg/myProjectScreen/areaIcon.svg";
 import IconEntrega from "../../../assets/svg/myProjectScreen/calendarIcon.svg";
 
-
-const projectDescriptionParagraphs = [
-  "VIOLET es un proyecto de apartamentos en conjunto cerrado ubicado en la ciudad de Cali, en el sector de Reserva de Kachipay, sobre la calle 60B entre carrera 118 y 118A.",
-  "El proyecto cuenta con 6 torres de 12 pisos, sumando 288 viviendas. Ofrece 288 parqueaderos privados (105 descubiertos y 183 cubiertos) y 58 para visitantes, con espacios reservados para personas con movilidad reducida. Entre sus amenidades destacan: portería con lobby y sala de juntas, salón social con turco y piscinas para adultos y niños, gimnasio dotado, zona de juegos infantiles, picnic, mascotas, biciparking y senderos peatonales. Además, dispone de infraestructura técnica como planta eléctrica, tanques de reserva y subestación eléctrica para zonas comunes.",
-];
-
-const highlights = [
-  { label: "Ubicación", tipo: "Sur de Cali", value: "Reserva de Kachipay", icon: IconUbicacion },
-  { label: "Precio desde", tipo: "Tipo 1", value: "$454.000.000", icon: IconPrecio },
-  { label: "Área desde", tipo: "Tipo 1", value: "88,00 m²", icon: IconArea },
-  { label: "Entrega estimada", tipo: "Tipo 1", value: "2026", icon: IconEntrega },
-];
-
 export function ProjectDescription() {
+  const selectedProjectId = useSelector((state) => state.main.projectSelected);
+  const allProjects = useSelector((state) => state.main.projects || []);
+
+  const selectedProject = allProjects.find((p) => p.id === selectedProjectId);
+
+  // Usamos el proyecto seleccionado si existe, si no usamos el de respaldo
+  const project = selectedProject || fallbackProject;
+
   return (
     <section className="project-description">
       <h2>Descripción del proyecto</h2>
 
-      {projectDescriptionParagraphs.map((text, index) => (
+      {/* {projectDescriptionParagraphs.map((text, index) => (
         <p key={index}>{text}</p>
-      ))}
+      ))} */}
+
+      <p>{project.description || fallbackProject.description}</p>
 
       <div className="project-content-wrapper">
-      <div className="project-image">
-        <img src={Project3D} alt="Visualización en 3D" />
-      </div>
+        <div className="project-image">
+          <img src={project.view3d_image || Project3D} alt="Visualización en 3D" />
+        </div>
 
-              <div className="projectElementsSide">
+        <div className="projectElementsSide">
 
           <div className="info-highlights">
-            {highlights.map((item, index) => (
-              <div key={index} className="highlight-card">
-  <img src={item.icon} alt={`Icono de ${item.label}`} className="highlight-icon" />
-  <div className="text-content">
-    <p className="label">{item.label}</p>
-    <p className="tipo">{item.tipo}</p>
-    <p className="value">{item.value}</p>
-  </div>
-</div>
+            <div className="highlight-card">
+              <img src={IconUbicacion} alt="Icono de Ubicación" className="highlight-icon" />
+              <div className="text-content">
+                <p className="label">Ubicación</p>
+                <p className="tipo">{project.location || fallbackProject.location}</p>
+                <p className="value">{project.specific_location || fallbackProject.specific_location}</p>
+              </div>
+            </div>
 
-            ))}
+            <div className="highlight-card">
+              <img src={IconPrecio} alt="Icono de Precio desde" className="highlight-icon" />
+              <div className="text-content">
+                <p className="label">Precio desde</p>
+                <p className="tipo">{project.type || fallbackProject.type}</p>
+                <p className="value">{formatPrice(project.price_cop) || fallbackProject.price_cop}</p>
+              </div>
+            </div>
+
+            <div className="highlight-card">
+              <img src={IconArea} alt="Icono de Área desde" className="highlight-icon" />
+              <div className="text-content">
+                <p className="label">Área desde</p>
+                <p className="tipo">{project.type || fallbackProject.type}</p>
+                <p className="value">{project.area_m2 || fallbackProject.area_m2} m2</p>
+              </div>
+            </div>
+
+            <div className="highlight-card">
+              <img src={IconEntrega} alt="Icono de Entrega estimada" className="highlight-icon" />
+              <div className="text-content">
+                <p className="label">Entrega estimada</p>
+                <p className="tipo">{project.type || fallbackProject.type}</p>
+                <p className="value">{project.delivery_year || fallbackProject.delivery_year}</p>
+              </div>
+            </div>
           </div>
 
           <div className="amenities-text">
             <h4>Amenidades</h4>
             <p>
-              Salón social con turco, gimnasio dotado, piscinas para adultos y niños, juegos infantiles, zona de picnic,
-              zona de mascotas, biciparking, senderos peatonales y planta eléctrica para zonas comunes.
+              {project.amenities || fallbackProject.amenities}
             </p>
           </div>
         </div>
-      </div>     
+      </div>
     </section>
   );
 }

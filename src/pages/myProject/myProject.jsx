@@ -18,9 +18,9 @@ export function MyProject() {
         <UpperNavButtons />
         <main className="content">
           <ProjectDescription />
-          <CommonAreas />
+          {/* <CommonAreas /> */}
           <ProjectDetails />
-          <ProjectMap />
+          {/* <ProjectMap /> */}
         </main>
       </div>
     </div>

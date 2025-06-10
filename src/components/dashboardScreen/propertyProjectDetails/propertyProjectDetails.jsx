@@ -1,41 +1,32 @@
-import "./propertyProjectDetails.css"
+import "./propertyProjectDetails.css";
 
-import buildingIcon from "../../../assets/svg/dashboardScreen/buildingIcon.svg"
-import starListIcon from "../../../assets/svg/dashboardScreen/starListIcon.svg"
-
-const projectMock = {
-    title: "Violet",
-    location: "Sur de Cali",
-    type: "Apartamento",
-    class: "1",
-    state: "Obra Gris",
-    size: "88,00 m2",
-    elements: [
-        "Cocina",
-        "Alcoba 1",
-        "Sala Comedor",
-        "Estudio",
-        "Terraza",
-        "Baño alcoba principal",
-        "Baño alcobas",
-        "Vestier",
-        "Espacio flexible",
-        "Zona de ropas",
-        "Balcón"
-    ]
-}
+import starListIcon from "../../../assets/svg/dashboardScreen/starListIcon.svg";
+import { useSelector } from "react-redux";
+import { fallbackProject } from "../../../utils/fallbakcProject";
 
 export const PropertyProjectDetails = () => {
-    return <>
+    const selectedProjectId = useSelector((state) => state.main.projectSelected);
+    const allProjects = useSelector((state) => state.main.projects || []);
+
+    const selectedProject = allProjects.find((p) => p.id === selectedProjectId);
+
+    // Usamos el proyecto seleccionado si existe, si no usamos el de respaldo
+    const project = selectedProject || fallbackProject;
+
+    const availableExtras = Object.entries(project.elements_extra || {})
+        .filter(([_, value]) => value === true)
+        .map(([key]) => key);
+
+    return (
         <div id="propertyProjectDetailsContainer">
             <div id="propertyProjectDetailsTitleContainer">
                 <h2>Detalles de tu Proyecto</h2>
             </div>
 
-            <p>Área privada construida total {projectMock.size}</p>
+            <p>Área privada construida total {project.area_m2} m2</p>
 
             <div id="propertyProjectDetailsDescription">
-                {projectMock.elements.map((element, index) => (
+                {availableExtras.map((element, index) => (
                     <div className="propertyProjectDetailsDescriptionElement" key={`${element}-${index}`}>
                         <img src={starListIcon} alt="" />
                         <p>{element}</p>
@@ -43,5 +34,5 @@ export const PropertyProjectDetails = () => {
                 ))}
             </div>
         </div>
-    </>
-}
+    );
+};

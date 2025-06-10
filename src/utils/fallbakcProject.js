@@ -1,0 +1,47 @@
+export const fallbackProject = {
+	id: 1,
+	name: "Violet Torre 1",
+	location: "Cali, Valle del Cauca",
+	specific_location: "Reserva de Kachipay, Calle 10 # 25-50",
+	latitude: 3.451647,
+	longitude: -76.531985,
+	type: "Residencial",
+	class: "4",
+	estrato: 4,
+	constructionState: "En construcción",
+	constructionStartDate: "2023-01-15",
+	constructionEndDate: "2025-07-30",
+	launchDate: "2023-02-01",
+	size: "N/A",
+	area_m2: 62.4,
+	price_from: 180000000,
+	price_to: 230000000,
+	price_cop: 230000000,
+	units_total: 120,
+	units_available: 15,
+	delivery_year: 2025,
+	constructionCompany: "Constructora Violet",
+	developer: "Grupo Violet",
+	constructionPhase: "Fachadas",
+	constructionPercentage: 80,
+	elements_extra: {
+		piscina: true,
+		ascensor: true,
+		gimnasio: true,
+		salonSocial: true,
+		parqueadero: true,
+		zonasVerdes: true,
+		seguridadPrivada: true
+	},
+	website: "https://www.violet-torre1.com",
+	contactPhone: "3104567890",
+	contactEmail: "info@violet-torre1.com",
+	images: [
+		"https://example.com/img1.jpg",
+		"https://example.com/img2.jpg"
+	],
+	description:
+		"Violet Torre 1 es un proyecto residencial moderno con excelentes zonas comunes, ubicado en una zona estratégica de Cali. Ideal para familias jóvenes y parejas.",
+	videoUrl: "https://www.youtube.com/watch?v=violetproject",
+	amenities: "Zonas comunes, Parqueadero, Ascensor, Piscina, Salón social, Gimnasio y Senderos."
+};

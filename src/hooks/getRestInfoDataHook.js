@@ -39,7 +39,7 @@ export const useUserFullData = () => {
             const projectIds = Object.values(userData.projects || {});
 
             const { data: projects, error: projectsErr } = await supabase
-                .from("projects")
+                .from("proyectos")
                 .select("*")
                 .in("id", projectIds);
 

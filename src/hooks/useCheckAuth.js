@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { NavigationHook } from "./navigationHook";
+import { isUserLoggedIn } from "../services/supabase/login";
 
 export const useCheckAuth = () => {
     const { handleNavigation } = NavigationHook();

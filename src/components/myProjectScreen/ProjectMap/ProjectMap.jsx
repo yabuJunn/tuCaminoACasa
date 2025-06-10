@@ -1,5 +1,8 @@
 import "./ProjectMap.css";
 
+import { useSelector } from "react-redux";
+import { fallbackProject } from "../../../utils/fallbakcProject";
+
 import SiteMapImage from "../../../assets/png/myProjectScreen/PlanoAereo.png";
 import PoolIcon from '../../../assets/svg/myProjectScreen/poolArea2.svg';
 import SalonIcon from '../../../assets/svg/myProjectScreen/salonArea.svg';
@@ -11,6 +14,15 @@ import JuegosIcon from '../../../assets/svg/myProjectScreen/juegosArea.svg';
 import GymIcon from '../../../assets/svg/myProjectScreen/gymArea2.svg';
 
 export function ProjectMap() {
+
+  const selectedProjectId = useSelector((state) => state.main.projectSelected);
+  const allProjects = useSelector((state) => state.main.projects || []);
+
+  const selectedProject = allProjects.find((p) => p.id === selectedProjectId);
+
+  // Usamos el proyecto seleccionado si existe, si no usamos el de respaldo
+  const project = selectedProject || fallbackProject;
+
   const amenities = [
     { name: "Portería con Lobby", icon: LobbyIcon },
     { name: "Salón social", icon: SalonIcon },
@@ -26,7 +38,7 @@ export function ProjectMap() {
     <section className="project-map-container">
       <div className="map-column">
         <div className="project-map">
-          <img src={SiteMapImage} alt="Mapa del proyecto" />
+          <img src={project.floor_plan_image || SiteMapImage} alt="Mapa del proyecto" />
         </div>
       </div>
       <div className="amenities-column">

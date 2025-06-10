@@ -1,8 +1,7 @@
-// hooks/getUserDataHook.js
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getUserData } from "../services/supabase/login";
-import { setUser, setError } from "../store/index"; // ajusta si tu slice está separado
+import { setUser, setError } from "../store/index";
 
 export const useGetUserData = () => {
     const dispatch = useDispatch();

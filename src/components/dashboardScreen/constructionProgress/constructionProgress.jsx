@@ -1,22 +1,31 @@
 import "./constructionProgress.css"
+
 import {
     CircularProgressbar,
     buildStyles
 } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
-const constructionProgressMock = "Inst de servicios"
-const percentage = 20;
+import { useSelector } from "react-redux";
+import { fallbackProject } from "../../../utils/fallbakcProject";
 
 export const ConstructionProgress = () => {
+
+    const selectedProjectId = useSelector((state) => state.main.projectSelected);
+    const allProjects = useSelector((state) => state.main.projects || []);
+
+    const selectedProject = allProjects.find((p) => p.id === selectedProjectId);
+
+    // Usamos el proyecto seleccionado si existe, si no usamos el de respaldo
+    const project = selectedProject || fallbackProject;
+
     return <>
         <div id="constructionProgressContainer">
             <h2>Progreso de la construcción</h2>
 
             <CircularProgressbar
-                value={percentage}
+                value={project.constructionPercentage}
                 maxValue={100}
-                text={`${percentage}%`}
+                text={`${project.constructionPercentage}%`}
                 styles={buildStyles({
                     rotation: 0.75,
                     strokeLinecap: 'round',
@@ -31,7 +40,7 @@ export const ConstructionProgress = () => {
             <div id="constructionProgressProgressText">
                 <div id="constructionProgressProgressTextTitle">
                     <h3>Etapa actual</h3>
-                    <p>{constructionProgressMock}</p>
+                    <p>{project.constructionPhase}</p>
                 </div>
 
                 <button id="constructionProgressNextStageButton">
