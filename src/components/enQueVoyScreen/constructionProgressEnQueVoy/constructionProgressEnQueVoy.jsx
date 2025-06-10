@@ -2,7 +2,7 @@ import "./constructionProgressEnQueVoy.css"
 
 import obraNegra from "../../../assets/png/enQueVoyScreen/ObraNegra.png"
 import obraNegra2 from "../../../assets/png/enQueVoyScreen/obraNegra2.png"
-import obraNegra3 from "../../../assets/png/enQueVoyScreen/ObraNegra3.png"
+import obraNegra3 from "../../../assets/png/enQueVoyScreen/obraNegra3.png"
 
 import constructionIcon from "../../../assets/svg/enQueVoyScreen/constructionIcon.svg"
 import graphicProgress from "../../../assets/svg/enQueVoyScreen/graphicProgress.svg"
